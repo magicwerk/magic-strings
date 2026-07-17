@@ -19,8 +19,6 @@ import org.magicwerk.brownies.tools.dev.jvm.JmhBenchmarkCreator.TestMethod;
 import org.magicwerk.brownies.tools.dev.tools.JavaTool;
 import org.magicwerk.collections.GapList;
 import org.magicwerk.collections.IList;
-import org.magicwerk.strings.ReturnMode;
-import org.magicwerk.strings.StringReplacer;
 import org.magicwerk.strings.BuilderHelper.IStringTransformerBuilder;
 import org.magicwerk.strings.GeneralStringTest.StringJmhBenchmark;
 import org.magicwerk.strings.StringReplacer.IReplaceStringImpl;
@@ -230,7 +228,7 @@ public class StringReplacerTest extends StringBenchmarkTestBase {
 		public static class MyState {
 			final String findString = "a";
 			final String replaceString = "BB";
-			final StringReplacer replacerString = StringReplacer.builder().replaceString(findString, replaceString).build();
+			final StringReplacer replacerString = StringReplacer.build(b -> b.replaceString(findString, replaceString));
 
 			final char findChar = 'a';
 			final char replaceChar = 'B';
