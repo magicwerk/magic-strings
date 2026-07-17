@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testClass xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="org.magicwerk.strings.helper.MathToolsTest" xsi:noNamespaceSchemaLocation="testclass-v10.xsd">
+  <traceTest name="testSignum">
+    <runDate>2012-09-23T23:51:56.933+02:00</runDate>
+    <runDuration>0.001</runDuration>
+    <exception></exception>
+    <traceClass>org.magicwerk.strings.helper.MathTools</traceClass>
+    <traceMethod>signum</traceMethod>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"signum(int)"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"2"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"1"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"signum(int)"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"1"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"1"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"signum(int)"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"0"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"0"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"signum(int)"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"-1"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"-1"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"signum(int)"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"-2"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"-1"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"signum(long)"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"2"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"1"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"signum(long)"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"1"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"1"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"signum(long)"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"0"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"0"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"signum(long)"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"-1"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"-1"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"signum(long)"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"-2"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"-1"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+  </traceTest>
+</testClass>

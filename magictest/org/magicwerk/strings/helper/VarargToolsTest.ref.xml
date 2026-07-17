@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testClass xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="org.magicwerk.strings.helper.VarargToolsTest" xsi:noNamespaceSchemaLocation="testclass-v10.xsd">
+  <captureTest name="testProcessVarargTuples">
+    <runDate>2023-11-28T11:53:25.533+01:00</runDate>
+    <runDuration>0.0232841</runDuration>
+    <exception></exception>
+    <captureStep>
+      <text outputType="TEXT">"1: 1a\r\n1: 1a\r\n2: 2b\r\n"</text>
+    </captureStep>
+  </captureTest>
+</testClass>

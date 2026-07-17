@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testClass xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="org.magicwerk.strings.objects.RangeTest" xsi:noNamespaceSchemaLocation="testclass-v10.xsd">
+  <traceTest name="testNumberRange">
+    <runDate>2024-09-14T23:22:37.9901536+02:00</runDate>
+    <runDuration>0.080683</runDuration>
+    <exception></exception>
+    <traceClass>org.magicwerk.brownies.core.objects.NumberRange</traceClass>
+    <traceMethod>/.*/</traceMethod>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"NumberRange"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"1"</paramText>
+        <paramText outputType="VALUE" param="#2">"9"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"1 - 9"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"range"</paramText>
+      </description>
+      <parameters></parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"8"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+  </traceTest>
+</testClass>

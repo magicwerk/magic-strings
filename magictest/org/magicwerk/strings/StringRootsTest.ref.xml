@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testClass xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="org.magicwerk.strings.StringRootsTest" xsi:noNamespaceSchemaLocation="testclass-v10.xsd">
+  <traceTest name="test">
+    <runDate>2025-08-19T01:37:26.6724739+02:00</runDate>
+    <runDuration>0.0441587</runDuration>
+    <exception></exception>
+    <traceClass>org.magicwerk.strings.StringRoots</traceClass>
+    <traceMethod>/.*/</traceMethod>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"builder"</paramText>
+      </description>
+      <parameters></parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"{ \r\n   org.magicwerk.brownies.core.strings.chars.CharCaseTools$IIgnoreCase ignoreCase = null; \r\n   boolean reverse = false; \r\n}"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"getCommonLength"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"abc\""</paramText>
+        <paramText outputType="VALUE" param="#2">"\"ab\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"2"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"getCommonRoot"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"abc\""</paramText>
+        <paramText outputType="VALUE" param="#2">"\"ab\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"ab\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"getCommonLength"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"{ \"abc\", \"ab\", \"ab\" }"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"2"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"getCommonRootString"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"{ \"abc\", \"ab\", \"ab\" }"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"ab\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"builder"</paramText>
+      </description>
+      <parameters></parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"{ \r\n   org.magicwerk.brownies.core.strings.chars.CharCaseTools$IIgnoreCase ignoreCase = null; \r\n   boolean reverse = false; \r\n}"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"getCommonLength"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"abc\""</paramText>
+        <paramText outputType="VALUE" param="#2">"\"bc\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"2"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"getCommonRoot"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"abc\""</paramText>
+        <paramText outputType="VALUE" param="#2">"\"bc\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"bc\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"getCommonLength"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"{ \"abc\", \"bc\", \"bc\" }"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"2"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"getCommonRootString"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"{ \"abc\", \"bc\", \"bc\" }"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"bc\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"builder"</paramText>
+      </description>
+      <parameters></parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"{ \r\n   org.magicwerk.brownies.core.strings.chars.CharCaseTools$IIgnoreCase ignoreCase = null; \r\n   boolean reverse = false; \r\n}"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"getCommonLength"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"abc\""</paramText>
+        <paramText outputType="VALUE" param="#2">"\"Ab\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"2"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"getCommonRoot"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"abc\""</paramText>
+        <paramText outputType="VALUE" param="#2">"\"Ab\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"ab\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"getCommonLength"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"{ \"abc\", \"Ab\", \"Ab\" }"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"2"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"getCommonRootString"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"{ \"abc\", \"Ab\", \"Ab\" }"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"ab\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"builder"</paramText>
+      </description>
+      <parameters></parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"{ \r\n   org.magicwerk.brownies.core.strings.chars.CharCaseTools$IIgnoreCase ignoreCase = null; \r\n   boolean reverse = false; \r\n}"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"getCommonLength"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"abc\""</paramText>
+        <paramText outputType="VALUE" param="#2">"\"Bc\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"2"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"getCommonRoot"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"abc\""</paramText>
+        <paramText outputType="VALUE" param="#2">"\"Bc\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"bc\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"getCommonLength"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"{ \"abc\", \"Bc\", \"Bc\" }"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"2"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"getCommonRootString"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"{ \"abc\", \"Bc\", \"Bc\" }"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"bc\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"builder"</paramText>
+      </description>
+      <parameters></parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"{ \r\n   org.magicwerk.brownies.core.strings.chars.CharCaseTools$IIgnoreCase ignoreCase = null; \r\n   boolean reverse = false; \r\n}"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"getCommonLength"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"x\\ud800\\udc00\""</paramText>
+        <paramText outputType="VALUE" param="#2">"\"x\\ud800\\udc01\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"1"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"getCommonRoot"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"x\\ud800\\udc00\""</paramText>
+        <paramText outputType="VALUE" param="#2">"\"x\\ud800\\udc01\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"x\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"getCommonLength"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"{ \"x\\ud800\\udc00\", \"x\\ud800\\udc01\", \"x\\ud800\\udc01\" }"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"1"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"getCommonRootString"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"{ \"x\\ud800\\udc00\", \"x\\ud800\\udc01\", \"x\\ud800\\udc01\" }"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"x\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"builder"</paramText>
+      </description>
+      <parameters></parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"{ \r\n   org.magicwerk.brownies.core.strings.chars.CharCaseTools$IIgnoreCase ignoreCase = null; \r\n   boolean reverse = false; \r\n}"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"getCommonLength"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"\\ud800\\udc00x\""</paramText>
+        <paramText outputType="VALUE" param="#2">"\"\\ud800\\udc01x\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"1"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"getCommonRoot"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"\\ud800\\udc00x\""</paramText>
+        <paramText outputType="VALUE" param="#2">"\"\\ud800\\udc01x\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"x\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"getCommonLength"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"{ \"\\ud800\\udc00x\", \"\\ud800\\udc01x\", \"\\ud800\\udc01x\" }"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"1"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"getCommonRootString"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"{ \"\\ud800\\udc00x\", \"\\ud800\\udc01x\", \"\\ud800\\udc01x\" }"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"x\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+  </traceTest>
+  <captureTest name="testBenchmarks">
+    <runDate>2026-04-08T21:19:54.4475869+02:00</runDate>
+    <runDuration>0.0054618</runDuration>
+    <exception></exception>
+    <captureStep>
+      <text outputType="TEXT">"Test class org.magicwerk.brownies.core.strings.StringRootsTest$StringRootsPrefixBenchmarkTest\r\nResult: abc\r\nResult: ab\r\nResult: ab\r\nResult: \r\nResult: \r\nResult: \r\nResult: \r\nTest class org.magicwerk.brownies.core.strings.StringRootsTest$StringRootsSuffixBenchmarkTest\r\nResult: abc\r\nResult: \r\nResult: \r\nResult: bc\r\nResult: bc\r\nResult: \r\nResult: \r\nTest class org.magicwerk.brownies.core.strings.StringRootsTest$StringRootsIgnoreCaseBenchmarkTest\r\nResult: abc\r\nResult: ab\r\nResult: ab\r\nResult: \r\nResult: \r\nResult: \r\nResult: \r\nTest class org.magicwerk.brownies.core.strings.StringRootsTest$StringRootsIndexBenchmarkTest\r\nResult: -1\r\nResult: 2\r\nResult: 2\r\nResult: 0\r\nResult: 0\r\nResult: 0\r\nResult: -1\r\n"</text>
+    </captureStep>
+  </captureTest>
+</testClass>

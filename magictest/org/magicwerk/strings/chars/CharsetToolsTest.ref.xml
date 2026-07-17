@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testClass xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="org.magicwerk.strings.chars.CharsetToolsTest" xsi:noNamespaceSchemaLocation="testclass-v10.xsd">
+  <captureTest name="testDecoder">
+    <runDate>2024-12-17T11:00:17.8033404+01:00</runDate>
+    <runDuration>0.0124149</runDuration>
+    <exception></exception>
+    <captureStep>
+      <text outputType="TEXT">"[-30, -126, -84, -30, -126, -84]\r\nError: Conversion to UTF-8 failed at position 3\r\nResult: \u20ac\r\n"</text>
+    </captureStep>
+  </captureTest>
+  <traceTest name="testHasReplacementChar">
+    <runDate>2024-12-17T11:00:17.8353779+01:00</runDate>
+    <runDuration>5.992E-4</runDuration>
+    <exception></exception>
+    <traceClass>org.magicwerk.strings.chars.CharsetTools</traceClass>
+    <traceMethod>hasReplacementChar</traceMethod>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"hasReplacementChar"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"abc\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"false"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"hasReplacementChar"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"abcäA\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"false"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"hasReplacementChar"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"abc\\ufffdA\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"true"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+  </traceTest>
+  <captureTest name="testIso8859">
+    <runDate>2024-12-17T11:00:17.8590175+01:00</runDate>
+    <runDuration>0.0083973</runDuration>
+    <exception></exception>
+    <captureStep>
+      <text outputType="TEXT">""</text>
+    </captureStep>
+  </captureTest>
+</testClass>

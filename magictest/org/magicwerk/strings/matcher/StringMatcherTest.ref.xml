@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testClass xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="org.magicwerk.strings.matcher.StringMatcherTest" xsi:noNamespaceSchemaLocation="testclass-v10.xsd">
+  <traceTest name="test">
+    <runDate>2025-05-19T14:40:42.8800426+02:00</runDate>
+    <runDuration>0.1495075</runDuration>
+    <exception></exception>
+    <traceClass>org.magicwerk.strings.matcher.StringMatcher</traceClass>
+    <traceMethod>find</traceMethod>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"find"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"01x34\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"Match [2/3]: x"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+  </traceTest>
+  <captureTest name="testEquals">
+    <runDate>2024-12-03T09:08:04.7629294+01:00</runDate>
+    <runDuration>0.122129</runDuration>
+    <exception></exception>
+    <captureStep>
+      <text outputType="TEXT">""</text>
+    </captureStep>
+  </captureTest>
+  <captureTest name="testRegexStringMatcher">
+    <runDate>2014-08-04T18:26:52.255+02:00</runDate>
+    <runDuration>0.001262792</runDuration>
+    <exception></exception>
+    <captureStep>
+      <text outputType="TEXT">"Input: xxxxxxxxxxbefore 'str' after\r\nStart match: 'str' after\r\nMatch: 'str'\r\nInput: xxxxxxxxxxbefore 'ante''post' after\r\nStart match: 'ante''post' after\r\nMatch: 'ante''post'\r\nInput: xxxxxxxxxxbefore '' after\r\nStart match: '' after\r\nMatch: ''\r\nInput: xxxxxxxxxxbefore 'str' after\r\nStart match: 'str' after\r\nMatch: 'str'\r\nInput: xxxxxxxxxxbefore 'ante''post' after\r\nStart match: 'ante''post' after\r\nMatch: 'ante''post'\r\nInput: xxxxxxxxxxbefore '' after\r\nStart match: '' after\r\nMatch: ''\r\n"</text>
+    </captureStep>
+  </captureTest>
+  <traceTest name="testStringMatcher">
+    <runDate>2025-07-31T00:20:51.5870216+02:00</runDate>
+    <runDuration>0.0010519</runDuration>
+    <exception></exception>
+    <traceClass>org.magicwerk.strings.matcher.StringMatcher</traceClass>
+    <traceMethod>/.*/</traceMethod>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"of"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"abc\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"Match string: abc"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"find"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"(abc)\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"Match [1/4]: abc"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"indexOf"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"(abc)\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"1"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+  </traceTest>
+</testClass>

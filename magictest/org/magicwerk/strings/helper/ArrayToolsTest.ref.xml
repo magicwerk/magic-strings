@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testClass xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="org.magicwerk.strings.helper.ArrayToolsTest" xsi:noNamespaceSchemaLocation="testclass-v10.xsd">
+  <traceTest name="testArraysAsListJdk">
+    <runDate>2023-12-10T13:35:55.031+01:00</runDate>
+    <runDuration>0.1008122</runDuration>
+    <exception></exception>
+    <traceClass>java.util.Arrays</traceClass>
+    <traceMethod>asList</traceMethod>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"asList"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"[ 1, 2, 3 ]"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"{ 1, 2, 3 }"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"asList"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"[ \r\n   [ 1, 2, 3 ] \r\n]"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"{ \r\n   [ 1, 2, 3 ] \r\n}"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"asList"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"[ \r\n   [ 1, 2, 3 ] \r\n]"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"{ \r\n   [ 1, 2, 3 ] \r\n}"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+  </traceTest>
+  <traceTest name="testConvert">
+    <runDate>2024-08-16T01:33:25.0166212+02:00</runDate>
+    <runDuration>0.0317268</runDuration>
+    <exception></exception>
+    <traceClass>org.magicwerk.strings.helper.ArrayTools</traceClass>
+    <traceMethod>/.*/</traceMethod>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"convert"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"[ 1, 2, 3 ]"</paramText>
+        <paramText outputType="VALUE" param="#2">"class java.lang.Integer"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"[ 1, 2, 3 ]"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"convert"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"[ 1, 2, 3 ]"</paramText>
+        <paramText outputType="VALUE" param="#2">"class java.lang.String"</paramText>
+      </parameters>
+      <result></result>
+      <error>
+        <paramText outputType="VALUE" param="Error">"java.lang.ArrayStoreException: arraycopy: element type mismatch: can not cast one of the elements of java.lang.Object[] to the type of the destination array, java.lang.String"</paramText>
+      </error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"convertIf"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"[ 1, 2, 3 ]"</paramText>
+        <paramText outputType="VALUE" param="#2">"class java.lang.String"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"null"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"convert"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"[ 1, 2, 3 ]"</paramText>
+        <paramText outputType="VALUE" param="#2">"class java.lang.String"</paramText>
+        <paramText outputType="VALUE" param="#3">"{ \r\n}"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"[ \"1\", \"2\", \"3\" ]"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+  </traceTest>
+  <traceTest name="testGet">
+    <runDate>2013-09-17T23:38:05.195+02:00</runDate>
+    <runDuration>0.068069146</runDuration>
+    <exception></exception>
+    <traceClass>org.magicwerk.strings.helper.ArrayTools</traceClass>
+    <traceMethod>get</traceMethod>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"get"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"[ 1, 2, 3 ]"</paramText>
+        <paramText outputType="VALUE" param="#2">"0"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"1"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"get"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"[ \"a\", \"b\", \"c\" ]"</paramText>
+        <paramText outputType="VALUE" param="#2">"1"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"b\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+  </traceTest>
+  <traceTest name="testGetBaseComponentType">
+    <runDate>2014-08-05T17:48:17.193+02:00</runDate>
+    <runDuration>9.78985E-4</runDuration>
+    <exception></exception>
+    <traceClass>org.magicwerk.strings.helper.ArrayTools</traceClass>
+    <traceMethod>getBaseComponentType</traceMethod>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"getBaseComponentType"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"a\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"class java.lang.String"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"getBaseComponentType"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"[ \"a\" ]"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"class java.lang.String"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"getBaseComponentType"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"[ \r\n   [ \"a\" ] \r\n]"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"class java.lang.String"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+  </traceTest>
+  <traceTest name="testGetComponentType">
+    <runDate>2014-08-05T17:48:17.421+02:00</runDate>
+    <runDuration>7.12265E-4</runDuration>
+    <exception></exception>
+    <traceClass>org.magicwerk.strings.helper.ArrayTools</traceClass>
+    <traceMethod>getComponentType</traceMethod>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"getComponentType"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"a\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"null"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"getComponentType"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"[ \"a\" ]"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"class java.lang.String"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"getComponentType"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"[ \r\n   [ \"a\" ] \r\n]"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"class [Ljava.lang.String;"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+  </traceTest>
+  <traceTest name="testGetNumDimensions">
+    <runDate>2014-08-05T17:24:31.895+02:00</runDate>
+    <runDuration>0.014113671</runDuration>
+    <exception></exception>
+    <traceClass>org.magicwerk.strings.helper.ArrayTools</traceClass>
+    <traceMethod>getNumDimensions</traceMethod>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"getNumDimensions"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"a\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"0"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"getNumDimensions"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"[ \"a\" ]"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"1"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"getNumDimensions"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"[ \r\n   [ \"a\" ] \r\n]"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"2"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+  </traceTest>
+  <traceTest name="testToList">
+    <runDate>2023-12-10T13:57:43.355+01:00</runDate>
+    <runDuration>0.0079302</runDuration>
+    <exception></exception>
+    <traceClass>org.magicwerk.strings.helper.ArrayTools</traceClass>
+    <traceMethod>toList</traceMethod>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"toList"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"[ 1, 2 ]"</paramText>
+        <paramText outputType="VALUE" param="#2">"true"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"{ 1, 2 }"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"toList"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"[ \r\n   [ 1, 2 ], \r\n   [ 3, 4 ] \r\n]"</paramText>
+        <paramText outputType="VALUE" param="#2">"true"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"{ \r\n   { 1, 2 }, \r\n   { 3, 4 } \r\n}"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"toList"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"[ \r\n   [ \r\n      [ 1, 2 ], \r\n      [ 3, 4 ] \r\n   ], \r\n   [ \r\n      [ 5, 6 ], \r\n      [ 7, 8 ] \r\n   ] \r\n]"</paramText>
+        <paramText outputType="VALUE" param="#2">"true"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"{ \r\n   { \r\n      { 1, 2 }, \r\n      { 3, 4 } \r\n   }, \r\n   { \r\n      { 5, 6 }, \r\n      { 7, 8 } \r\n   } \r\n}"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"toList"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"[ 1, 2 ]"</paramText>
+        <paramText outputType="VALUE" param="#2">"true"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"{ 1, 2 }"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"toList"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"[ \r\n   [ 1, 2 ], \r\n   [ 3, 4 ] \r\n]"</paramText>
+        <paramText outputType="VALUE" param="#2">"true"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"{ \r\n   { 1, 2 }, \r\n   { 3, 4 } \r\n}"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"toList"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"[ \r\n   [ \r\n      [ 1, 2 ], \r\n      [ 3, 4 ] \r\n   ], \r\n   [ \r\n      [ 5, 6 ], \r\n      [ 7, 8 ] \r\n   ] \r\n]"</paramText>
+        <paramText outputType="VALUE" param="#2">"true"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"{ \r\n   { \r\n      { 1, 2 }, \r\n      { 3, 4 } \r\n   }, \r\n   { \r\n      { 5, 6 }, \r\n      { 7, 8 } \r\n   } \r\n}"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"toList"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"[ \"a1\", \"b2\" ]"</paramText>
+        <paramText outputType="VALUE" param="#2">"true"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"{ \"a1\", \"b2\" }"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"toList"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"[ \r\n   [ \"a1\", \"b2\" ], \r\n   [ \"c3\", \"d4\" ] \r\n]"</paramText>
+        <paramText outputType="VALUE" param="#2">"true"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"{ \r\n   { \"a1\", \"b2\" }, \r\n   { \"c3\", \"d4\" } \r\n}"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"toList"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"[ \r\n   [ \r\n      [ \"a1\", \"b2\" ], \r\n      [ \"c3\", \"d4\" ] \r\n   ], \r\n   [ \r\n      [ \"e5\", \"f6\" ], \r\n      [ \"g7\", \"h8\" ] \r\n   ] \r\n]"</paramText>
+        <paramText outputType="VALUE" param="#2">"true"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"{ \r\n   { \r\n      { \"a1\", \"b2\" }, \r\n      { \"c3\", \"d4\" } \r\n   }, \r\n   { \r\n      { \"e5\", \"f6\" }, \r\n      { \"g7\", \"h8\" } \r\n   } \r\n}"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"toList"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"[ 1, 2, 3 ]"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"{ 1, 2, 3 }"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"toList"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"[ 1, 2, 3 ]"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"{ 1, 2, 3 }"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"toList"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"[ 1, 2, 3 ]"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"{ 1, 2, 3 }"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+  </traceTest>
+</testClass>

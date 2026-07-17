@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testClass xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="org.magicwerk.strings.StringTrimmerTest" xsi:noNamespaceSchemaLocation="testclass-v10.xsd">
+  <captureTest name="testBenchmarks">
+    <runDate>2026-04-08T21:21:44.2224601+02:00</runDate>
+    <runDuration>0.0086949</runDuration>
+    <exception></exception>
+    <captureStep>
+      <text outputType="TEXT">"Test class org.magicwerk.brownies.core.strings.StringTrimmerTest$StringTrimmerBenchmarkTest\r\nResult: ab\r\nResult: ab\r\nResult:  ab \r\nTest class org.magicwerk.brownies.core.strings.StringTrimmerTest$StringTrimmerWhitespaceBenchmarkTest\r\nResult: ab\r\nResult: 'ab'\r\nResult: ab\r\nTest class org.magicwerk.brownies.core.strings.StringTrimmerTest$StringTrimmerStartBenchmarkTest\r\nResult: ab\r\nResult: ab'\r\nResult:  ab \r\nTest class org.magicwerk.brownies.core.strings.StringTrimmerTest$StringTrimmerEndBenchmarkTest\r\nResult: ab\r\nResult: 'ab\r\nResult:  ab \r\n"</text>
+    </captureStep>
+  </captureTest>
+  <captureTest name="testCollapse">
+    <runDate>2026-02-27T13:50:00.6310036+01:00</runDate>
+    <runDuration>0.0052156</runDuration>
+    <exception></exception>
+    <captureStep>
+      <text outputType="TEXT">"abc -&gt; abc (trimMode: HEAD_TAIL, collapseMode: null\r\nabc -&gt; abc (trimMode: HEAD_TAIL, collapseMode: BODY\r\n..abc.. -&gt; abc (trimMode: HEAD_TAIL, collapseMode: BODY\r\n..a..b.. -&gt; a-b (trimMode: HEAD_TAIL, collapseMode: BODY\r\n..a..b..c.. -&gt; a-b-c (trimMode: HEAD_TAIL, collapseMode: BODY\r\n"</text>
+    </captureStep>
+  </captureTest>
+  <captureTest name="testGeneric">
+    <runDate>2026-01-21T23:13:12.3414292+01:00</runDate>
+    <runDuration>0.0033084</runDuration>
+    <exception></exception>
+    <captureStep>
+      <text outputType="TEXT">"123 -&gt; 123"</text>
+    </captureStep>
+    <captureStep>
+      <text outputType="TEXT">"123 -&gt; null"</text>
+    </captureStep>
+    <captureStep>
+      <text outputType="TEXT">"123 -&gt; Exception"</text>
+    </captureStep>
+    <captureStep>
+      <text outputType="TEXT">"-123- -&gt; 123"</text>
+    </captureStep>
+    <captureStep>
+      <text outputType="TEXT">"-123- -&gt; 123"</text>
+    </captureStep>
+    <captureStep>
+      <text outputType="TEXT">"-123- -&gt; 123"</text>
+    </captureStep>
+  </captureTest>
+  <captureTest name="testLocation">
+    <runDate>2026-02-27T13:18:44.3030537+01:00</runDate>
+    <runDuration>6.434E-4</runDuration>
+    <exception></exception>
+    <captureStep>
+      <text outputType="TEXT">"HEAD: --aa-- -&gt; aa--\r\nHEAD: --aa== -&gt; aa==\r\nHEAD: -- -&gt; \r\nTAIL: --aa-- -&gt; --aa\r\nTAIL: --aa== -&gt; --aa==\r\nTAIL: -- -&gt; \r\nHEAD_TAIL: --aa-- -&gt; aa\r\nHEAD_TAIL: --aa== -&gt; aa==\r\nHEAD_TAIL: -- -&gt; \r\n"</text>
+    </captureStep>
+  </captureTest>
+  <traceTest name="testTrim">
+    <runDate>2026-02-26T23:32:00.4077028+01:00</runDate>
+    <runDuration>0.0096771</runDuration>
+    <exception></exception>
+    <traceClass>org.magicwerk.strings.StringTrimmer</traceClass>
+    <traceMethod>trim</traceMethod>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"trim"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"abc\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"abc\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"trim"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\".abc\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"abc\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"trim"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\".,abc\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"abc\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"trim"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"abc,\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"abc\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"trim"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"abc,.\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"abc\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"trim"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\",abc,\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"abc\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"trim"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\".,abc,.\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"abc\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"trim"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\".,,.\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"trim"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\".,,.\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"trim"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\".,,.\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+  </traceTest>
+  <captureTest name="testTrim2">
+    <runDate>2026-02-27T13:18:44.3903578+01:00</runDate>
+    <runDuration>7.883E-4</runDuration>
+    <exception></exception>
+    <captureStep>
+      <text outputType="TEXT">"-=abc=- (HEAD): abc=-\r\n-=abc=- (TAIL): -=abc\r\n-=abc=- (HEAD_TAIL): abc\r\ndef (HEAD): def\r\ndef (TAIL): def\r\ndef (HEAD_TAIL): def\r\n"</text>
+    </captureStep>
+  </captureTest>
+</testClass>

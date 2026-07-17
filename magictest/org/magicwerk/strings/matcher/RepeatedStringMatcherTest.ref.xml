@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testClass xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="org.magicwerk.strings.matcher.RepeatedStringMatcherTest" xsi:noNamespaceSchemaLocation="testclass-v10.xsd">
+  <traceTest name="testRepeatedStringMatcher">
+    <runDate>2025-07-18T10:03:33.1961148+02:00</runDate>
+    <runDuration>0.0339769</runDuration>
+    <exception></exception>
+    <traceClass>org.magicwerk.strings.matcher.RepeatedStringMatcher</traceClass>
+    <traceMethod>/.*/</traceMethod>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"of"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"Match string: 01"</paramText>
+        <paramText outputType="VALUE" param="#2">"false"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"RepeatedStringStartsAtMatcherImpl (Match string: 01)"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"find"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"a0101b0101c\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"Match [1/5]: 0101"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"indexOf"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"a0101b0101c\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"1"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"indexOfEnd"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"a0101b0101c\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"5"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"of"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"REGEX:01[0]"</paramText>
+        <paramText outputType="VALUE" param="#2">"false"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"RepeatedStringMatcherImpl (REGEX:01[0])"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"find"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"a0101b0101c\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"Match [1/5]: 0101"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"indexOf"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"a0101b0101c\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"1"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"indexOfEnd"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"a0101b0101c\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"5"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"of"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"Match string: 01"</paramText>
+        <paramText outputType="VALUE" param="#2">"true"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"RepeatedStringReverseEndsAtMatcherImpl (Match string: 01)"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"find"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"a0101b0101c\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"Match [6/10]: 0101"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"indexOf"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"a0101b0101c\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"6"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"indexOfEnd"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"a0101b0101c\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"10"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"of"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"REGEX:01[0]"</paramText>
+        <paramText outputType="VALUE" param="#2">"true"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"RepeatedStringReverseIterateMatcherImpl (REGEX:01[0])"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"find"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"a0101b0101c\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"Match [6/10]: 0101"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"indexOf"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"a0101b0101c\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"6"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"indexOfEnd"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"a0101b0101c\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"10"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+  </traceTest>
+</testClass>

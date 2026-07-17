@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testClass xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="org.magicwerk.strings.matcher.StringsMatcherTest" xsi:noNamespaceSchemaLocation="testclass-v10.xsd">
+  <captureTest name="testExample">
+    <runDate>2026-07-08T18:09:08.2541514+02:00</runDate>
+    <runDuration>0.0440045</runDuration>
+    <exception></exception>
+    <captureStep>
+      <text outputType="TEXT">"[Match [0/9]: /* abc */, Match [16/25]: /* abc */]\r\n[Match [4/5]: b, Match [20/21]: b]\r\n/* aXYZc */ \"abc\" /* aXYZc */\r\n"</text>
+    </captureStep>
+  </captureTest>
+  <traceTest name="testFind">
+    <runDate>2025-08-07T15:55:45.6904438+02:00</runDate>
+    <runDuration>0.0461257</runDuration>
+    <exception></exception>
+    <traceClass>org.magicwerk.brownies.core.strings.matcher.StringsMatcher$StringsTreeMatcher</traceClass>
+    <traceMethod>find</traceMethod>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"find"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="This">"StringsMatcher [searchStrs=[ab, abc], searchNotStrs=null]"</paramText>
+        <paramText outputType="VALUE" param="#1">"\"abcde\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"Match [0/3]: abc"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"find"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="This">"StringsMatcher [searchStrs=[ab, abc], searchNotStrs=[abcd]]"</paramText>
+        <paramText outputType="VALUE" param="#1">"\"abcde\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"null"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"find"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="This">"StringsMatcher [searchStrs=[bc, bcd], searchNotStrs=[abc]]"</paramText>
+        <paramText outputType="VALUE" param="#1">"\"abcde\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"Match [1/4]: bcd"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"find"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="This">"StringsMatcher [searchStrs=[bc, bcd, ], searchNotStrs=[abc]]"</paramText>
+        <paramText outputType="VALUE" param="#1">"\"abcde\""</paramText>
+        <paramText outputType="VALUE" param="#2">"0"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"Match [0/0]: "</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"find"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="This">"StringsMatcher [searchStrs=[bc, bcd, ], searchNotStrs=[abc]]"</paramText>
+        <paramText outputType="VALUE" param="#1">"\"abcde\""</paramText>
+        <paramText outputType="VALUE" param="#2">"1"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"Match [1/4]: bcd"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+  </traceTest>
+  <captureTest name="testFind2">
+    <runDate>2024-07-30T01:59:51.626+02:00</runDate>
+    <runDuration>0.0024637</runDuration>
+    <exception></exception>
+    <captureStep>
+      <text outputType="TEXT">"input: , matches: [x] -&gt; find: null\r\ninput: abcdefg, matches: [] -&gt; find: Match [0/0]: \r\ninput: abcdefg, matches: [a] -&gt; find: Match [0/1]: a\r\ninput: abcdefg, matches: [x] -&gt; find: null\r\ninput: abcdefg, matches: [bcd] -&gt; find: Match [1/4]: bcd\r\ninput: abcdefg, matches: [bcd, bcdx] -&gt; find: Match [1/4]: bcd\r\ninput: abcdefg, matches: [bcd, bcde] -&gt; find: Match [1/5]: bcde\r\ninput: abcdefg, matches: [def, defgh] -&gt; find: Match [3/6]: def\r\n"</text>
+    </captureStep>
+  </captureTest>
+  <captureTest name="testFind3">
+    <runDate>2025-07-22T17:49:38.9629035+02:00</runDate>
+    <runDuration>0.0256237</runDuration>
+    <exception></exception>
+    <captureStep>
+      <text outputType="TEXT">"input: , matches: [x] -&gt; find: null\r\ninput: abcdefg, matches: [] -&gt; find: Match [0/0]: \r\ninput: abcdefg, matches: [a] -&gt; find: Match [0/1]: a\r\ninput: abcdefg, matches: [x] -&gt; find: null\r\ninput: abcdefg, matches: [bcd] -&gt; find: Match [1/4]: bcd\r\ninput: abcdefg, matches: [bcd, bcdx] -&gt; find: Match [1/4]: bcd\r\ninput: abcdefg, matches: [bcd, bcde] -&gt; find: Match [1/5]: bcde\r\ninput: abcdefg, matches: [def, defgh] -&gt; find: Match [3/6]: def\r\n"</text>
+    </captureStep>
+  </captureTest>
+  <traceTest name="testFind4">
+    <runDate>2025-07-30T23:03:44.854272+02:00</runDate>
+    <runDuration>0.0017176</runDuration>
+    <exception></exception>
+    <traceClass>org.magicwerk.strings.matcher.StringsMatcher</traceClass>
+    <traceMethod>find</traceMethod>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"find"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"abcde\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"Match [0/3]: abc"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"find"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"abcde\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"Match [1/4]: bcd"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"find"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"abcde\""</paramText>
+        <paramText outputType="VALUE" param="#2">"0"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"Match [0/0]: "</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"find"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"abcde\""</paramText>
+        <paramText outputType="VALUE" param="#2">"1"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"Match [1/4]: bcd"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+  </traceTest>
+  <traceTest name="testIndexOfStrings">
+    <runDate>2025-08-07T13:02:02.5805262+02:00</runDate>
+    <runDuration>0.001288</runDuration>
+    <exception></exception>
+    <traceClass>org.magicwerk.brownies.core.strings.matcher.StringsMatcher$StringsSimpleMatcher</traceClass>
+    <traceMethod>indexOf</traceMethod>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"indexOf"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"abcd\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"1"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"indexOf"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"abcd\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"-1"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+  </traceTest>
+  <traceTest name="testMatchNot">
+    <runDate>2025-08-17T09:12:11.8085505+02:00</runDate>
+    <runDuration>0.0015093</runDuration>
+    <exception></exception>
+    <traceClass>org.magicwerk.brownies.core.strings.matcher.StringsMatcher$StringsTreeCharMatcher</traceClass>
+    <traceMethod>matchNot</traceMethod>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"matchNot"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"abc\""</paramText>
+        <paramText outputType="VALUE" param="#2">"0"</paramText>
+        <paramText outputType="VALUE" param="#3">"3"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"false"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"matchNot"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"0abc\""</paramText>
+        <paramText outputType="VALUE" param="#2">"1"</paramText>
+        <paramText outputType="VALUE" param="#3">"3"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"true"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"matchNot"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"abc1\""</paramText>
+        <paramText outputType="VALUE" param="#2">"0"</paramText>
+        <paramText outputType="VALUE" param="#3">"3"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"true"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"matchNot"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"0abc1\""</paramText>
+        <paramText outputType="VALUE" param="#2">"1"</paramText>
+        <paramText outputType="VALUE" param="#3">"3"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"true"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+  </traceTest>
+  <captureTest name="testStringsTreeMatcher">
+    <runDate>2026-06-12T10:27:52.1199603+02:00</runDate>
+    <runDuration>0.0503729</runDuration>
+    <exception></exception>
+    <captureStep>
+      <text outputType="TEXT">"\nnull\r\n -&gt; Match [0/0]: \r\n\r\na\nMatchNode [matchChar=0 U+0000, startString=a, allChildChars=null, end=true, minLen=1]\n\r\na -&gt; Match [0/1]: a\r\n\r\na\nb\nMatchNode [matchChar=0 U+0000, startString=, allChildChars=[97, 98], end=false, minLen=1]\n\tMatchNode [matchChar=97 a, startString=null, allChildChars=null, end=true, minLen=1]\n\tMatchNode [matchChar=98 b, startString=null, allChildChars=null, end=true, minLen=1]\n\r\na -&gt; Match [0/1]: a\r\nb -&gt; Match [0/1]: b\r\n\r\na\nab\nMatchNode [matchChar=0 U+0000, startString=a, allChildChars=[98], end=true, minLen=1]\n\tMatchNode [matchChar=98 b, startString=null, allChildChars=null, end=true, minLen=1]\n\r\na -&gt; Match [0/1]: a\r\nab -&gt; Match [0/2]: ab\r\n\r\na\nab\nabc\nMatchNode [matchChar=0 U+0000, startString=a, allChildChars=[98], end=true, minLen=1]\n\tMatchNode [matchChar=98 b, startString=null, allChildChars=[99], end=true, minLen=1]\n\t\tMatchNode [matchChar=99 c, startString=null, allChildChars=null, end=true, minLen=1]\n\r\na -&gt; Match [0/1]: a\r\nab -&gt; Match [0/2]: ab\r\nabc -&gt; Match [0/3]: abc\r\n\r\nab\nabcd\nMatchNode [matchChar=0 U+0000, startString=ab, allChildChars=[99], end=true, minLen=2]\n\tMatchNode [matchChar=99 c, startString=d, allChildChars=null, end=true, minLen=2]\n\r\nabcd -&gt; Match [0/4]: abcd\r\nab -&gt; Match [0/2]: ab\r\n\r\nab\nabcd\nabcdef\nMatchNode [matchChar=0 U+0000, startString=ab, allChildChars=[99], end=true, minLen=2]\n\tMatchNode [matchChar=99 c, startString=d, allChildChars=[101], end=true, minLen=2]\n\t\tMatchNode [matchChar=101 e, startString=f, allChildChars=null, end=true, minLen=2]\n\r\nabcdef -&gt; Match [0/6]: abcdef\r\nab -&gt; Match [0/2]: ab\r\nabcd -&gt; Match [0/4]: abcd\r\n\r\nab\nabcd\nabcdef\nMatchNode [matchChar=0 U+0000, startString=ab, allChildChars=[99], end=true, minLen=2]\n\tMatchNode [matchChar=99 c, startString=d, allChildChars=[101], end=true, minLen=2]\n\t\tMatchNode [matchChar=101 e, startString=f, allChildChars=null, end=true, minLen=2]\n\r\nabcdef -&gt; Match [0/6]: abcdef\r\nabcd -&gt; Match [0/4]: abcd\r\nab -&gt; Match [0/2]: ab\r\n\r\nab\nabcd\ncd\nMatchNode [matchChar=0 U+0000, startString=, allChildChars=[97, 99], end=false, minLen=2]\n\tMatchNode [matchChar=97 a, startString=b, allChildChars=[99], end=true, minLen=2]\n\t\tMatchNode [matchChar=99 c, startString=d, allChildChars=null, end=true, minLen=2]\n\tMatchNode [matchChar=99 c, startString=d, allChildChars=null, end=true, minLen=2]\n\r\nabcd -&gt; Match [0/4]: abcd\r\nab -&gt; Match [0/2]: ab\r\ncd -&gt; Match [0/2]: cd\r\n\r\nabc\nMatchNode [matchChar=0 U+0000, startString=abc, allChildChars=null, end=true, minLen=3]\n\r\nabc -&gt; Match [0/3]: abc\r\n\r\nabc\nxyz\nMatchNode [matchChar=0 U+0000, startString=, allChildChars=[97, 120], end=false, minLen=3]\n\tMatchNode [matchChar=97 a, startString=bc, allChildChars=null, end=true, minLen=3]\n\tMatchNode [matchChar=120 x, startString=yz, allChildChars=null, end=true, minLen=3]\n\r\nabc -&gt; Match [0/3]: abc\r\nxyz -&gt; Match [0/3]: xyz\r\n\r\nabc\nabcx\nMatchNode [matchChar=0 U+0000, startString=abc, allChildChars=[120], end=true, minLen=3]\n\tMatchNode [matchChar=120 x, startString=null, allChildChars=null, end=true, minLen=1]\n\r\nabc -&gt; Match [0/3]: abc\r\nabcx -&gt; Match [0/4]: abcx\r\n\r\nabc\nabx\nMatchNode [matchChar=0 U+0000, startString=ab, allChildChars=[99, 120], end=false, minLen=3]\n\tMatchNode [matchChar=99 c, startString=null, allChildChars=null, end=true, minLen=1]\n\tMatchNode [matchChar=120 x, startString=null, allChildChars=null, end=true, minLen=1]\n\r\nabc -&gt; Match [0/3]: abc\r\nabx -&gt; Match [0/3]: abx\r\n\r\nabc\nabxy\nMatchNode [matchChar=0 U+0000, startString=ab, allChildChars=[99, 120], end=false, minLen=3]\n\tMatchNode [matchChar=99 c, startString=null, allChildChars=null, end=true, minLen=1]\n\tMatchNode [matchChar=120 x, startString=y, allChildChars=null, end=true, minLen=2]\n\r\nabc -&gt; Match [0/3]: abc\r\nabxy -&gt; Match [0/4]: abxy\r\n\r\n"</text>
+    </captureStep>
+  </captureTest>
+</testClass>

@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testClass xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="org.magicwerk.strings.text.TextRangeTest" xsi:noNamespaceSchemaLocation="testclass-v10.xsd">
+  <traceTest name="testClip">
+    <runDate>2023-07-14T23:42:43.393+02:00</runDate>
+    <runDuration>0.0545971</runDuration>
+    <exception></exception>
+    <traceClass>org.magicwerk.strings.text.TextRange</traceClass>
+    <traceMethod>clip</traceMethod>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"clip"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"row: 2, col: 2"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"row: 3, col: 3"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"clip"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"row: 5, col: 5"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"row: 5, col: 5"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"clip"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"row: 8, col: 8"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"row: 7, col: 7"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"clip"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"start: row: 4, col: 4, end: row: 6, col: 6"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"start: row: 4, col: 4, end: row: 6, col: 6"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"clip"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"start: row: 2, col: 2, end: row: 8, col: 8"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"start: row: 3, col: 3, end: row: 7, col: 7"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"clip"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"start: row: 2, col: 2, end: row: 5, col: 5"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"start: row: 3, col: 3, end: row: 5, col: 5"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"clip"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"start: row: 5, col: 5, end: row: 8, col: 8"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"start: row: 5, col: 5, end: row: 7, col: 7"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"clip"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"start: row: 1, col: 1, end: row: 2, col: 2"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"start: row: 2, col: 2, end: row: 2, col: 2"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"clip"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"start: row: 8, col: 8, end: row: 9, col: 9"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"start: row: 8, col: 8, end: row: 8, col: 8"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+  </traceTest>
+  <traceTest name="testTextRange">
+    <runDate>2021-10-19T10:29:23.934+02:00</runDate>
+    <runDuration>0.0286297</runDuration>
+    <exception></exception>
+    <traceClass>org.magicwerk.strings.text.TextRange</traceClass>
+    <traceMethod>/.*/</traceMethod>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"TextRange"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"row: 0, col: 4"</paramText>
+        <paramText outputType="VALUE" param="#2">"row: 0, col: 7"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"start: row: 0, col: 4, end: row: 0, col: 7"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"TextRange"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"row: 1, col: 0"</paramText>
+        <paramText outputType="VALUE" param="#2">"row: 0, col: 0"</paramText>
+      </parameters>
+      <result></result>
+      <error>
+        <paramText outputType="VALUE" param="Error">"java.lang.IllegalArgumentException: invalid positions, required start &lt;= end: start= row: 1, col: 0, end= row: 0, col: 0"</paramText>
+      </error>
+    </traceStep>
+  </traceTest>
+</testClass>

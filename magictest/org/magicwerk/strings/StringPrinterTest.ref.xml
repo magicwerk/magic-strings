@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testClass xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="org.magicwerk.strings.StringPrinterTest" xsi:noNamespaceSchemaLocation="testclass-v10.xsd">
+  <captureTest name="testAdd">
+    <runDate>2020-12-21T18:04:05.709+01:00</runDate>
+    <runDuration>0.0079586</runDuration>
+    <exception></exception>
+    <captureStep>
+      <text outputType="TEXT">"a|null|b||c\r\na|NULL|b||c\r\na||b||c\r\n"</text>
+    </captureStep>
+  </captureTest>
+  <captureTest name="testAddConditional">
+    <runDate>2024-12-12T17:29:09.1831222+01:00</runDate>
+    <runDuration>0.0028968</runDuration>
+    <exception></exception>
+    <captureStep>
+      <text outputType="TEXT">"X-a:b:c-a:b:c-a:b:c-a:b:c-X-X\r\n"</text>
+    </captureStep>
+  </captureTest>
+  <captureTest name="testConcatWithoutSeparator">
+    <runDate>2020-12-21T21:50:32.788+01:00</runDate>
+    <runDuration>0.0010609</runDuration>
+    <exception></exception>
+    <captureStep>
+      <text outputType="TEXT">"severity:info,message:text,error:stacktrace\r\nseverity:info,error:stacktrace\r\nseverity:info,message:text,error:stacktrace\r\nseverity:info,error:stacktrace\r\n"</text>
+    </captureStep>
+  </captureTest>
+  <captureTest name="testConfig">
+    <runDate>2023-11-05T21:23:49.778+01:00</runDate>
+    <runDuration>0.0047</runDuration>
+    <exception></exception>
+    <captureStep>
+      <text outputType="TEXT">"&lt;a1,a2&gt;[b1-b2]{c1|c2}[d1-d2]&lt;e1,e2&gt;\r\n"</text>
+    </captureStep>
+  </captureTest>
+  <captureTest name="testExamples">
+    <runDate>2024-12-12T12:07:08.9055543+01:00</runDate>
+    <runDuration>0.0078827</runDuration>
+    <exception></exception>
+    <captureStep>
+      <text outputType="TEXT">"localhost/rest\r\nlocalhost/rest?verbose=true\r\nlocalhost/rest?verbose=true&amp;sorted\r\nlocalhost/rest\r\nlocalhost/rest&amp;verbose=true\r\nlocalhost/rest&amp;verbose=true&amp;fast=true\r\n"</text>
+    </captureStep>
+  </captureTest>
+  <captureTest name="testIndent">
+    <runDate>2023-11-04T17:55:16.606+01:00</runDate>
+    <runDuration>0.0047308</runDuration>
+    <exception></exception>
+    <captureStep>
+      <text outputType="TEXT">"(=)line1\n(=)line2\n\r\n(=)line1\nline2\n\r\n(=)line1\n(=)line2\n\r\nline-1\n- line-1-1\nline-2\nline-3\n- line-3-1\n\r\nline1\n(=)line2\n\r\nline1=\nline2\n-line3\r\n"</text>
+    </captureStep>
+  </captureTest>
+  <captureTest name="testPrint">
+    <runDate>2023-01-08T21:58:58.494+01:00</runDate>
+    <runDuration>5.23E-4</runDuration>
+    <exception></exception>
+    <captureStep>
+      <text outputType="TEXT">"before[e0,e1]\r\n[e0,e1]after\r\n[e0,e1]between[e2,e3]\r\n[e0,e1,e2,e3]\r\n"</text>
+    </captureStep>
+  </captureTest>
+  <captureTest name="testSeparator">
+    <runDate>2021-08-04T01:52:39.827+02:00</runDate>
+    <runDuration>2.989E-4</runDuration>
+    <exception></exception>
+    <captureStep>
+      <text outputType="TEXT">"[a]\r\n\r\n[]\r\n[aa, b]\r\n[aa]\r\n[a, b]\r\n"</text>
+    </captureStep>
+  </captureTest>
+  <captureTest name="testSeparatorConcat">
+    <runDate>2020-12-21T17:49:31.444+01:00</runDate>
+    <runDuration>3.639E-4</runDuration>
+    <exception></exception>
+    <captureStep>
+      <text outputType="TEXT">"a-b\r\nb\r\n-b\r\n"</text>
+    </captureStep>
+  </captureTest>
+  <traceTest name="testStatic">
+    <runDate>2022-10-14T13:44:58.162+02:00</runDate>
+    <runDuration>0.0152702</runDuration>
+    <exception></exception>
+    <traceClass>org.magicwerk.strings.StringPrinter</traceClass>
+    <traceMethod>/.*/</traceMethod>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"formatArray"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"{ }"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"[]\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"formatArray"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"{ 1 }"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"[1]\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"formatArray"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"{ 1, 2 }"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"[1, 2]\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+  </traceTest>
+  <captureTest name="testStringPrinter">
+    <runDate>2020-04-24T17:54:33.362+02:00</runDate>
+    <runDuration>2.642E-4</runDuration>
+    <exception></exception>
+    <captureStep>
+      <text outputType="TEXT">"H1\n\tH1.1\n\t\tText 1.1\n\tH1.2\n\t\tText 1.2\n\r\nH1|-H1.1|--Text 1.1|-H1.2|--Text 1.2|\r\n(a)\r\n(a,b)\r\n(key1=val1)\r\n"</text>
+    </captureStep>
+  </captureTest>
+</testClass>

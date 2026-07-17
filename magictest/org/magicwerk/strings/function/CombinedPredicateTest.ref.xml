@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testClass xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="org.magicwerk.strings.function.CombinedPredicateTest" xsi:noNamespaceSchemaLocation="testclass-v10.xsd">
+  <captureTest name="test">
+    <runDate>2022-11-06T15:36:59.981+01:00</runDate>
+    <runDuration>0.0420096</runDuration>
+    <exception></exception>
+    <captureStep>
+      <text outputType="TEXT">"[endsWith(ST) (defining: true), endsWith (defining: true)]\r\n"</text>
+    </captureStep>
+  </captureTest>
+</testClass>

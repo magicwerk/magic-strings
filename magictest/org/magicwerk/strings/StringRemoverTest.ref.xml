@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testClass xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="org.magicwerk.strings.StringRemoverTest" xsi:noNamespaceSchemaLocation="testclass-v10.xsd">
+  <captureTest name="testBenchmarks">
+    <runDate>2026-04-08T21:20:37.2412582+02:00</runDate>
+    <runDuration>0.0024534</runDuration>
+    <exception></exception>
+    <captureStep>
+      <text outputType="TEXT">"Test class org.magicwerk.brownies.core.strings.StringRemoverTest$StringRemoverRemoveCharFoundBenchmarkTest\r\nResult: abc\r\nTest class org.magicwerk.brownies.core.strings.StringRemoverTest$StringRemoverRemoveCharNotFoundBenchmarkTest\r\nResult: a0b0c\r\nTest class org.magicwerk.brownies.core.strings.StringRemoverTest$StringRemoverRemoveStringFoundBenchmarkTest\r\nResult: abc\r\nTest class org.magicwerk.brownies.core.strings.StringRemoverTest$StringRemoverRemoveStringNotFoundBenchmarkTest\r\nResult: a00b00c\r\n"</text>
+    </captureStep>
+  </captureTest>
+  <captureTest name="testNoChange">
+    <runDate>2025-07-09T01:05:53.277269+02:00</runDate>
+    <runDuration>0.0165607</runDuration>
+    <exception></exception>
+    <captureStep>
+      <text outputType="TEXT">""</text>
+    </captureStep>
+  </captureTest>
+  <traceTest name="testRemove">
+    <runDate>2026-05-12T14:23:31.1001502+02:00</runDate>
+    <runDuration>0.0389413</runDuration>
+    <exception></exception>
+    <traceClass>org.magicwerk.strings.StringRemover</traceClass>
+    <traceMethod>remove</traceMethod>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"remove"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"abcXdef\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"abcdef\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"remove"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"abcXdef\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"abcdef\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"remove"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"abcdef\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"abcdef\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"remove"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"abcdef\""</paramText>
+      </parameters>
+      <result></result>
+      <error>
+        <paramText outputType="VALUE" param="Error">"java.lang.IllegalArgumentException: String not changed"</paramText>
+      </error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"remove"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"abcXXdef\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"abcdef\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"remove"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"abcXXdef\""</paramText>
+      </parameters>
+      <result></result>
+      <error>
+        <paramText outputType="VALUE" param="Error">"java.lang.IllegalArgumentException: String not changed"</paramText>
+      </error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"remove"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"abc\\ud800\\udc00def\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"abcdef\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"remove"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"abcdef\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"abcdef\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"remove"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"abc\\ud800\\udc00\\ud800\\udc00def\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"abcdef\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+  </traceTest>
+  <traceTest name="testRemoveMultiple">
+    <runDate>2026-01-20T00:17:29.0683363+01:00</runDate>
+    <runDuration>0.0582596</runDuration>
+    <exception></exception>
+    <traceClass>org.magicwerk.strings.StringRemover</traceClass>
+    <traceMethod>apply</traceMethod>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"apply"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"[aa]\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"[]\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"apply"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"[aaa]\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"[]\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"apply"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"[aaaa]\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"[a]\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"apply"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"[aa]\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"[]\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"apply"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"[aaa]\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"[]\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"apply"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"[aaaa]\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"[a]\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+  </traceTest>
+  <captureTest name="testRemoveReplace">
+    <runDate>2026-03-05T19:08:06.1288064+01:00</runDate>
+    <runDuration>0.002097</runDuration>
+    <exception></exception>
+    <captureStep>
+      <text outputType="TEXT">""</text>
+    </captureStep>
+  </captureTest>
+  <captureTest name="testRemoveRetain">
+    <runDate>2026-03-03T18:27:58.9828655+01:00</runDate>
+    <runDuration>0.0016368</runDuration>
+    <exception></exception>
+    <captureStep>
+      <text outputType="TEXT">""</text>
+    </captureStep>
+  </captureTest>
+  <captureTest name="testRetain">
+    <runDate>2025-07-17T10:07:36.9102318+02:00</runDate>
+    <runDuration>0.0096215</runDuration>
+    <exception></exception>
+    <captureStep>
+      <text outputType="TEXT">"a0b0c: abc - 00\r\n"</text>
+    </captureStep>
+  </captureTest>
+  <captureTest name="testStringTransformer">
+    <runDate>2025-07-08T22:09:12.9208434+02:00</runDate>
+    <runDuration>0.0013218</runDuration>
+    <exception></exception>
+    <captureStep>
+      <text outputType="TEXT">""</text>
+    </captureStep>
+  </captureTest>
+</testClass>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testClass xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="org.magicwerk.strings.matcher.IStringMatcherTest" xsi:noNamespaceSchemaLocation="testclass-v10.xsd">
+  <captureTest name="test">
+    <runDate>2025-05-20T18:13:37.9834894+02:00</runDate>
+    <runDuration>0.1968386</runDuration>
+    <exception></exception>
+    <captureStep>
+      <text outputType="TEXT">""</text>
+    </captureStep>
+  </captureTest>
+</testClass>

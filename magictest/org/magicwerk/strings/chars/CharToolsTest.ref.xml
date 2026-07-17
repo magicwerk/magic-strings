@@ -1,0 +1,504 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testClass xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="org.magicwerk.strings.chars.CharToolsTest" xsi:noNamespaceSchemaLocation="testclass-v10.xsd">
+  <traceTest name="testFromUnicodeChar">
+    <runDate>2024-12-11T00:40:24.6317646+01:00</runDate>
+    <runDuration>0.0012185</runDuration>
+    <exception></exception>
+    <traceClass>org.magicwerk.brownies.core.strings.escape.StringEscapeTools</traceClass>
+    <traceMethod>fromUnicodeChar</traceMethod>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"fromUnicodeChar"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"\\\\u1234\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"'\\u1234'"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+  </traceTest>
+  <traceTest name="testGetUtf8Char">
+    <runDate>2024-12-17T11:00:17.5361768+01:00</runDate>
+    <runDuration>0.0022946</runDuration>
+    <exception></exception>
+    <traceClass>org.magicwerk.strings.chars.CharTools</traceClass>
+    <traceMethod>getUtf8Char</traceMethod>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"getUtf8Char"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"[ 97 ]"</paramText>
+        <paramText outputType="VALUE" param="#2">"0"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"97"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"getUtf8Char"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"[ -61, -92 ]"</paramText>
+        <paramText outputType="VALUE" param="#2">"0"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"228"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"getUtf8Char"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"[ -30, -126, -84 ]"</paramText>
+        <paramText outputType="VALUE" param="#2">"0"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"8364"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"getUtf8Char"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"[ -128 ]"</paramText>
+        <paramText outputType="VALUE" param="#2">"0"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"-1"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+  </traceTest>
+  <traceTest name="testGetUtf8Len">
+    <runDate>2024-12-17T11:00:17.5634972+01:00</runDate>
+    <runDuration>7.746E-4</runDuration>
+    <exception></exception>
+    <traceClass>org.magicwerk.strings.chars.CharTools</traceClass>
+    <traceMethod>getUtf8Len</traceMethod>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"getUtf8Len"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"'a'"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"1"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"getUtf8Len"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"'ä'"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"2"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"getUtf8Len"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"'\\u20ac'"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"3"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"getUtf8Len"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"'\\uffff'"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"3"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+  </traceTest>
+  <traceTest name="testGetUtf8Start">
+    <runDate>2024-12-17T11:00:17.5943212+01:00</runDate>
+    <runDuration>0.0016123</runDuration>
+    <exception></exception>
+    <traceClass>org.magicwerk.strings.chars.CharTools</traceClass>
+    <traceMethod>getUtf8Start</traceMethod>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"getUtf8Start"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"[ 97 ]"</paramText>
+        <paramText outputType="VALUE" param="#2">"0"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"0"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"getUtf8Start"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"[ -61, -92 ]"</paramText>
+        <paramText outputType="VALUE" param="#2">"0"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"0"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"getUtf8Start"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"[ -30, -126, -84 ]"</paramText>
+        <paramText outputType="VALUE" param="#2">"0"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"0"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"getUtf8Start"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"[ -128 ]"</paramText>
+        <paramText outputType="VALUE" param="#2">"0"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"-1"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"getUtf8Start"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"[ 97, 97 ]"</paramText>
+        <paramText outputType="VALUE" param="#2">"1"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"1"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"getUtf8Start"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"[ -61, -92, 97 ]"</paramText>
+        <paramText outputType="VALUE" param="#2">"1"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"2"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"getUtf8Start"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"[ -30, -126, -84, 97 ]"</paramText>
+        <paramText outputType="VALUE" param="#2">"1"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"3"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+  </traceTest>
+  <traceTest name="testGetUtf8StartReverse">
+    <runDate>2024-12-17T11:00:17.6283981+01:00</runDate>
+    <runDuration>0.0014503</runDuration>
+    <exception></exception>
+    <traceClass>org.magicwerk.strings.chars.CharTools</traceClass>
+    <traceMethod>getUtf8StartReverse</traceMethod>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"getUtf8StartReverse"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"[ 97 ]"</paramText>
+        <paramText outputType="VALUE" param="#2">"0"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"0"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"getUtf8StartReverse"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"[ -61, -92 ]"</paramText>
+        <paramText outputType="VALUE" param="#2">"1"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"0"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"getUtf8StartReverse"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"[ -30, -126, -84 ]"</paramText>
+        <paramText outputType="VALUE" param="#2">"2"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"0"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"getUtf8StartReverse"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"[ -128 ]"</paramText>
+        <paramText outputType="VALUE" param="#2">"0"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"-1"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+  </traceTest>
+  <traceTest name="testHasSurrogate">
+    <runDate>2025-08-19T08:47:35.4626825+02:00</runDate>
+    <runDuration>0.0066893</runDuration>
+    <exception></exception>
+    <traceClass>org.magicwerk.strings.chars.CharTools</traceClass>
+    <traceMethod>hasSurrogate</traceMethod>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"hasSurrogate"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"(x)\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"false"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"hasSurrogate"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"(\\ud800\\udc00)\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"true"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+  </traceTest>
+  <traceTest name="testIsAscii">
+    <runDate>2024-12-17T11:00:17.7012107+01:00</runDate>
+    <runDuration>7.457E-4</runDuration>
+    <exception></exception>
+    <traceClass>org.magicwerk.strings.chars.CharTools</traceClass>
+    <traceMethod>isAscii</traceMethod>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"isAscii"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"[ 97, 98, 99 ]"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"true"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"isAscii"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"[ 97, -61, -92, 99 ]"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"false"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"isAscii"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"[ 97, -1, 99 ]"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"false"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+  </traceTest>
+  <traceTest name="testIsUtf8">
+    <runDate>2024-12-17T11:00:17.7375917+01:00</runDate>
+    <runDuration>6.989E-4</runDuration>
+    <exception></exception>
+    <traceClass>org.magicwerk.strings.chars.CharTools</traceClass>
+    <traceMethod>isUtf8</traceMethod>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"isUtf8"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"[ 97, 98, 99 ]"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"true"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"isUtf8"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"[ 97, -61, -92, 99 ]"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"true"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"isUtf8"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"[ 97, -1, 99 ]"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"false"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+  </traceTest>
+  <traceTest name="testReplaceSurrogate">
+    <runDate>2025-08-19T08:47:35.5770433+02:00</runDate>
+    <runDuration>5.211E-4</runDuration>
+    <exception></exception>
+    <traceClass>org.magicwerk.strings.chars.CharTools</traceClass>
+    <traceMethod>replaceSurrogate</traceMethod>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"replaceSurrogate"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"(x)\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"(x)\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"replaceSurrogate"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"(\\ud800\\udc00)\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"(\\ufffd)\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+  </traceTest>
+  <captureTest name="testSurrogate">
+    <runDate>2025-08-19T08:47:35.6116262+02:00</runDate>
+    <runDuration>0.0092959</runDuration>
+    <exception></exception>
+    <captureStep>
+      <text outputType="TEXT">"--/28/ffffffff/0\r\nHI/10000/28/1\r\nLO/dc00/d800/1\r\n--/29/10000/3\r\n"</text>
+    </captureStep>
+  </captureTest>
+  <traceTest name="testToUnicodeChar">
+    <runDate>2021-05-10T00:59:48.749+02:00</runDate>
+    <runDuration>6.139E-4</runDuration>
+    <exception></exception>
+    <traceClass>org.magicwerk.brownies.core.strings.escape.StringEscapeTools</traceClass>
+    <traceMethod>toUnicodeChar</traceMethod>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"toUnicodeChar"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"0xf"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"\\\\u000f\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"toUnicodeChar"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"0xff"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"\\\\u00ff\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"toUnicodeChar"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"0xfff"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"\\\\u0fff\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"toUnicodeChar"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"0xffff"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"\\\\uffff\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+  </traceTest>
+</testClass>

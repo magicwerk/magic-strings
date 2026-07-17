@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testClass xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="org.magicwerk.strings.matcher.MultiStringMatcherTest" xsi:noNamespaceSchemaLocation="testclass-v10.xsd">
+  <captureTest name="testMultiStringMatcher">
+    <runDate>2024-08-22T00:23:40.0734911+02:00</runDate>
+    <runDuration>0.0189012</runDuration>
+    <exception></exception>
+    <captureStep>
+      <text outputType="TEXT">"RegexMatch [0/2]: aS\r\nRegexMatch [2/3]: b\r\n\r\nRegexMatch [0/2]: aS\r\nRegexMatch [2/3]: b\r\n\r\n"</text>
+    </captureStep>
+  </captureTest>
+</testClass>

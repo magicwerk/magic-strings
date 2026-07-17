@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testClass xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="org.magicwerk.strings.StringRepeaterTest" xsi:noNamespaceSchemaLocation="testclass-v10.xsd">
+  <captureTest name="testBenchmarks">
+    <runDate>2026-04-08T21:17:38.2709009+02:00</runDate>
+    <runDuration>0.0034447</runDuration>
+    <exception></exception>
+    <captureStep>
+      <text outputType="TEXT">"Test class org.magicwerk.brownies.core.strings.StringRepeaterTest$StringRepeatCharBenchmarkTest\r\nResult: \r\nResult: x\r\nResult: xx\r\nResult: xxxxxxxxxx\r\nTest class org.magicwerk.brownies.core.strings.StringRepeaterTest$StringRepeatStringBenchmarkTest\r\nResult: \r\nResult: ab\r\nResult: abab\r\nResult: abababababababababab\r\nTest class org.magicwerk.brownies.core.strings.StringRepeaterTest$StringRepeatStringSeparatorBenchmarkTest\r\nResult: \r\nResult: ab\r\nResult: ab,ab\r\nResult: ab,ab,ab,ab,ab,ab,ab,ab,ab,ab\r\n"</text>
+    </captureStep>
+  </captureTest>
+  <traceTest name="testRepeat">
+    <runDate>2026-01-11T12:35:44.4923024+01:00</runDate>
+    <runDuration>0.0052924</runDuration>
+    <exception></exception>
+    <traceClass>org.magicwerk.strings.StringRepeater</traceClass>
+    <traceMethod>repeat</traceMethod>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"repeat"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"0"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"repeat"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"1"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"&lt;-&gt;\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"repeat"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"2"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"&lt;-&gt;&lt;-&gt;\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"repeat"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"4"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"&lt;-&gt;&lt;-&gt;&lt;-&gt;&lt;-&gt;\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"repeat"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"-1"</paramText>
+      </parameters>
+      <result></result>
+      <error>
+        <paramText outputType="VALUE" param="Error">"java.lang.IllegalArgumentException: count must be &gt;= 0"</paramText>
+      </error>
+    </traceStep>
+  </traceTest>
+</testClass>

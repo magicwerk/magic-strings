@@ -1,0 +1,874 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testClass xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="org.magicwerk.strings.helper.ByteToolsTest" xsi:noNamespaceSchemaLocation="testclass-v10.xsd">
+  <traceTest name="testByteArrayToByte">
+    <runDate>2026-04-07T16:48:20.1520231+02:00</runDate>
+    <runDuration>0.0727387</runDuration>
+    <exception></exception>
+    <traceClass>org.magicwerk.strings.helper.ByteTools</traceClass>
+    <traceMethod>byteArrayToByte</traceMethod>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"byteArrayToByte"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"0x7f"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"127"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"byteArrayToByte"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"0x80"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"-128"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"byteArrayToByte"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"0x00"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"0"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+  </traceTest>
+  <traceTest name="testByteArrayToInt">
+    <runDate>2026-04-07T16:48:20.2963455+02:00</runDate>
+    <runDuration>9.394E-4</runDuration>
+    <exception></exception>
+    <traceClass>org.magicwerk.strings.helper.ByteTools</traceClass>
+    <traceMethod>/byteArrayToInt[BL]/</traceMethod>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"byteArrayToIntB"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"0x12345678"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"305419896"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"byteArrayToIntL"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"0x78563412"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"305419896"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"byteArrayToIntB"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"0x87654321"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"-2023406815"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"byteArrayToIntL"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"0x21436587"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"-2023406815"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"byteArrayToIntB"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"0x00000000"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"0"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"byteArrayToIntL"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"0x00000000"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"0"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+  </traceTest>
+  <traceTest name="testByteArrayToShort">
+    <runDate>2026-04-07T16:48:20.3393281+02:00</runDate>
+    <runDuration>6.32E-4</runDuration>
+    <exception></exception>
+    <traceClass>org.magicwerk.strings.helper.ByteTools</traceClass>
+    <traceMethod>/byteArrayToShort[BL]/</traceMethod>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"byteArrayToShortB"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"0x1234"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"4660"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"byteArrayToShortL"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"0x3412"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"4660"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"byteArrayToShortB"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"0x8421"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"-31711"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"byteArrayToShortL"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"0x2184"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"-31711"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"byteArrayToShortB"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"0x0000"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"0"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"byteArrayToShortL"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"0x0000"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"0"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+  </traceTest>
+  <traceTest name="testByteArrayToUByte">
+    <runDate>2026-04-07T16:48:20.3734663+02:00</runDate>
+    <runDuration>0.0025174</runDuration>
+    <exception></exception>
+    <traceClass>org.magicwerk.strings.helper.ByteTools</traceClass>
+    <traceMethod>byteArrayToUByte</traceMethod>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"byteArrayToUByte"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"0x7f"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"127"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"byteArrayToUByte"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"0x80"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"128"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"byteArrayToUByte"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"0xff"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"255"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+  </traceTest>
+  <traceTest name="testByteArrayToUInt">
+    <runDate>2026-04-07T16:48:20.4033472+02:00</runDate>
+    <runDuration>6.082E-4</runDuration>
+    <exception></exception>
+    <traceClass>org.magicwerk.strings.helper.ByteTools</traceClass>
+    <traceMethod>/byteArrayToUInt[BL]/</traceMethod>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"byteArrayToUIntB"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"0x12345678"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"305419896"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"byteArrayToUIntL"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"0x78563412"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"305419896"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"byteArrayToUIntB"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"0x87654321"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"2271560481"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"byteArrayToUIntL"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"0x21436587"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"2271560481"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"byteArrayToUIntB"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"0x00000000"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"0"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"byteArrayToUIntL"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"0x00000000"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"0"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+  </traceTest>
+  <traceTest name="testByteArrayToUShort">
+    <runDate>2026-04-07T16:48:20.4335129+02:00</runDate>
+    <runDuration>0.0010308</runDuration>
+    <exception></exception>
+    <traceClass>org.magicwerk.strings.helper.ByteTools</traceClass>
+    <traceMethod>/byteArrayToUShort[BL]/</traceMethod>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"byteArrayToUShortB"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"0x1234"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"4660"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"byteArrayToUShortL"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"0x3412"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"4660"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"byteArrayToUShortB"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"0x8421"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"33825"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"byteArrayToUShortL"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"0x2184"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"33825"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"byteArrayToUShortB"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"0x0000"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"0"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"byteArrayToUShortL"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"0x0000"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"0"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+  </traceTest>
+  <traceTest name="testByteToByteArray">
+    <runDate>2026-04-07T16:48:20.467321+02:00</runDate>
+    <runDuration>5.375E-4</runDuration>
+    <exception></exception>
+    <traceClass>org.magicwerk.strings.helper.ByteTools</traceClass>
+    <traceMethod>byteToByteArray</traceMethod>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"byteToByteArray"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"127"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"0x7f"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"byteToByteArray"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"-128"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"0x80"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"byteToByteArray"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"0"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"0x00"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+  </traceTest>
+  <traceTest name="testByteToUbyte">
+    <runDate>2026-04-07T16:48:20.4947122+02:00</runDate>
+    <runDuration>3.672E-4</runDuration>
+    <exception></exception>
+    <traceClass>org.magicwerk.strings.helper.ByteTools</traceClass>
+    <traceMethod>byteToUbyte</traceMethod>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"byteToUbyte"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"-1"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"255"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"byteToUbyte"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"0"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"0"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"byteToUbyte"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"127"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"127"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"byteToUbyte"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"-128"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"128"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+  </traceTest>
+  <traceTest name="testIntToByteArray">
+    <runDate>2026-04-07T16:48:20.5183393+02:00</runDate>
+    <runDuration>5.777E-4</runDuration>
+    <exception></exception>
+    <traceClass>org.magicwerk.strings.helper.ByteTools</traceClass>
+    <traceMethod>/intToByteArray[BL]/</traceMethod>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"intToByteArrayB"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"305419896"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"0x12345678"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"intToByteArrayL"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"305419896"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"0x78563412"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"intToByteArrayB"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"-2023406815"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"0x87654321"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"intToByteArrayL"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"-2023406815"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"0x21436587"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"intToByteArrayB"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"0"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"0x00000000"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"intToByteArrayL"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"0"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"0x00000000"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+  </traceTest>
+  <traceTest name="testShortToByteArray">
+    <runDate>2026-04-07T16:48:20.5428354+02:00</runDate>
+    <runDuration>6.087E-4</runDuration>
+    <exception></exception>
+    <traceClass>org.magicwerk.strings.helper.ByteTools</traceClass>
+    <traceMethod>/shortToByteArray[BL]/</traceMethod>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"shortToByteArrayB"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"4660"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"0x1234"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"shortToByteArrayL"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"4660"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"0x3412"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"shortToByteArrayB"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"-31711"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"0x8421"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"shortToByteArrayL"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"-31711"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"0x2184"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"shortToByteArrayB"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"0"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"0x0000"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"shortToByteArrayL"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"0"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"0x0000"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+  </traceTest>
+  <traceTest name="testUIntToByteArray">
+    <runDate>2026-04-07T16:48:20.5660603+02:00</runDate>
+    <runDuration>0.0011965</runDuration>
+    <exception></exception>
+    <traceClass>org.magicwerk.strings.helper.ByteTools</traceClass>
+    <traceMethod>/uintToByteArray[BL]/</traceMethod>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"uintToByteArrayB"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"305419896"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"0x12345678"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"uintToByteArrayL"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"305419896"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"0x78563412"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"uintToByteArrayB"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"2271560481"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"0x87654321"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"uintToByteArrayL"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"2271560481"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"0x21436587"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"uintToByteArrayB"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"0"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"0x00000000"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"uintToByteArrayL"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"0"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"0x00000000"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+  </traceTest>
+  <traceTest name="testUShortToByteArray">
+    <runDate>2026-04-07T16:48:20.5981026+02:00</runDate>
+    <runDuration>8.648E-4</runDuration>
+    <exception></exception>
+    <traceClass>org.magicwerk.strings.helper.ByteTools</traceClass>
+    <traceMethod>/ushortToByteArray[BL]/</traceMethod>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"ushortToByteArrayB"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"4660"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"0x1234"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"ushortToByteArrayL"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"4660"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"0x3412"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"ushortToByteArrayB"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"33825"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"0x8421"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"ushortToByteArrayL"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"33825"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"0x2184"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"ushortToByteArrayB"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"0"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"0x0000"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"ushortToByteArrayL"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"0"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"0x0000"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+  </traceTest>
+  <traceTest name="testUbyteToByteArray">
+    <runDate>2026-04-07T16:48:20.6325117+02:00</runDate>
+    <runDuration>6.096E-4</runDuration>
+    <exception></exception>
+    <traceClass>org.magicwerk.strings.helper.ByteTools</traceClass>
+    <traceMethod>ubyteToByteArray</traceMethod>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"ubyteToByteArray"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"127"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"0x7f"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"ubyteToByteArray"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"128"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"0x80"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"ubyteToByteArray"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"255"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"0xff"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"ubyteToByteArray"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"-1"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"0xff"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+  </traceTest>
+</testClass>

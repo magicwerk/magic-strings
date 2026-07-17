@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testClass xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="org.magicwerk.strings.MultiStringReplacerTest" xsi:noNamespaceSchemaLocation="testclass-v10.xsd">
+  <traceTest name="testReplace">
+    <runDate>2026-01-14T23:11:12.5568229+01:00</runDate>
+    <runDuration>0.1346691</runDuration>
+    <exception></exception>
+    <traceClass>org.magicwerk.strings.MultiStringReplacer</traceClass>
+    <traceMethod>replace</traceMethod>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"replace"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"ab\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"AbBa\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"replace"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"[aaa]\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"[(short)a]\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"replace"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"[aaaa]\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"[(short)(short)]\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"replace"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"[aaaaa]\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"[(long)]\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"replace"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"[aaaaaa]\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"[(long)a]\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"replace"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"[aaaaaaa]\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"[(long)(short)]\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"replace"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"[aaa]\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"[(short)a]\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"replace"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"[aaaa]\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"[(short)(short)]\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"replace"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"[aaaaa]\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"[(short)(short)a]\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"replace"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"[aaaaaa]\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"[(short)(short)(short)]\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"replace"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"[aaaaaaa]\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"[(short)(short)(short)a]\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"replace"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"abc /* comment */ def 'string' ghi\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"ABc COMMENT def STRING ghi\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"replace"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"abc /* comment 'string' */ def \""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"ABc COMMENT def \""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+  </traceTest>
+</testClass>

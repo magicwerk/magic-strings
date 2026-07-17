@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testClass xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="org.magicwerk.strings.StringReplacerTest" xsi:noNamespaceSchemaLocation="testclass-v10.xsd">
+  <captureTest name="testBenchmarks">
+    <runDate>2026-04-09T14:06:30.756889+02:00</runDate>
+    <runDuration>0.001122</runDuration>
+    <exception></exception>
+    <captureStep>
+      <text outputType="TEXT">"Test class org.magicwerk.brownies.core.strings.StringReplacerTest$StringReplacerBenchmarkTest\r\nResult: 0A1B23\r\n"</text>
+    </captureStep>
+  </captureTest>
+  <captureTest name="testEmpty">
+    <runDate>2025-07-09T00:53:35.5992003+02:00</runDate>
+    <runDuration>0.0146658</runDuration>
+    <exception></exception>
+    <captureStep>
+      <text outputType="TEXT">""</text>
+    </captureStep>
+  </captureTest>
+  <captureTest name="testMultiReplace">
+    <runDate>2025-06-09T15:13:01.6643313+02:00</runDate>
+    <runDuration>0.0399254</runDuration>
+    <exception></exception>
+    <captureStep>
+      <text outputType="TEXT">"0 -&gt; 1-0\r\n12 -&gt; 2-12\r\n"</text>
+    </captureStep>
+  </captureTest>
+  <captureTest name="testNoChange">
+    <runDate>2025-07-09T00:53:35.7341115+02:00</runDate>
+    <runDuration>1.99E-4</runDuration>
+    <exception></exception>
+    <captureStep>
+      <text outputType="TEXT">""</text>
+    </captureStep>
+  </captureTest>
+  <traceTest name="testReplace">
+    <runDate>2026-04-17T15:10:10.4951996+02:00</runDate>
+    <runDuration>0.0200742</runDuration>
+    <exception></exception>
+    <traceClass>org.magicwerk.strings.StringReplacer</traceClass>
+    <traceMethod>replace</traceMethod>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"replace"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"abc-012-def\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"abc-345-def\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"replace"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"abc-012-def-012-ghi\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"abc-345-def-345-ghi\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"replace"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"abc-012-def-012-ghi\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"abc-345-def-012-ghi\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"replace"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"abc-012-def-012-ghi\""</paramText>
+      </parameters>
+      <result></result>
+      <error>
+        <paramText outputType="VALUE" param="Error">"java.lang.IllegalArgumentException: String not changed"</paramText>
+      </error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"replace"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"abc-012-def-012-ghi\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"abc-345-def-345-ghi\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"replace"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"abc-012-def-012-ghi\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"abc-909-def-909-ghi\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"replace"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"-before-old-after-\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"-before-NEW-after-\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"replace"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"-before-old-after-\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"-before-NEW-after-\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"replace"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"-before-old-after-\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"-before-NEW-after-\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"replace"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"-before-old-after-\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"-before-NEW-after-\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"replace"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"first-line\\nbefore-MARK-after\\nbefore2-MARK-after2\\nlast-line\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"first-line\\nbefore-SIGN-after\\nbefore2-SIGN-after2\\nlast-line\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"replace"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"a&lt;b[dxe]c&gt;bxc&lt;b[dxe]c&gt;b\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"a&lt;b[dxe]c&gt;bxc&lt;b[dxe]c&gt;b\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"replace"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"abc\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"abc\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"replace"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"a0b1c\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"a1b2c\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+  </traceTest>
+  <traceTest name="testReplaceNew">
+    <runDate>2025-06-16T10:55:44.4286178+02:00</runDate>
+    <runDuration>0.016550799</runDuration>
+    <exception></exception>
+    <traceClass>org.magicwerk.strings.StringReplacer</traceClass>
+    <traceMethod>replaceNew</traceMethod>
+  </traceTest>
+  <traceTest name="testReplaceWithCount">
+    <runDate>2025-06-09T15:13:01.8164834+02:00</runDate>
+    <runDuration>0.0030421</runDuration>
+    <exception></exception>
+    <traceClass>org.magicwerk.strings.StringReplacer</traceClass>
+    <traceMethod>/replace/</traceMethod>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"replace"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"c.lambda$1-c.lambda$SimpleLambda$3-c.lambda$10-c.lambda$ComplexLambda$11\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"c.lambda$0-c.lambda$1-c.lambda$2-c.lambda$3\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+  </traceTest>
+  <captureTest name="testStringTransformer">
+    <runDate>2025-07-08T22:09:27.6389762+02:00</runDate>
+    <runDuration>1.423E-4</runDuration>
+    <exception></exception>
+    <captureStep>
+      <text outputType="TEXT">""</text>
+    </captureStep>
+  </captureTest>
+</testClass>

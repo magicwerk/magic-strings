@@ -1,0 +1,18 @@
+dependencies {
+    api project(':Magic-Collections')
+
+    // Test
+    
+    testImplementation project(':MagicTest-NG')
+    testImplementation project(':Brownies-Test')
+    testImplementation project(':Brownies-Tools')
+    
+    testImplementation libraries.commons_lang
+    testImplementation libraries.commons_text
+    
+    // Aho–Corasick algorithm
+    // https://en.wikipedia.org/wiki/Aho%E2%80%93Corasick_algorithm
+    // https://github.com/robert-bor/aho-corasick
+    // Version 0.6.3 released on Mar 01, 2021
+    testImplementation 'org.ahocorasick:ahocorasick:0.6.3'
+}

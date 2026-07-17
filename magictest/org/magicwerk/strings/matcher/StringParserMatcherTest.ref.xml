@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testClass xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="org.magicwerk.strings.matcher.StringParserMatcherTest" xsi:noNamespaceSchemaLocation="testclass-v10.xsd">
+  <captureTest name="testStringParserMatcher">
+    <runDate>2022-11-01T00:34:28.269+01:00</runDate>
+    <runDuration>0.0523295</runDuration>
+    <exception></exception>
+    <captureStep>
+      <text outputType="TEXT">"begin null; end; (type: proc, start: 7, end: 23)\r\n\r\nbegin null1; begin null2; end; end; (type: proc, start: 7, end: 42)\r\nbegin null2; end; (type: proc, start: 20, end: 37)\r\n\r\n"</text>
+    </captureStep>
+  </captureTest>
+</testClass>

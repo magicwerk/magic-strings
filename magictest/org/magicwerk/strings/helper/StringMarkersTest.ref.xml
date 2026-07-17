@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testClass xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="org.magicwerk.strings.helper.StringMarkersTest" xsi:noNamespaceSchemaLocation="testclass-v10.xsd">
+  <traceTest name="testGetMarkerString">
+    <runDate>2026-04-17T10:53:32.3434628+02:00</runDate>
+    <runDuration>0.0153457</runDuration>
+    <exception></exception>
+    <traceClass>org.magicwerk.strings.helper.StringMarkers</traceClass>
+    <traceMethod>getMarkerString</traceMethod>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"getMarkerString"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"abcde\""</paramText>
+        <paramText outputType="VALUE" param="#2">"\"x\""</paramText>
+        <paramText outputType="VALUE" param="#3">"\"-\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"x\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"getMarkerString"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"abcde\""</paramText>
+        <paramText outputType="VALUE" param="#2">"\"b\""</paramText>
+        <paramText outputType="VALUE" param="#3">"\"-\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"b-\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+  </traceTest>
+  <traceTest name="testIsMarkerString">
+    <runDate>2026-04-17T10:53:32.4555726+02:00</runDate>
+    <runDuration>6.08E-4</runDuration>
+    <exception></exception>
+    <traceClass>org.magicwerk.strings.helper.StringMarkers</traceClass>
+    <traceMethod>isMarkerString</traceMethod>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"isMarkerString"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"abcde\""</paramText>
+        <paramText outputType="VALUE" param="#2">"\"x\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"true"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"isMarkerString"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"abcde\""</paramText>
+        <paramText outputType="VALUE" param="#2">"\"b\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"false"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+  </traceTest>
+</testClass>

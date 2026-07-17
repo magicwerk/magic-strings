@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testClass xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="org.magicwerk.strings.helper.CheckToolsTest" xsi:noNamespaceSchemaLocation="testclass-v10.xsd">
+  <captureTest name="testCheck">
+    <runDate>2023-11-17T14:26:55.304+01:00</runDate>
+    <runDuration>0.0326879</runDuration>
+    <exception></exception>
+    <captureStep>
+      <text outputType="TEXT">"ALL\r\nALL [] -&gt; ok\r\nALL [one] -&gt; ok\r\nALL [one, two] -&gt; ok\r\nALL [null] -&gt; ERROR: all elements must be IsNotNull: [null]\r\n\r\nNONE\r\nNONE [] -&gt; ok\r\nNONE [null] -&gt; ok\r\nNONE [one] -&gt; ERROR: none elements must be IsNotNull: [one]\r\n\r\nANY\r\nANY [one] -&gt; ok\r\nANY [one, null] -&gt; ok\r\nANY [one, two] -&gt; ok\r\nANY [] -&gt; ERROR: any elements must be IsNotNull: []\r\nANY [null] -&gt; ERROR: any elements must be IsNotNull: [null]\r\n\r\nONE\r\nONE [one] -&gt; ok\r\nONE [one, null] -&gt; ok\r\nONE [] -&gt; ERROR: one elements must be IsNotNull: []\r\nONE [null] -&gt; ERROR: one elements must be IsNotNull: [null]\r\nONE [one, two] -&gt; ERROR: one elements must be IsNotNull: [one, two]\r\n\r\nONE_OR_NONE\r\nONE_OR_NONE [] -&gt; ok\r\nONE_OR_NONE [one] -&gt; ok\r\nONE_OR_NONE [null] -&gt; ok\r\nONE_OR_NONE [one, null] -&gt; ok\r\nONE_OR_NONE [one, two] -&gt; ERROR: one_or_none elements must be IsNotNull: [one, two]\r\n\r\nError messages\r\nIllegalArgumentException: none elements must be IsNotNull: [one]\r\nIllegalArgumentException: fails: [one]\r\nIllegalArgumentException: error: details: [one]\r\n"</text>
+    </captureStep>
+  </captureTest>
+  <captureTest name="testCheckAllocationFree">
+    <runDate>2024-01-09T10:47:45.141+01:00</runDate>
+    <runDuration>11.688284699</runDuration>
+    <exception></exception>
+  </captureTest>
+  <traceTest name="testCheckForBoolean">
+    <runDate>2023-10-10T14:28:19.698+02:00</runDate>
+    <runDuration>0.0133413</runDuration>
+    <exception></exception>
+    <traceClass>org.magicwerk.brownies.core.CheckTools$CheckNull</traceClass>
+    <traceMethod>check</traceMethod>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"check"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"[ true, false, false ]"</paramText>
+      </parameters>
+      <result></result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"check"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"[ false, true, false ]"</paramText>
+      </parameters>
+      <result></result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"check"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"[ false, false, true ]"</paramText>
+      </parameters>
+      <result></result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"check"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"[ false, false, false ]"</paramText>
+      </parameters>
+      <result></result>
+      <error>
+        <paramText outputType="VALUE" param="Error">"java.lang.IllegalArgumentException: one elements must be true: [false, false, false]"</paramText>
+      </error>
+    </traceStep>
+  </traceTest>
+  <traceTest name="testCheckForNull">
+    <runDate>2024-09-20T10:56:15.0269092+02:00</runDate>
+    <runDuration>0.0013356</runDuration>
+    <exception></exception>
+    <traceClass>org.magicwerk.brownies.core.CheckTools$CheckNull</traceClass>
+    <traceMethod>check</traceMethod>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"check"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"[ null, \"one\" ]"</paramText>
+      </parameters>
+      <result></result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"check"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"[ \"one\", null ]"</paramText>
+      </parameters>
+      <result></result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"check"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"[ \"one\", null ]"</paramText>
+      </parameters>
+      <result></result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"check"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"[ ]"</paramText>
+      </parameters>
+      <result></result>
+      <error>
+        <paramText outputType="VALUE" param="Error">"java.lang.IllegalArgumentException: one elements must be IsNotNull: []"</paramText>
+      </error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"check"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"[ null, null ]"</paramText>
+      </parameters>
+      <result></result>
+      <error>
+        <paramText outputType="VALUE" param="Error">"java.lang.IllegalArgumentException: one elements must be IsNotNull: [null, null]"</paramText>
+      </error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"check"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"[ \"one\", \"one\" ]"</paramText>
+      </parameters>
+      <result></result>
+      <error>
+        <paramText outputType="VALUE" param="Error">"java.lang.IllegalArgumentException: one elements must be IsNotNull: [one, one]"</paramText>
+      </error>
+    </traceStep>
+  </traceTest>
+  <traceTest name="testCheckMulti">
+    <runDate>2024-01-08T23:48:48.319+01:00</runDate>
+    <runDuration>0.0025058</runDuration>
+    <exception></exception>
+    <traceClass>org.magicwerk.brownies.core.CheckTools$CheckMulti</traceClass>
+    <traceMethod>/.*/</traceMethod>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"check"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"[ \"ab\" ]"</paramText>
+      </parameters>
+      <result></result>
+      <error>
+        <paramText outputType="VALUE" param="Error">"java.lang.IllegalArgumentException: any elements must be longString: [ab]"</paramText>
+      </error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"check"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"[ \"ab\", \"abc\" ]"</paramText>
+      </parameters>
+      <result></result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"check"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"[ \"abc\" ]"</paramText>
+      </parameters>
+      <result></result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"check"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"[ \"abc\", \"abcd\" ]"</paramText>
+      </parameters>
+      <result></result>
+      <error></error>
+    </traceStep>
+  </traceTest>
+  <traceTest name="testCheckSingle">
+    <runDate>2024-01-09T00:56:51.904+01:00</runDate>
+    <runDuration>0.0022946</runDuration>
+    <exception></exception>
+    <traceClass>org.magicwerk.brownies.core.CheckTools$CheckSingle</traceClass>
+    <traceMethod>/.*/</traceMethod>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"check"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"ab\""</paramText>
+      </parameters>
+      <result></result>
+      <error>
+        <paramText outputType="VALUE" param="Error">"java.lang.IllegalArgumentException: longString: ab"</paramText>
+      </error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"check"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"abc\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"abc\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"check"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"abc\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"abc\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+  </traceTest>
+  <captureTest name="testCheckTypeOf">
+    <runDate>2026-04-08T09:48:26.4955812+02:00</runDate>
+    <runDuration>0.01538</runDuration>
+    <exception></exception>
+    <captureStep>
+      <text outputType="TEXT">"IllegalArgumentException: Object has invalid type: class java.lang.Long, expected: [class java.lang.Integer, class java.lang.String]\r\nIllegalArgumentException: Object has invalid type: class java.lang.Long, expected: [class java.lang.Integer, class java.lang.String]: 0\r\nIllegalArgumentException: Object has invalid type: class java.lang.Long, expected: [class java.lang.Integer, class java.lang.String]: 0\r\n"</text>
+    </captureStep>
+  </captureTest>
+  <traceTest name="testCheckVarargTuples">
+    <runDate>2023-05-21T13:04:19.388+02:00</runDate>
+    <runDuration>0.1753177</runDuration>
+    <exception></exception>
+    <traceClass>org.magicwerk.strings.helper.CheckTools</traceClass>
+    <traceMethod>checkVarargTuples</traceMethod>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"checkVarargTuples"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"a\""</paramText>
+        <paramText outputType="VALUE" param="#2">"1"</paramText>
+        <paramText outputType="VALUE" param="#3">"[ ]"</paramText>
+      </parameters>
+      <result></result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"checkVarargTuples"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"a\""</paramText>
+        <paramText outputType="VALUE" param="#2">"1"</paramText>
+        <paramText outputType="VALUE" param="#3">"[ \"b\", 2 ]"</paramText>
+      </parameters>
+      <result></result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"checkVarargTuples"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"a\""</paramText>
+        <paramText outputType="VALUE" param="#2">"1"</paramText>
+        <paramText outputType="VALUE" param="#3">"[ \"b\" ]"</paramText>
+      </parameters>
+      <result></result>
+      <error>
+        <paramText outputType="VALUE" param="Error">"java.lang.IllegalArgumentException: Number of arguments must be even"</paramText>
+      </error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"checkVarargTuples"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"a\""</paramText>
+        <paramText outputType="VALUE" param="#2">"1"</paramText>
+        <paramText outputType="VALUE" param="#3">"[ \"b\", \"c\" ]"</paramText>
+      </parameters>
+      <result></result>
+      <error>
+        <paramText outputType="VALUE" param="Error">"java.lang.IllegalArgumentException: Value must be of type class java.lang.Integer or null: c"</paramText>
+      </error>
+    </traceStep>
+  </traceTest>
+  <captureTest name="testEqual">
+    <runDate>2024-11-07T00:55:34.3399607+01:00</runDate>
+    <runDuration>0.0021175</runDuration>
+    <exception></exception>
+    <captureStep>
+      <text outputType="TEXT">""</text>
+    </captureStep>
+  </captureTest>
+  <captureTest name="testExamples">
+    <runDate>2024-09-20T13:24:30.761214+02:00</runDate>
+    <runDuration>0.0029208</runDuration>
+    <exception></exception>
+    <captureStep>
+      <text outputType="TEXT">""</text>
+    </captureStep>
+  </captureTest>
+</testClass>

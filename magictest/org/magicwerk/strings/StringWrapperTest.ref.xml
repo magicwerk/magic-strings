@@ -1,0 +1,3913 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testClass xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="org.magicwerk.strings.StringWrapperTest" xsi:noNamespaceSchemaLocation="testclass-v10.xsd">
+  <traceTest name="test">
+    <runDate>2026-03-05T00:56:06.543132+01:00</runDate>
+    <runDuration>0.0433121</runDuration>
+    <exception></exception>
+    <traceClass>org.magicwerk.strings.StringWrapper</traceClass>
+    <traceMethod>/wrap|isWrapped/</traceMethod>
+    <traceStep>
+      <description>
+        <text outputType="VALUE">"=== wrapString('=') ==="</text>
+      </description>
+      <parameters></parameters>
+      <result></result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <text outputType="VALUE">"HEAD_AND_TAIL"</text>
+      </description>
+      <parameters></parameters>
+      <result></result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"isWrapped"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"ab\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"false"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <text outputType="VALUE">"wrapAlways= true"</text>
+      </description>
+      <parameters></parameters>
+      <result></result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"wrap"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"ab\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"=ab=\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <text outputType="VALUE">"wrapAlways= false"</text>
+      </description>
+      <parameters></parameters>
+      <result></result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"wrap"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"ab\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"=ab=\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <text outputType="VALUE">"HEAD_AND_TAIL"</text>
+      </description>
+      <parameters></parameters>
+      <result></result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"isWrapped"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"=ab=\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"true"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <text outputType="VALUE">"wrapAlways= true"</text>
+      </description>
+      <parameters></parameters>
+      <result></result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"wrap"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"=ab=\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"==ab==\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <text outputType="VALUE">"wrapAlways= false"</text>
+      </description>
+      <parameters></parameters>
+      <result></result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"wrap"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"=ab=\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"=ab=\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <text outputType="VALUE">"HEAD_AND_TAIL"</text>
+      </description>
+      <parameters></parameters>
+      <result></result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"isWrapped"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"=ab\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"false"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <text outputType="VALUE">"wrapAlways= true"</text>
+      </description>
+      <parameters></parameters>
+      <result></result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"wrap"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"=ab\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"==ab=\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <text outputType="VALUE">"wrapAlways= false"</text>
+      </description>
+      <parameters></parameters>
+      <result></result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"wrap"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"=ab\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"==ab=\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <text outputType="VALUE">"HEAD_AND_TAIL"</text>
+      </description>
+      <parameters></parameters>
+      <result></result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"isWrapped"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"ab=\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"false"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <text outputType="VALUE">"wrapAlways= true"</text>
+      </description>
+      <parameters></parameters>
+      <result></result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"wrap"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"ab=\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"=ab==\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <text outputType="VALUE">"wrapAlways= false"</text>
+      </description>
+      <parameters></parameters>
+      <result></result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"wrap"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"ab=\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"=ab==\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <text outputType="VALUE">"HEAD_OR_TAIL"</text>
+      </description>
+      <parameters></parameters>
+      <result></result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"isWrapped"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"ab\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"false"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <text outputType="VALUE">"wrapAlways= true"</text>
+      </description>
+      <parameters></parameters>
+      <result></result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"wrap"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"ab\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"=ab=\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <text outputType="VALUE">"wrapAlways= false"</text>
+      </description>
+      <parameters></parameters>
+      <result></result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"wrap"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"ab\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"=ab=\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <text outputType="VALUE">"HEAD_OR_TAIL"</text>
+      </description>
+      <parameters></parameters>
+      <result></result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"isWrapped"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"=ab=\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"true"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <text outputType="VALUE">"wrapAlways= true"</text>
+      </description>
+      <parameters></parameters>
+      <result></result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"wrap"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"=ab=\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"==ab==\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <text outputType="VALUE">"wrapAlways= false"</text>
+      </description>
+      <parameters></parameters>
+      <result></result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"wrap"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"=ab=\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"=ab=\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <text outputType="VALUE">"HEAD_OR_TAIL"</text>
+      </description>
+      <parameters></parameters>
+      <result></result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"isWrapped"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"=ab\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"false"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <text outputType="VALUE">"wrapAlways= true"</text>
+      </description>
+      <parameters></parameters>
+      <result></result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"wrap"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"=ab\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"==ab=\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <text outputType="VALUE">"wrapAlways= false"</text>
+      </description>
+      <parameters></parameters>
+      <result></result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"wrap"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"=ab\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"=ab=\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <text outputType="VALUE">"HEAD_OR_TAIL"</text>
+      </description>
+      <parameters></parameters>
+      <result></result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"isWrapped"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"ab=\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"false"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <text outputType="VALUE">"wrapAlways= true"</text>
+      </description>
+      <parameters></parameters>
+      <result></result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"wrap"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"ab=\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"=ab==\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <text outputType="VALUE">"wrapAlways= false"</text>
+      </description>
+      <parameters></parameters>
+      <result></result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"wrap"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"ab=\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"=ab=\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <text outputType="VALUE">"HEAD"</text>
+      </description>
+      <parameters></parameters>
+      <result></result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"isWrapped"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"ab\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"false"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <text outputType="VALUE">"wrapAlways= true"</text>
+      </description>
+      <parameters></parameters>
+      <result></result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"wrap"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"ab\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"=ab\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <text outputType="VALUE">"wrapAlways= false"</text>
+      </description>
+      <parameters></parameters>
+      <result></result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"wrap"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"ab\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"=ab\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <text outputType="VALUE">"HEAD"</text>
+      </description>
+      <parameters></parameters>
+      <result></result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"isWrapped"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"=ab=\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"true"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <text outputType="VALUE">"wrapAlways= true"</text>
+      </description>
+      <parameters></parameters>
+      <result></result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"wrap"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"=ab=\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"==ab=\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <text outputType="VALUE">"wrapAlways= false"</text>
+      </description>
+      <parameters></parameters>
+      <result></result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"wrap"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"=ab=\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"=ab=\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <text outputType="VALUE">"HEAD"</text>
+      </description>
+      <parameters></parameters>
+      <result></result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"isWrapped"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"=ab\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"true"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <text outputType="VALUE">"wrapAlways= true"</text>
+      </description>
+      <parameters></parameters>
+      <result></result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"wrap"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"=ab\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"==ab\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <text outputType="VALUE">"wrapAlways= false"</text>
+      </description>
+      <parameters></parameters>
+      <result></result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"wrap"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"=ab\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"=ab\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <text outputType="VALUE">"HEAD"</text>
+      </description>
+      <parameters></parameters>
+      <result></result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"isWrapped"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"ab=\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"false"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <text outputType="VALUE">"wrapAlways= true"</text>
+      </description>
+      <parameters></parameters>
+      <result></result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"wrap"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"ab=\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"=ab=\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <text outputType="VALUE">"wrapAlways= false"</text>
+      </description>
+      <parameters></parameters>
+      <result></result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"wrap"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"ab=\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"=ab=\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <text outputType="VALUE">"TAIL"</text>
+      </description>
+      <parameters></parameters>
+      <result></result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"isWrapped"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"ab\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"false"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <text outputType="VALUE">"wrapAlways= true"</text>
+      </description>
+      <parameters></parameters>
+      <result></result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"wrap"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"ab\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"ab=\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <text outputType="VALUE">"wrapAlways= false"</text>
+      </description>
+      <parameters></parameters>
+      <result></result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"wrap"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"ab\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"ab=\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <text outputType="VALUE">"TAIL"</text>
+      </description>
+      <parameters></parameters>
+      <result></result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"isWrapped"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"=ab=\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"true"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <text outputType="VALUE">"wrapAlways= true"</text>
+      </description>
+      <parameters></parameters>
+      <result></result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"wrap"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"=ab=\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"=ab==\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <text outputType="VALUE">"wrapAlways= false"</text>
+      </description>
+      <parameters></parameters>
+      <result></result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"wrap"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"=ab=\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"=ab=\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <text outputType="VALUE">"TAIL"</text>
+      </description>
+      <parameters></parameters>
+      <result></result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"isWrapped"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"=ab\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"false"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <text outputType="VALUE">"wrapAlways= true"</text>
+      </description>
+      <parameters></parameters>
+      <result></result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"wrap"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"=ab\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"=ab=\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <text outputType="VALUE">"wrapAlways= false"</text>
+      </description>
+      <parameters></parameters>
+      <result></result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"wrap"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"=ab\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"=ab=\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <text outputType="VALUE">"TAIL"</text>
+      </description>
+      <parameters></parameters>
+      <result></result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"isWrapped"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"ab=\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"true"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <text outputType="VALUE">"wrapAlways= true"</text>
+      </description>
+      <parameters></parameters>
+      <result></result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"wrap"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"ab=\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"ab==\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <text outputType="VALUE">"wrapAlways= false"</text>
+      </description>
+      <parameters></parameters>
+      <result></result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"wrap"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"ab=\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"ab=\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <text outputType="VALUE">"=== wrapMatcher('=') ==="</text>
+      </description>
+      <parameters></parameters>
+      <result></result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <text outputType="VALUE">"HEAD_AND_TAIL"</text>
+      </description>
+      <parameters></parameters>
+      <result></result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"isWrapped"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"ab\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"false"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <text outputType="VALUE">"wrapAlways= true"</text>
+      </description>
+      <parameters></parameters>
+      <result></result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"wrap"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"ab\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"=ab=\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <text outputType="VALUE">"wrapAlways= false"</text>
+      </description>
+      <parameters></parameters>
+      <result></result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"wrap"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"ab\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"=ab=\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <text outputType="VALUE">"HEAD_AND_TAIL"</text>
+      </description>
+      <parameters></parameters>
+      <result></result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"isWrapped"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"=ab=\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"true"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <text outputType="VALUE">"wrapAlways= true"</text>
+      </description>
+      <parameters></parameters>
+      <result></result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"wrap"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"=ab=\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"==ab==\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <text outputType="VALUE">"wrapAlways= false"</text>
+      </description>
+      <parameters></parameters>
+      <result></result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"wrap"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"=ab=\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"=ab=\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <text outputType="VALUE">"HEAD_AND_TAIL"</text>
+      </description>
+      <parameters></parameters>
+      <result></result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"isWrapped"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"=ab\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"false"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <text outputType="VALUE">"wrapAlways= true"</text>
+      </description>
+      <parameters></parameters>
+      <result></result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"wrap"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"=ab\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"==ab=\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <text outputType="VALUE">"wrapAlways= false"</text>
+      </description>
+      <parameters></parameters>
+      <result></result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"wrap"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"=ab\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"==ab=\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <text outputType="VALUE">"HEAD_AND_TAIL"</text>
+      </description>
+      <parameters></parameters>
+      <result></result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"isWrapped"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"ab=\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"false"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <text outputType="VALUE">"wrapAlways= true"</text>
+      </description>
+      <parameters></parameters>
+      <result></result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"wrap"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"ab=\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"=ab==\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <text outputType="VALUE">"wrapAlways= false"</text>
+      </description>
+      <parameters></parameters>
+      <result></result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"wrap"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"ab=\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"=ab==\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <text outputType="VALUE">"HEAD_OR_TAIL"</text>
+      </description>
+      <parameters></parameters>
+      <result></result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"isWrapped"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"ab\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"false"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <text outputType="VALUE">"wrapAlways= true"</text>
+      </description>
+      <parameters></parameters>
+      <result></result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"wrap"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"ab\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"=ab=\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <text outputType="VALUE">"wrapAlways= false"</text>
+      </description>
+      <parameters></parameters>
+      <result></result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"wrap"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"ab\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"=ab=\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <text outputType="VALUE">"HEAD_OR_TAIL"</text>
+      </description>
+      <parameters></parameters>
+      <result></result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"isWrapped"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"=ab=\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"true"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <text outputType="VALUE">"wrapAlways= true"</text>
+      </description>
+      <parameters></parameters>
+      <result></result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"wrap"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"=ab=\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"==ab==\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <text outputType="VALUE">"wrapAlways= false"</text>
+      </description>
+      <parameters></parameters>
+      <result></result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"wrap"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"=ab=\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"=ab=\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <text outputType="VALUE">"HEAD_OR_TAIL"</text>
+      </description>
+      <parameters></parameters>
+      <result></result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"isWrapped"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"=ab\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"false"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <text outputType="VALUE">"wrapAlways= true"</text>
+      </description>
+      <parameters></parameters>
+      <result></result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"wrap"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"=ab\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"==ab=\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <text outputType="VALUE">"wrapAlways= false"</text>
+      </description>
+      <parameters></parameters>
+      <result></result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"wrap"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"=ab\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"=ab=\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <text outputType="VALUE">"HEAD_OR_TAIL"</text>
+      </description>
+      <parameters></parameters>
+      <result></result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"isWrapped"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"ab=\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"false"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <text outputType="VALUE">"wrapAlways= true"</text>
+      </description>
+      <parameters></parameters>
+      <result></result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"wrap"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"ab=\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"=ab==\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <text outputType="VALUE">"wrapAlways= false"</text>
+      </description>
+      <parameters></parameters>
+      <result></result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"wrap"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"ab=\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"=ab=\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <text outputType="VALUE">"HEAD"</text>
+      </description>
+      <parameters></parameters>
+      <result></result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"isWrapped"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"ab\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"false"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <text outputType="VALUE">"wrapAlways= true"</text>
+      </description>
+      <parameters></parameters>
+      <result></result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"wrap"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"ab\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"=ab\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <text outputType="VALUE">"wrapAlways= false"</text>
+      </description>
+      <parameters></parameters>
+      <result></result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"wrap"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"ab\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"=ab\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <text outputType="VALUE">"HEAD"</text>
+      </description>
+      <parameters></parameters>
+      <result></result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"isWrapped"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"=ab=\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"true"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <text outputType="VALUE">"wrapAlways= true"</text>
+      </description>
+      <parameters></parameters>
+      <result></result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"wrap"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"=ab=\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"==ab=\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <text outputType="VALUE">"wrapAlways= false"</text>
+      </description>
+      <parameters></parameters>
+      <result></result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"wrap"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"=ab=\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"=ab=\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <text outputType="VALUE">"HEAD"</text>
+      </description>
+      <parameters></parameters>
+      <result></result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"isWrapped"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"=ab\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"true"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <text outputType="VALUE">"wrapAlways= true"</text>
+      </description>
+      <parameters></parameters>
+      <result></result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"wrap"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"=ab\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"==ab\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <text outputType="VALUE">"wrapAlways= false"</text>
+      </description>
+      <parameters></parameters>
+      <result></result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"wrap"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"=ab\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"=ab\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <text outputType="VALUE">"HEAD"</text>
+      </description>
+      <parameters></parameters>
+      <result></result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"isWrapped"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"ab=\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"false"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <text outputType="VALUE">"wrapAlways= true"</text>
+      </description>
+      <parameters></parameters>
+      <result></result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"wrap"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"ab=\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"=ab=\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <text outputType="VALUE">"wrapAlways= false"</text>
+      </description>
+      <parameters></parameters>
+      <result></result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"wrap"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"ab=\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"=ab=\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <text outputType="VALUE">"TAIL"</text>
+      </description>
+      <parameters></parameters>
+      <result></result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"isWrapped"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"ab\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"false"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <text outputType="VALUE">"wrapAlways= true"</text>
+      </description>
+      <parameters></parameters>
+      <result></result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"wrap"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"ab\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"ab=\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <text outputType="VALUE">"wrapAlways= false"</text>
+      </description>
+      <parameters></parameters>
+      <result></result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"wrap"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"ab\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"ab=\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <text outputType="VALUE">"TAIL"</text>
+      </description>
+      <parameters></parameters>
+      <result></result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"isWrapped"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"=ab=\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"true"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <text outputType="VALUE">"wrapAlways= true"</text>
+      </description>
+      <parameters></parameters>
+      <result></result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"wrap"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"=ab=\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"=ab==\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <text outputType="VALUE">"wrapAlways= false"</text>
+      </description>
+      <parameters></parameters>
+      <result></result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"wrap"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"=ab=\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"=ab=\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <text outputType="VALUE">"TAIL"</text>
+      </description>
+      <parameters></parameters>
+      <result></result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"isWrapped"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"=ab\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"false"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <text outputType="VALUE">"wrapAlways= true"</text>
+      </description>
+      <parameters></parameters>
+      <result></result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"wrap"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"=ab\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"=ab=\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <text outputType="VALUE">"wrapAlways= false"</text>
+      </description>
+      <parameters></parameters>
+      <result></result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"wrap"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"=ab\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"=ab=\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <text outputType="VALUE">"TAIL"</text>
+      </description>
+      <parameters></parameters>
+      <result></result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"isWrapped"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"ab=\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"true"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <text outputType="VALUE">"wrapAlways= true"</text>
+      </description>
+      <parameters></parameters>
+      <result></result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"wrap"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"ab=\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"ab==\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <text outputType="VALUE">"wrapAlways= false"</text>
+      </description>
+      <parameters></parameters>
+      <result></result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"wrap"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"ab=\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"ab=\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <text outputType="VALUE">"=== wrapMatcher('=').wrapString('#') ==="</text>
+      </description>
+      <parameters></parameters>
+      <result></result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <text outputType="VALUE">"HEAD_AND_TAIL"</text>
+      </description>
+      <parameters></parameters>
+      <result></result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"isWrapped"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"ab\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"false"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <text outputType="VALUE">"wrapAlways= true"</text>
+      </description>
+      <parameters></parameters>
+      <result></result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"wrap"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"ab\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"#ab#\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <text outputType="VALUE">"wrapAlways= false"</text>
+      </description>
+      <parameters></parameters>
+      <result></result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"wrap"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"ab\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"#ab#\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <text outputType="VALUE">"HEAD_AND_TAIL"</text>
+      </description>
+      <parameters></parameters>
+      <result></result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"isWrapped"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"=ab=\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"true"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <text outputType="VALUE">"wrapAlways= true"</text>
+      </description>
+      <parameters></parameters>
+      <result></result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"wrap"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"=ab=\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"#=ab=#\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <text outputType="VALUE">"wrapAlways= false"</text>
+      </description>
+      <parameters></parameters>
+      <result></result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"wrap"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"=ab=\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"=ab=\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <text outputType="VALUE">"HEAD_AND_TAIL"</text>
+      </description>
+      <parameters></parameters>
+      <result></result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"isWrapped"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"=ab\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"false"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <text outputType="VALUE">"wrapAlways= true"</text>
+      </description>
+      <parameters></parameters>
+      <result></result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"wrap"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"=ab\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"#=ab#\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <text outputType="VALUE">"wrapAlways= false"</text>
+      </description>
+      <parameters></parameters>
+      <result></result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"wrap"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"=ab\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"#=ab#\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <text outputType="VALUE">"HEAD_AND_TAIL"</text>
+      </description>
+      <parameters></parameters>
+      <result></result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"isWrapped"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"ab=\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"false"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <text outputType="VALUE">"wrapAlways= true"</text>
+      </description>
+      <parameters></parameters>
+      <result></result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"wrap"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"ab=\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"#ab=#\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <text outputType="VALUE">"wrapAlways= false"</text>
+      </description>
+      <parameters></parameters>
+      <result></result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"wrap"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"ab=\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"#ab=#\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <text outputType="VALUE">"HEAD_OR_TAIL"</text>
+      </description>
+      <parameters></parameters>
+      <result></result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"isWrapped"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"ab\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"false"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <text outputType="VALUE">"wrapAlways= true"</text>
+      </description>
+      <parameters></parameters>
+      <result></result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"wrap"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"ab\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"#ab#\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <text outputType="VALUE">"wrapAlways= false"</text>
+      </description>
+      <parameters></parameters>
+      <result></result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"wrap"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"ab\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"#ab#\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <text outputType="VALUE">"HEAD_OR_TAIL"</text>
+      </description>
+      <parameters></parameters>
+      <result></result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"isWrapped"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"=ab=\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"true"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <text outputType="VALUE">"wrapAlways= true"</text>
+      </description>
+      <parameters></parameters>
+      <result></result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"wrap"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"=ab=\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"#=ab=#\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <text outputType="VALUE">"wrapAlways= false"</text>
+      </description>
+      <parameters></parameters>
+      <result></result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"wrap"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"=ab=\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"=ab=\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <text outputType="VALUE">"HEAD_OR_TAIL"</text>
+      </description>
+      <parameters></parameters>
+      <result></result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"isWrapped"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"=ab\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"false"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <text outputType="VALUE">"wrapAlways= true"</text>
+      </description>
+      <parameters></parameters>
+      <result></result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"wrap"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"=ab\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"#=ab#\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <text outputType="VALUE">"wrapAlways= false"</text>
+      </description>
+      <parameters></parameters>
+      <result></result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"wrap"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"=ab\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"=ab#\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <text outputType="VALUE">"HEAD_OR_TAIL"</text>
+      </description>
+      <parameters></parameters>
+      <result></result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"isWrapped"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"ab=\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"false"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <text outputType="VALUE">"wrapAlways= true"</text>
+      </description>
+      <parameters></parameters>
+      <result></result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"wrap"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"ab=\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"#ab=#\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <text outputType="VALUE">"wrapAlways= false"</text>
+      </description>
+      <parameters></parameters>
+      <result></result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"wrap"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"ab=\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"#ab=\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <text outputType="VALUE">"HEAD"</text>
+      </description>
+      <parameters></parameters>
+      <result></result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"isWrapped"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"ab\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"false"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <text outputType="VALUE">"wrapAlways= true"</text>
+      </description>
+      <parameters></parameters>
+      <result></result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"wrap"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"ab\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"#ab\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <text outputType="VALUE">"wrapAlways= false"</text>
+      </description>
+      <parameters></parameters>
+      <result></result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"wrap"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"ab\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"#ab\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <text outputType="VALUE">"HEAD"</text>
+      </description>
+      <parameters></parameters>
+      <result></result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"isWrapped"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"=ab=\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"true"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <text outputType="VALUE">"wrapAlways= true"</text>
+      </description>
+      <parameters></parameters>
+      <result></result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"wrap"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"=ab=\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"#=ab=\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <text outputType="VALUE">"wrapAlways= false"</text>
+      </description>
+      <parameters></parameters>
+      <result></result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"wrap"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"=ab=\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"=ab=\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <text outputType="VALUE">"HEAD"</text>
+      </description>
+      <parameters></parameters>
+      <result></result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"isWrapped"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"=ab\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"true"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <text outputType="VALUE">"wrapAlways= true"</text>
+      </description>
+      <parameters></parameters>
+      <result></result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"wrap"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"=ab\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"#=ab\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <text outputType="VALUE">"wrapAlways= false"</text>
+      </description>
+      <parameters></parameters>
+      <result></result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"wrap"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"=ab\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"=ab\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <text outputType="VALUE">"HEAD"</text>
+      </description>
+      <parameters></parameters>
+      <result></result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"isWrapped"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"ab=\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"false"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <text outputType="VALUE">"wrapAlways= true"</text>
+      </description>
+      <parameters></parameters>
+      <result></result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"wrap"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"ab=\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"#ab=\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <text outputType="VALUE">"wrapAlways= false"</text>
+      </description>
+      <parameters></parameters>
+      <result></result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"wrap"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"ab=\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"#ab=\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <text outputType="VALUE">"TAIL"</text>
+      </description>
+      <parameters></parameters>
+      <result></result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"isWrapped"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"ab\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"false"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <text outputType="VALUE">"wrapAlways= true"</text>
+      </description>
+      <parameters></parameters>
+      <result></result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"wrap"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"ab\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"ab#\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <text outputType="VALUE">"wrapAlways= false"</text>
+      </description>
+      <parameters></parameters>
+      <result></result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"wrap"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"ab\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"ab#\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <text outputType="VALUE">"TAIL"</text>
+      </description>
+      <parameters></parameters>
+      <result></result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"isWrapped"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"=ab=\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"true"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <text outputType="VALUE">"wrapAlways= true"</text>
+      </description>
+      <parameters></parameters>
+      <result></result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"wrap"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"=ab=\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"=ab=#\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <text outputType="VALUE">"wrapAlways= false"</text>
+      </description>
+      <parameters></parameters>
+      <result></result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"wrap"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"=ab=\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"=ab=\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <text outputType="VALUE">"TAIL"</text>
+      </description>
+      <parameters></parameters>
+      <result></result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"isWrapped"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"=ab\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"false"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <text outputType="VALUE">"wrapAlways= true"</text>
+      </description>
+      <parameters></parameters>
+      <result></result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"wrap"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"=ab\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"=ab#\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <text outputType="VALUE">"wrapAlways= false"</text>
+      </description>
+      <parameters></parameters>
+      <result></result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"wrap"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"=ab\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"=ab#\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <text outputType="VALUE">"TAIL"</text>
+      </description>
+      <parameters></parameters>
+      <result></result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"isWrapped"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"ab=\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"true"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <text outputType="VALUE">"wrapAlways= true"</text>
+      </description>
+      <parameters></parameters>
+      <result></result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"wrap"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"ab=\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"ab=#\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <text outputType="VALUE">"wrapAlways= false"</text>
+      </description>
+      <parameters></parameters>
+      <result></result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"wrap"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"ab=\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"ab=\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <text outputType="VALUE">"=== wrapMatcher(Regex('=')).wrapString('#') ==="</text>
+      </description>
+      <parameters></parameters>
+      <result></result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <text outputType="VALUE">"HEAD_AND_TAIL"</text>
+      </description>
+      <parameters></parameters>
+      <result></result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"isWrapped"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"ab\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"false"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <text outputType="VALUE">"wrapAlways= true"</text>
+      </description>
+      <parameters></parameters>
+      <result></result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"wrap"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"ab\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"#ab#\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <text outputType="VALUE">"wrapAlways= false"</text>
+      </description>
+      <parameters></parameters>
+      <result></result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"wrap"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"ab\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"#ab#\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <text outputType="VALUE">"HEAD_AND_TAIL"</text>
+      </description>
+      <parameters></parameters>
+      <result></result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"isWrapped"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"=ab=\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"true"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <text outputType="VALUE">"wrapAlways= true"</text>
+      </description>
+      <parameters></parameters>
+      <result></result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"wrap"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"=ab=\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"#=ab=#\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <text outputType="VALUE">"wrapAlways= false"</text>
+      </description>
+      <parameters></parameters>
+      <result></result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"wrap"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"=ab=\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"=ab=\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <text outputType="VALUE">"HEAD_AND_TAIL"</text>
+      </description>
+      <parameters></parameters>
+      <result></result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"isWrapped"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"=ab\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"false"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <text outputType="VALUE">"wrapAlways= true"</text>
+      </description>
+      <parameters></parameters>
+      <result></result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"wrap"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"=ab\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"#=ab#\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <text outputType="VALUE">"wrapAlways= false"</text>
+      </description>
+      <parameters></parameters>
+      <result></result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"wrap"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"=ab\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"#=ab#\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <text outputType="VALUE">"HEAD_AND_TAIL"</text>
+      </description>
+      <parameters></parameters>
+      <result></result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"isWrapped"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"ab=\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"false"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <text outputType="VALUE">"wrapAlways= true"</text>
+      </description>
+      <parameters></parameters>
+      <result></result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"wrap"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"ab=\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"#ab=#\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <text outputType="VALUE">"wrapAlways= false"</text>
+      </description>
+      <parameters></parameters>
+      <result></result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"wrap"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"ab=\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"#ab=#\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <text outputType="VALUE">"HEAD_OR_TAIL"</text>
+      </description>
+      <parameters></parameters>
+      <result></result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"isWrapped"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"ab\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"false"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <text outputType="VALUE">"wrapAlways= true"</text>
+      </description>
+      <parameters></parameters>
+      <result></result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"wrap"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"ab\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"#ab#\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <text outputType="VALUE">"wrapAlways= false"</text>
+      </description>
+      <parameters></parameters>
+      <result></result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"wrap"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"ab\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"#ab#\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <text outputType="VALUE">"HEAD_OR_TAIL"</text>
+      </description>
+      <parameters></parameters>
+      <result></result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"isWrapped"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"=ab=\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"true"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <text outputType="VALUE">"wrapAlways= true"</text>
+      </description>
+      <parameters></parameters>
+      <result></result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"wrap"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"=ab=\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"#=ab=#\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <text outputType="VALUE">"wrapAlways= false"</text>
+      </description>
+      <parameters></parameters>
+      <result></result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"wrap"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"=ab=\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"=ab=\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <text outputType="VALUE">"HEAD_OR_TAIL"</text>
+      </description>
+      <parameters></parameters>
+      <result></result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"isWrapped"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"=ab\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"false"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <text outputType="VALUE">"wrapAlways= true"</text>
+      </description>
+      <parameters></parameters>
+      <result></result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"wrap"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"=ab\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"#=ab#\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <text outputType="VALUE">"wrapAlways= false"</text>
+      </description>
+      <parameters></parameters>
+      <result></result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"wrap"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"=ab\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"=ab#\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <text outputType="VALUE">"HEAD_OR_TAIL"</text>
+      </description>
+      <parameters></parameters>
+      <result></result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"isWrapped"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"ab=\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"false"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <text outputType="VALUE">"wrapAlways= true"</text>
+      </description>
+      <parameters></parameters>
+      <result></result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"wrap"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"ab=\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"#ab=#\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <text outputType="VALUE">"wrapAlways= false"</text>
+      </description>
+      <parameters></parameters>
+      <result></result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"wrap"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"ab=\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"#ab=\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <text outputType="VALUE">"HEAD"</text>
+      </description>
+      <parameters></parameters>
+      <result></result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"isWrapped"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"ab\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"false"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <text outputType="VALUE">"wrapAlways= true"</text>
+      </description>
+      <parameters></parameters>
+      <result></result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"wrap"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"ab\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"#ab\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <text outputType="VALUE">"wrapAlways= false"</text>
+      </description>
+      <parameters></parameters>
+      <result></result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"wrap"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"ab\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"#ab\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <text outputType="VALUE">"HEAD"</text>
+      </description>
+      <parameters></parameters>
+      <result></result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"isWrapped"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"=ab=\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"true"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <text outputType="VALUE">"wrapAlways= true"</text>
+      </description>
+      <parameters></parameters>
+      <result></result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"wrap"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"=ab=\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"#=ab=\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <text outputType="VALUE">"wrapAlways= false"</text>
+      </description>
+      <parameters></parameters>
+      <result></result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"wrap"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"=ab=\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"=ab=\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <text outputType="VALUE">"HEAD"</text>
+      </description>
+      <parameters></parameters>
+      <result></result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"isWrapped"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"=ab\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"true"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <text outputType="VALUE">"wrapAlways= true"</text>
+      </description>
+      <parameters></parameters>
+      <result></result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"wrap"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"=ab\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"#=ab\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <text outputType="VALUE">"wrapAlways= false"</text>
+      </description>
+      <parameters></parameters>
+      <result></result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"wrap"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"=ab\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"=ab\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <text outputType="VALUE">"HEAD"</text>
+      </description>
+      <parameters></parameters>
+      <result></result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"isWrapped"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"ab=\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"false"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <text outputType="VALUE">"wrapAlways= true"</text>
+      </description>
+      <parameters></parameters>
+      <result></result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"wrap"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"ab=\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"#ab=\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <text outputType="VALUE">"wrapAlways= false"</text>
+      </description>
+      <parameters></parameters>
+      <result></result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"wrap"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"ab=\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"#ab=\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <text outputType="VALUE">"TAIL"</text>
+      </description>
+      <parameters></parameters>
+      <result></result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"isWrapped"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"ab\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"false"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <text outputType="VALUE">"wrapAlways= true"</text>
+      </description>
+      <parameters></parameters>
+      <result></result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"wrap"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"ab\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"ab#\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <text outputType="VALUE">"wrapAlways= false"</text>
+      </description>
+      <parameters></parameters>
+      <result></result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"wrap"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"ab\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"ab#\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <text outputType="VALUE">"TAIL"</text>
+      </description>
+      <parameters></parameters>
+      <result></result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"isWrapped"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"=ab=\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"true"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <text outputType="VALUE">"wrapAlways= true"</text>
+      </description>
+      <parameters></parameters>
+      <result></result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"wrap"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"=ab=\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"=ab=#\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <text outputType="VALUE">"wrapAlways= false"</text>
+      </description>
+      <parameters></parameters>
+      <result></result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"wrap"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"=ab=\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"=ab=\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <text outputType="VALUE">"TAIL"</text>
+      </description>
+      <parameters></parameters>
+      <result></result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"isWrapped"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"=ab\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"false"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <text outputType="VALUE">"wrapAlways= true"</text>
+      </description>
+      <parameters></parameters>
+      <result></result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"wrap"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"=ab\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"=ab#\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <text outputType="VALUE">"wrapAlways= false"</text>
+      </description>
+      <parameters></parameters>
+      <result></result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"wrap"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"=ab\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"=ab#\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <text outputType="VALUE">"TAIL"</text>
+      </description>
+      <parameters></parameters>
+      <result></result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"isWrapped"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"ab=\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"true"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <text outputType="VALUE">"wrapAlways= true"</text>
+      </description>
+      <parameters></parameters>
+      <result></result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"wrap"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"ab=\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"ab=#\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <text outputType="VALUE">"wrapAlways= false"</text>
+      </description>
+      <parameters></parameters>
+      <result></result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"wrap"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"ab=\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"ab=\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+  </traceTest>
+  <captureTest name="testBenchmarks">
+    <runDate>2026-04-08T21:22:17.7242893+02:00</runDate>
+    <runDuration>0.0055021</runDuration>
+    <exception></exception>
+    <captureStep>
+      <text outputType="TEXT">"Test class org.magicwerk.brownies.core.strings.StringWrapperTest$StringWrapperWrapBenchmarkTest\r\nResult: 'ab'\r\nResult: ''ab''\r\nResult: ' ab '\r\nTest class org.magicwerk.brownies.core.strings.StringWrapperTest$StringWrapperWrapIfMissingBenchmarkTest\r\nResult: 'ab'\r\nResult: 'ab'\r\nResult: ' ab '\r\nTest class org.magicwerk.brownies.core.strings.StringWrapperTest$StringWrapperPrependIfMissingBenchmarkTest\r\nResult: 'ab\r\nResult: 'ab'\r\nResult: ' ab \r\nTest class org.magicwerk.brownies.core.strings.StringWrapperTest$StringWrapperAppendIfMissingBenchmarkTest\r\nResult: ab'\r\nResult: 'ab'\r\nResult:  ab '\r\n"</text>
+    </captureStep>
+  </captureTest>
+  <captureTest name="testGeneric">
+    <runDate>2026-01-21T17:52:39.4292671+01:00</runDate>
+    <runDuration>0.0058523</runDuration>
+    <exception></exception>
+    <captureStep>
+      <text outputType="TEXT">"123 -&gt; -123-"</text>
+    </captureStep>
+    <captureStep>
+      <text outputType="TEXT">"123 -&gt; -123-"</text>
+    </captureStep>
+    <captureStep>
+      <text outputType="TEXT">"123 -&gt; -123-"</text>
+    </captureStep>
+    <captureStep>
+      <text outputType="TEXT">"-123- -&gt; -123-"</text>
+    </captureStep>
+    <captureStep>
+      <text outputType="TEXT">"-123- -&gt; null"</text>
+    </captureStep>
+    <captureStep>
+      <text outputType="TEXT">"-123- -&gt; Exception"</text>
+    </captureStep>
+  </captureTest>
+</testClass>

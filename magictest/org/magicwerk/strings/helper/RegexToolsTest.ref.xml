@@ -1,0 +1,763 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testClass xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="org.magicwerk.strings.helper.RegexToolsTest" xsi:noNamespaceSchemaLocation="testclass-v10.xsd">
+  <traceTest name="testCount">
+    <runDate>2026-04-08T21:28:36.1504663+02:00</runDate>
+    <runDuration>0.0162347</runDuration>
+    <exception></exception>
+    <traceClass>org.magicwerk.strings.helper.RegexTools</traceClass>
+    <traceMethod>count</traceMethod>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"count"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"12,34,56\""</paramText>
+        <paramText outputType="VALUE" param="#2">","</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"2"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"count"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"12,34,,56\""</paramText>
+        <paramText outputType="VALUE" param="#2">","</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"3"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"count"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\",12,34,56,\""</paramText>
+        <paramText outputType="VALUE" param="#2">","</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"4"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"count"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\",\""</paramText>
+        <paramText outputType="VALUE" param="#2">","</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"1"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"count"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"12\""</paramText>
+        <paramText outputType="VALUE" param="#2">","</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"0"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"count"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"\""</paramText>
+        <paramText outputType="VALUE" param="#2">","</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"0"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"count"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"null"</paramText>
+        <paramText outputType="VALUE" param="#2">","</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"0"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+  </traceTest>
+  <traceTest name="testGet">
+    <runDate>2021-05-19T12:18:33.161+02:00</runDate>
+    <runDuration>0.001723</runDuration>
+    <exception></exception>
+    <traceClass>org.magicwerk.brownies.core.regex.RegexTools</traceClass>
+    <traceMethod>get</traceMethod>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"get"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"-(abc)-"</paramText>
+        <paramText outputType="VALUE" param="#2">"\"0-abc-1\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"abc\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"get"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"-(ab(c))-"</paramText>
+        <paramText outputType="VALUE" param="#2">"\"0-abc-1\""</paramText>
+        <paramText outputType="VALUE" param="#3">"1"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"abc\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"get"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"abc"</paramText>
+        <paramText outputType="VALUE" param="#2">"\"0-def-1\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"null"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"get"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\\d"</paramText>
+        <paramText outputType="VALUE" param="#2">"\"a 01 b 23 c\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"0\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+  </traceTest>
+  <traceTest name="testGetAll">
+    <runDate>2018-10-19T19:18:58.425+02:00</runDate>
+    <runDuration>0.003242226</runDuration>
+    <exception></exception>
+    <traceClass>org.magicwerk.brownies.core.regex.RegexTools</traceClass>
+    <traceMethod>getAll</traceMethod>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"getAll"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"^\\s*(\\d*)\\s*(\\w*)\\s*$"</paramText>
+        <paramText outputType="VALUE" param="#2">"\"1024 b\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"{ \"1024 b\", \"1024\", \"b\" }"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"getAll"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"^\\s*(\\d*)\\s*(\\w*)\\s*$"</paramText>
+        <paramText outputType="VALUE" param="#2">"\" 1024  b \""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"{ \" 1024  b \", \"1024\", \"b\" }"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"getAll"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"^\\s*(\\d*)\\s*(\\w*)\\s*$"</paramText>
+        <paramText outputType="VALUE" param="#2">"\"1024\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"{ \"1024\", \"1024\", \"\" }"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"getAll"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"^\\s*(\\d*)\\s*(\\w*)\\s*$"</paramText>
+        <paramText outputType="VALUE" param="#2">"\"b\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"{ \"b\", \"\", \"b\" }"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"getAll"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"^\\s*(\\d*)\\s*(\\w*)\\s*$"</paramText>
+        <paramText outputType="VALUE" param="#2">"\"b b\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"null"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+  </traceTest>
+  <traceTest name="testGetFirstSplit">
+    <runDate>2026-04-08T21:28:36.4398184+02:00</runDate>
+    <runDuration>0.001764</runDuration>
+    <exception></exception>
+    <traceClass>org.magicwerk.strings.helper.RegexTools</traceClass>
+    <traceMethod>getFirstSplit</traceMethod>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"getFirstSplit"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"12,34,,56\""</paramText>
+        <paramText outputType="VALUE" param="#2">","</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"12\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"getFirstSplit"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\",12,34,56,\""</paramText>
+        <paramText outputType="VALUE" param="#2">","</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"getFirstSplit"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\",\""</paramText>
+        <paramText outputType="VALUE" param="#2">","</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"getFirstSplit"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"12\""</paramText>
+        <paramText outputType="VALUE" param="#2">","</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"12\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"getFirstSplit"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"\""</paramText>
+        <paramText outputType="VALUE" param="#2">","</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"getFirstSplit"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"null"</paramText>
+        <paramText outputType="VALUE" param="#2">","</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"null"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+  </traceTest>
+  <traceTest name="testLiteral">
+    <runDate>2025-05-05T16:32:36.336868+02:00</runDate>
+    <runDuration>0.0143217</runDuration>
+    <exception></exception>
+    <traceClass>org.magicwerk.brownies.core.regex.RegexBuilder</traceClass>
+    <traceMethod>/.*/</traceMethod>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"isSimpleStringLiteral"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"abc\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"true"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"isSimpleStringLiteral"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"^abc\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"false"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"isSimpleStringLiteral"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"\\\\^abc\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"false"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"getStringLiteral"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"abc\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"abc\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"getStringLiteral"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"^abc\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"null"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"getStringLiteral"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"\\\\^abc\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"^abc\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+  </traceTest>
+  <traceTest name="testMatches">
+    <runDate>2018-10-19T19:19:00.281+02:00</runDate>
+    <runDuration>0.003430225</runDuration>
+    <exception></exception>
+    <traceClass>org.magicwerk.brownies.core.regex.RegexTools</traceClass>
+    <traceMethod>matches</traceMethod>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"matches"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"abc\""</paramText>
+        <paramText outputType="VALUE" param="#2">"\"abc\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"true"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"matches"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"a\""</paramText>
+        <paramText outputType="VALUE" param="#2">"\"abc\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"false"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"matches"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"\\\\w+\""</paramText>
+        <paramText outputType="VALUE" param="#2">"\"abc\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"true"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"matches"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"\\\\s*[0-9]{4}\\\\s*\""</paramText>
+        <paramText outputType="VALUE" param="#2">"\"1000\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"true"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"matches"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"-\\\\d{3}-\""</paramText>
+        <paramText outputType="VALUE" param="#2">"\"abc-123-xyz\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"false"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"matches"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"^-\\\\d{3}-$\""</paramText>
+        <paramText outputType="VALUE" param="#2">"\"abc-123-xyz\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"false"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"matches"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"\\\\w{3}-\\\\d{3}-\\\\w{3}\""</paramText>
+        <paramText outputType="VALUE" param="#2">"\"abc-123-xyz\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"true"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"matches"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"^\\\\w{3}-\\\\d{3}-\\\\w{3}$\""</paramText>
+        <paramText outputType="VALUE" param="#2">"\"abc-123-xyz\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"true"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+  </traceTest>
+  <captureTest name="testRegexTools">
+    <runDate>2018-10-19T19:19:03.507+02:00</runDate>
+    <runDuration>0.001696002</runDuration>
+    <exception></exception>
+    <captureStep>
+      <text outputType="TEXT">"'-\\d{3}-' finds 'abc-123-xyz'\r\n'^-\\d{3}-$' does not find 'abc-123-xyz'\r\n'\\w{3}-\\d{3}-\\w{3}' finds 'abc-123-xyz'\r\n'^\\w{3}-\\d{3}-\\w{3}$' finds 'abc-123-xyz'\r\n"</text>
+    </captureStep>
+  </captureTest>
+  <traceTest name="testRemove">
+    <runDate>2021-10-19T10:18:20.796+02:00</runDate>
+    <runDuration>0.0145586</runDuration>
+    <exception></exception>
+    <traceClass>org.magicwerk.brownies.core.regex.RegexTools</traceClass>
+    <traceMethod>remove</traceMethod>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"remove"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"\\\\d\""</paramText>
+        <paramText outputType="VALUE" param="#2">"\"a1c\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"ac\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"remove"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"(\\\\d)\""</paramText>
+        <paramText outputType="VALUE" param="#2">"\"a1c\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"ac\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"remove"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"9\""</paramText>
+        <paramText outputType="VALUE" param="#2">"\"a1c\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"a1c\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+  </traceTest>
+  <traceTest name="testRemoveAll">
+    <runDate>2025-09-24T08:26:35.1581558+02:00</runDate>
+    <runDuration>4.214E-4</runDuration>
+    <exception></exception>
+    <traceClass>org.magicwerk.brownies.core.regex.RegexTools</traceClass>
+    <traceMethod>removeAll</traceMethod>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"removeAll"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"\\\\d\""</paramText>
+        <paramText outputType="VALUE" param="#2">"\"a1c2e\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"ac\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"removeAll"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"(\\\\d)\""</paramText>
+        <paramText outputType="VALUE" param="#2">"\"a1c2e\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"ac\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+  </traceTest>
+  <traceTest name="testSet">
+    <runDate>2019-09-21T15:00:26.69+02:00</runDate>
+    <runDuration>4.61333E-4</runDuration>
+    <exception></exception>
+    <traceClass>org.magicwerk.brownies.core.regex.RegexTools</traceClass>
+    <traceMethod>set</traceMethod>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"set"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"\\\\d\""</paramText>
+        <paramText outputType="VALUE" param="#2">"\"a1c\""</paramText>
+        <paramText outputType="VALUE" param="#3">"\"X\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"aXc\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"set"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"(\\\\d)\""</paramText>
+        <paramText outputType="VALUE" param="#2">"\"a1c\""</paramText>
+        <paramText outputType="VALUE" param="#3">"\"X\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"aXc\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+  </traceTest>
+  <traceTest name="testSetAll">
+    <runDate>2025-09-24T08:17:57.9142004+02:00</runDate>
+    <runDuration>7.17E-4</runDuration>
+    <exception></exception>
+    <traceClass>org.magicwerk.brownies.core.regex.RegexTools</traceClass>
+    <traceMethod>setAll</traceMethod>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"setAll"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"\\\\d\""</paramText>
+        <paramText outputType="VALUE" param="#2">"\"a1c2e\""</paramText>
+        <paramText outputType="VALUE" param="#3">"\"X\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"aXcX\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"setAll"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"(\\\\d)\""</paramText>
+        <paramText outputType="VALUE" param="#2">"\"a1c2e\""</paramText>
+        <paramText outputType="VALUE" param="#3">"\"X\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"aXcX\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+  </traceTest>
+  <traceTest name="testSplit">
+    <runDate>2026-04-08T21:28:36.9009244+02:00</runDate>
+    <runDuration>0.0022371</runDuration>
+    <exception></exception>
+    <traceClass>org.magicwerk.strings.helper.RegexTools</traceClass>
+    <traceMethod>split</traceMethod>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"split"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"12,34,56\""</paramText>
+        <paramText outputType="VALUE" param="#2">","</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"{ \"12\", \"34\", \"56\" }"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"split"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"12,34,,56\""</paramText>
+        <paramText outputType="VALUE" param="#2">","</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"{ \"12\", \"34\", \"\", \"56\" }"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"split"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\",12,34,56,\""</paramText>
+        <paramText outputType="VALUE" param="#2">","</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"{ \"\", \"12\", \"34\", \"56\", \"\" }"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"split"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\",\""</paramText>
+        <paramText outputType="VALUE" param="#2">","</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"{ \"\", \"\" }"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"split"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"12\""</paramText>
+        <paramText outputType="VALUE" param="#2">","</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"{ \"12\" }"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"split"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"\""</paramText>
+        <paramText outputType="VALUE" param="#2">","</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"{ \"\" }"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"split"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"null"</paramText>
+        <paramText outputType="VALUE" param="#2">","</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"null"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+  </traceTest>
+</testClass>

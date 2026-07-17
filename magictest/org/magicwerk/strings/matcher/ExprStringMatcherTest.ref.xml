@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testClass xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="org.magicwerk.strings.matcher.ExprStringMatcherTest" xsi:noNamespaceSchemaLocation="testclass-v10.xsd">
+  <traceTest name="testFind">
+    <runDate>2024-09-11T17:11:09.6852842+02:00</runDate>
+    <runDuration>0.1935754</runDuration>
+    <exception></exception>
+    <traceClass>org.magicwerk.strings.matcher.ExprStringMatcher</traceClass>
+    <traceMethod>find</traceMethod>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"find"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"start size 900 bytes end\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"null"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"find"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"start size 1100 bytes end\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"RegexMatch [6/21]: size 1100 bytes"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+  </traceTest>
+</testClass>

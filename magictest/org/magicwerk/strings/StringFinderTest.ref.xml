@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testClass xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="org.magicwerk.strings.StringFinderTest" xsi:noNamespaceSchemaLocation="testclass-v10.xsd">
+  <captureTest name="testBenchmarks">
+    <runDate>2026-04-08T21:21:10.6047236+02:00</runDate>
+    <runDuration>0.0010288</runDuration>
+    <exception></exception>
+    <captureStep>
+      <text outputType="TEXT">"Test class org.magicwerk.brownies.core.strings.StringFinderTest$StringFinderAnyCharBenchmarkTest\r\nResult: 2\r\nResult: 2\r\n"</text>
+    </captureStep>
+  </captureTest>
+  <traceTest name="testContains">
+    <runDate>2025-03-18T18:12:58.600564+01:00</runDate>
+    <runDuration>0.0259349</runDuration>
+    <exception></exception>
+    <traceClass>org.magicwerk.strings.StringFinder</traceClass>
+    <traceMethod>contains</traceMethod>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"contains"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"abc\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"true"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+  </traceTest>
+  <traceTest name="testCount">
+    <runDate>2024-07-02T00:50:36.573+02:00</runDate>
+    <runDuration>0.0179807</runDuration>
+    <exception></exception>
+    <traceClass>org.magicwerk.strings.StringFinder</traceClass>
+    <traceMethod>count</traceMethod>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"count"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"ab-ab-AB\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"2"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+  </traceTest>
+  <traceTest name="testEmpty">
+    <runDate>2025-07-09T00:38:22.1795621+02:00</runDate>
+    <runDuration>0.0381575</runDuration>
+    <exception></exception>
+    <traceClass>org.magicwerk.strings.StringFinder</traceClass>
+    <traceMethod>matches</traceMethod>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"matches"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"abc\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"{ \r\n   Match [0/0]: , \r\n   Match [1/1]: , \r\n   Match [2/2]: , \r\n   Match [3/3]:  \r\n}"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"matches"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"abc\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"{ \r\n   Match [3/3]: , \r\n   Match [2/2]: , \r\n   Match [1/1]: , \r\n   Match [0/0]:  \r\n}"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+  </traceTest>
+  <captureTest name="testIndexOf">
+    <runDate>2025-07-24T14:01:12.5797321+02:00</runDate>
+    <runDuration>0.0980557</runDuration>
+    <exception></exception>
+    <captureStep>
+      <text outputType="TEXT">"Find char(a) in ab-ab-AB -&gt;  0 (start=0, occurrence=0, reverse=false, ignoreCase=false) using FindCharImpl\r\nFind char(a) in ab-ab-AB -&gt;  0 (start=0, occurrence=0, reverse=false, ignoreCase=true) using FindMatcherImpl\r\nFind char(a) in ab-ab-AB -&gt;  3 (start=8, occurrence=0, reverse=true, ignoreCase=false) using FindCharReverseImpl\r\nFind char(a) in ab-ab-AB -&gt;  6 (start=8, occurrence=0, reverse=true, ignoreCase=true) using FindReverseMatcherReverseImpl\r\nFind char(a) in ab-ab-AB -&gt;  3 (start=0, occurrence=1, reverse=false, ignoreCase=false) using FindMatcherImpl\r\nFind char(a) in ab-ab-AB -&gt;  3 (start=0, occurrence=1, reverse=false, ignoreCase=true) using FindMatcherImpl\r\nFind char(a) in ab-ab-AB -&gt;  0 (start=8, occurrence=1, reverse=true, ignoreCase=false) using FindMatcherReverseImpl\r\nFind char(a) in ab-ab-AB -&gt;  3 (start=8, occurrence=1, reverse=true, ignoreCase=true) using FindMatcherReverseImpl\r\nFind char(a) in ab-ab-AB -&gt; -1 (start=0, occurrence=2, reverse=false, ignoreCase=false) using FindMatcherImpl\r\nFind char(a) in ab-ab-AB -&gt;  6 (start=0, occurrence=2, reverse=false, ignoreCase=true) using FindMatcherImpl\r\nFind char(a) in ab-ab-AB -&gt; -1 (start=8, occurrence=2, reverse=true, ignoreCase=false) using FindMatcherReverseImpl\r\nFind char(a) in ab-ab-AB -&gt;  0 (start=8, occurrence=2, reverse=true, ignoreCase=true) using FindMatcherReverseImpl\r\nFind char(a) in ab-ab-AB -&gt;  3 (start=1, occurrence=0, reverse=false, ignoreCase=false) using FindCharImpl\r\nFind char(a) in ab-ab-AB -&gt;  3 (start=1, occurrence=0, reverse=false, ignoreCase=true) using FindMatcherImpl\r\nFind char(a) in ab-ab-AB -&gt;  3 (start=5, occurrence=0, reverse=true, ignoreCase=false) using FindCharReverseImpl\r\nFind char(a) in ab-ab-AB -&gt;  3 (start=5, occurrence=0, reverse=true, ignoreCase=true) using FindReverseMatcherReverseImpl\r\nFind char(a) in ab-ab-AB -&gt; -1 (start=1, occurrence=1, reverse=false, ignoreCase=false) using FindMatcherImpl\r\nFind char(a) in ab-ab-AB -&gt;  6 (start=1, occurrence=1, reverse=false, ignoreCase=true) using FindMatcherImpl\r\nFind char(a) in ab-ab-AB -&gt;  0 (start=5, occurrence=1, reverse=true, ignoreCase=false) using FindMatcherReverseImpl\r\nFind char(a) in ab-ab-AB -&gt;  0 (start=5, occurrence=1, reverse=true, ignoreCase=true) using FindMatcherReverseImpl\r\nFind char(a) in ab-ab-AB -&gt; -1 (start=1, occurrence=2, reverse=false, ignoreCase=false) using FindMatcherImpl\r\nFind char(a) in ab-ab-AB -&gt; -1 (start=1, occurrence=2, reverse=false, ignoreCase=true) using FindMatcherImpl\r\nFind char(a) in ab-ab-AB -&gt; -1 (start=5, occurrence=2, reverse=true, ignoreCase=false) using FindMatcherReverseImpl\r\nFind char(a) in ab-ab-AB -&gt; -1 (start=5, occurrence=2, reverse=true, ignoreCase=true) using FindMatcherReverseImpl\r\nFind codePoint('a') in ab-ab-AB -&gt;  0 (start=0, occurrence=0, reverse=false, ignoreCase=false) using FindCodePointImpl\r\nFind codePoint('a') in ab-ab-AB -&gt;  0 (start=0, occurrence=0, reverse=false, ignoreCase=true) using FindMatcherImpl\r\nFind codePoint('a') in ab-ab-AB -&gt;  3 (start=8, occurrence=0, reverse=true, ignoreCase=false) using FindCodePointReverseImpl\r\nFind codePoint('a') in ab-ab-AB -&gt;  6 (start=8, occurrence=0, reverse=true, ignoreCase=true) using FindReverseMatcherReverseImpl\r\nFind codePoint('a') in ab-ab-AB -&gt;  3 (start=0, occurrence=1, reverse=false, ignoreCase=false) using FindMatcherImpl\r\nFind codePoint('a') in ab-ab-AB -&gt;  3 (start=0, occurrence=1, reverse=false, ignoreCase=true) using FindMatcherImpl\r\nFind codePoint('a') in ab-ab-AB -&gt;  0 (start=8, occurrence=1, reverse=true, ignoreCase=false) using FindMatcherReverseImpl\r\nFind codePoint('a') in ab-ab-AB -&gt;  3 (start=8, occurrence=1, reverse=true, ignoreCase=true) using FindMatcherReverseImpl\r\nFind codePoint('a') in ab-ab-AB -&gt; -1 (start=0, occurrence=2, reverse=false, ignoreCase=false) using FindMatcherImpl\r\nFind codePoint('a') in ab-ab-AB -&gt;  6 (start=0, occurrence=2, reverse=false, ignoreCase=true) using FindMatcherImpl\r\nFind codePoint('a') in ab-ab-AB -&gt; -1 (start=8, occurrence=2, reverse=true, ignoreCase=false) using FindMatcherReverseImpl\r\nFind codePoint('a') in ab-ab-AB -&gt;  0 (start=8, occurrence=2, reverse=true, ignoreCase=true) using FindMatcherReverseImpl\r\nFind codePoint('a') in ab-ab-AB -&gt;  3 (start=1, occurrence=0, reverse=false, ignoreCase=false) using FindCodePointImpl\r\nFind codePoint('a') in ab-ab-AB -&gt;  3 (start=1, occurrence=0, reverse=false, ignoreCase=true) using FindMatcherImpl\r\nFind codePoint('a') in ab-ab-AB -&gt;  3 (start=5, occurrence=0, reverse=true, ignoreCase=false) using FindCodePointReverseImpl\r\nFind codePoint('a') in ab-ab-AB -&gt;  3 (start=5, occurrence=0, reverse=true, ignoreCase=true) using FindReverseMatcherReverseImpl\r\nFind codePoint('a') in ab-ab-AB -&gt; -1 (start=1, occurrence=1, reverse=false, ignoreCase=false) using FindMatcherImpl\r\nFind codePoint('a') in ab-ab-AB -&gt;  6 (start=1, occurrence=1, reverse=false, ignoreCase=true) using FindMatcherImpl\r\nFind codePoint('a') in ab-ab-AB -&gt;  0 (start=5, occurrence=1, reverse=true, ignoreCase=false) using FindMatcherReverseImpl\r\nFind codePoint('a') in ab-ab-AB -&gt;  0 (start=5, occurrence=1, reverse=true, ignoreCase=true) using FindMatcherReverseImpl\r\nFind codePoint('a') in ab-ab-AB -&gt; -1 (start=1, occurrence=2, reverse=false, ignoreCase=false) using FindMatcherImpl\r\nFind codePoint('a') in ab-ab-AB -&gt; -1 (start=1, occurrence=2, reverse=false, ignoreCase=true) using FindMatcherImpl\r\nFind codePoint('a') in ab-ab-AB -&gt; -1 (start=5, occurrence=2, reverse=true, ignoreCase=false) using FindMatcherReverseImpl\r\nFind codePoint('a') in ab-ab-AB -&gt; -1 (start=5, occurrence=2, reverse=true, ignoreCase=true) using FindMatcherReverseImpl\r\nFind charPredicate(a) in ab-ab-AB -&gt;  0 (start=0, occurrence=0, reverse=false, ignoreCase=false) using FindMatcherImpl\r\nFind charPredicate(a) in ab-ab-AB -&gt;  0 (start=0, occurrence=0, reverse=false, ignoreCase=true) using FindMatcherImpl\r\nFind charPredicate(a) in ab-ab-AB -&gt;  3 (start=8, occurrence=0, reverse=true, ignoreCase=false) using FindReverseMatcherReverseImpl\r\nFind charPredicate(a) in ab-ab-AB -&gt;  6 (start=8, occurrence=0, reverse=true, ignoreCase=true) using FindReverseMatcherReverseImpl\r\nFind charPredicate(a) in ab-ab-AB -&gt;  3 (start=0, occurrence=1, reverse=false, ignoreCase=false) using FindMatcherImpl\r\nFind charPredicate(a) in ab-ab-AB -&gt;  3 (start=0, occurrence=1, reverse=false, ignoreCase=true) using FindMatcherImpl\r\nFind charPredicate(a) in ab-ab-AB -&gt;  0 (start=8, occurrence=1, reverse=true, ignoreCase=false) using FindMatcherReverseImpl\r\nFind charPredicate(a) in ab-ab-AB -&gt;  3 (start=8, occurrence=1, reverse=true, ignoreCase=true) using FindMatcherReverseImpl\r\nFind charPredicate(a) in ab-ab-AB -&gt; -1 (start=0, occurrence=2, reverse=false, ignoreCase=false) using FindMatcherImpl\r\nFind charPredicate(a) in ab-ab-AB -&gt;  6 (start=0, occurrence=2, reverse=false, ignoreCase=true) using FindMatcherImpl\r\nFind charPredicate(a) in ab-ab-AB -&gt; -1 (start=8, occurrence=2, reverse=true, ignoreCase=false) using FindMatcherReverseImpl\r\nFind charPredicate(a) in ab-ab-AB -&gt;  0 (start=8, occurrence=2, reverse=true, ignoreCase=true) using FindMatcherReverseImpl\r\nFind charPredicate(a) in ab-ab-AB -&gt;  3 (start=1, occurrence=0, reverse=false, ignoreCase=false) using FindMatcherImpl\r\nFind charPredicate(a) in ab-ab-AB -&gt;  3 (start=1, occurrence=0, reverse=false, ignoreCase=true) using FindMatcherImpl\r\nFind charPredicate(a) in ab-ab-AB -&gt;  3 (start=5, occurrence=0, reverse=true, ignoreCase=false) using FindReverseMatcherReverseImpl\r\nFind charPredicate(a) in ab-ab-AB -&gt;  3 (start=5, occurrence=0, reverse=true, ignoreCase=true) using FindReverseMatcherReverseImpl\r\nFind charPredicate(a) in ab-ab-AB -&gt; -1 (start=1, occurrence=1, reverse=false, ignoreCase=false) using FindMatcherImpl\r\nFind charPredicate(a) in ab-ab-AB -&gt;  6 (start=1, occurrence=1, reverse=false, ignoreCase=true) using FindMatcherImpl\r\nFind charPredicate(a) in ab-ab-AB -&gt;  0 (start=5, occurrence=1, reverse=true, ignoreCase=false) using FindMatcherReverseImpl\r\nFind charPredicate(a) in ab-ab-AB -&gt;  0 (start=5, occurrence=1, reverse=true, ignoreCase=true) using FindMatcherReverseImpl\r\nFind charPredicate(a) in ab-ab-AB -&gt; -1 (start=1, occurrence=2, reverse=false, ignoreCase=false) using FindMatcherImpl\r\nFind charPredicate(a) in ab-ab-AB -&gt; -1 (start=1, occurrence=2, reverse=false, ignoreCase=true) using FindMatcherImpl\r\nFind charPredicate(a) in ab-ab-AB -&gt; -1 (start=5, occurrence=2, reverse=true, ignoreCase=false) using FindMatcherReverseImpl\r\nFind charPredicate(a) in ab-ab-AB -&gt; -1 (start=5, occurrence=2, reverse=true, ignoreCase=true) using FindMatcherReverseImpl\r\nFind anyChar(xa) in ab-ab-AB -&gt;  0 (start=0, occurrence=0, reverse=false, ignoreCase=false) using FindMatcherImpl\r\nFind anyChar(xa) in ab-ab-AB -&gt;  0 (start=0, occurrence=0, reverse=false, ignoreCase=true) using FindMatcherImpl\r\nFind anyChar(xa) in ab-ab-AB -&gt;  3 (start=8, occurrence=0, reverse=true, ignoreCase=false) using FindReverseMatcherReverseImpl\r\nFind anyChar(xa) in ab-ab-AB -&gt;  6 (start=8, occurrence=0, reverse=true, ignoreCase=true) using FindReverseMatcherReverseImpl\r\nFind anyChar(xa) in ab-ab-AB -&gt;  3 (start=0, occurrence=1, reverse=false, ignoreCase=false) using FindMatcherImpl\r\nFind anyChar(xa) in ab-ab-AB -&gt;  3 (start=0, occurrence=1, reverse=false, ignoreCase=true) using FindMatcherImpl\r\nFind anyChar(xa) in ab-ab-AB -&gt;  0 (start=8, occurrence=1, reverse=true, ignoreCase=false) using FindMatcherReverseImpl\r\nFind anyChar(xa) in ab-ab-AB -&gt;  3 (start=8, occurrence=1, reverse=true, ignoreCase=true) using FindMatcherReverseImpl\r\nFind anyChar(xa) in ab-ab-AB -&gt; -1 (start=0, occurrence=2, reverse=false, ignoreCase=false) using FindMatcherImpl\r\nFind anyChar(xa) in ab-ab-AB -&gt;  6 (start=0, occurrence=2, reverse=false, ignoreCase=true) using FindMatcherImpl\r\nFind anyChar(xa) in ab-ab-AB -&gt; -1 (start=8, occurrence=2, reverse=true, ignoreCase=false) using FindMatcherReverseImpl\r\nFind anyChar(xa) in ab-ab-AB -&gt;  0 (start=8, occurrence=2, reverse=true, ignoreCase=true) using FindMatcherReverseImpl\r\nFind anyChar(xa) in ab-ab-AB -&gt;  3 (start=1, occurrence=0, reverse=false, ignoreCase=false) using FindMatcherImpl\r\nFind anyChar(xa) in ab-ab-AB -&gt;  3 (start=1, occurrence=0, reverse=false, ignoreCase=true) using FindMatcherImpl\r\nFind anyChar(xa) in ab-ab-AB -&gt;  3 (start=5, occurrence=0, reverse=true, ignoreCase=false) using FindReverseMatcherReverseImpl\r\nFind anyChar(xa) in ab-ab-AB -&gt;  3 (start=5, occurrence=0, reverse=true, ignoreCase=true) using FindReverseMatcherReverseImpl\r\nFind anyChar(xa) in ab-ab-AB -&gt; -1 (start=1, occurrence=1, reverse=false, ignoreCase=false) using FindMatcherImpl\r\nFind anyChar(xa) in ab-ab-AB -&gt;  6 (start=1, occurrence=1, reverse=false, ignoreCase=true) using FindMatcherImpl\r\nFind anyChar(xa) in ab-ab-AB -&gt;  0 (start=5, occurrence=1, reverse=true, ignoreCase=false) using FindMatcherReverseImpl\r\nFind anyChar(xa) in ab-ab-AB -&gt;  0 (start=5, occurrence=1, reverse=true, ignoreCase=true) using FindMatcherReverseImpl\r\nFind anyChar(xa) in ab-ab-AB -&gt; -1 (start=1, occurrence=2, reverse=false, ignoreCase=false) using FindMatcherImpl\r\nFind anyChar(xa) in ab-ab-AB -&gt; -1 (start=1, occurrence=2, reverse=false, ignoreCase=true) using FindMatcherImpl\r\nFind anyChar(xa) in ab-ab-AB -&gt; -1 (start=5, occurrence=2, reverse=true, ignoreCase=false) using FindMatcherReverseImpl\r\nFind anyChar(xa) in ab-ab-AB -&gt; -1 (start=5, occurrence=2, reverse=true, ignoreCase=true) using FindMatcherReverseImpl\r\nFind string(a) in ab-ab-AB -&gt;  0 (start=0, occurrence=0, reverse=false, ignoreCase=false) using FindStringImpl\r\nFind string(a) in ab-ab-AB -&gt;  0 (start=0, occurrence=0, reverse=false, ignoreCase=true) using FindMatcherImpl\r\nFind string(a) in ab-ab-AB -&gt;  3 (start=8, occurrence=0, reverse=true, ignoreCase=false) using FindStringReverseImpl\r\nFind string(a) in ab-ab-AB -&gt;  6 (start=8, occurrence=0, reverse=true, ignoreCase=true) using FindReverseMatcherReverseImpl\r\nFind string(a) in ab-ab-AB -&gt;  3 (start=0, occurrence=1, reverse=false, ignoreCase=false) using FindMatcherImpl\r\nFind string(a) in ab-ab-AB -&gt;  3 (start=0, occurrence=1, reverse=false, ignoreCase=true) using FindMatcherImpl\r\nFind string(a) in ab-ab-AB -&gt;  0 (start=8, occurrence=1, reverse=true, ignoreCase=false) using FindMatcherReverseImpl\r\nFind string(a) in ab-ab-AB -&gt;  3 (start=8, occurrence=1, reverse=true, ignoreCase=true) using FindMatcherReverseImpl\r\nFind string(a) in ab-ab-AB -&gt; -1 (start=0, occurrence=2, reverse=false, ignoreCase=false) using FindMatcherImpl\r\nFind string(a) in ab-ab-AB -&gt;  6 (start=0, occurrence=2, reverse=false, ignoreCase=true) using FindMatcherImpl\r\nFind string(a) in ab-ab-AB -&gt; -1 (start=8, occurrence=2, reverse=true, ignoreCase=false) using FindMatcherReverseImpl\r\nFind string(a) in ab-ab-AB -&gt;  0 (start=8, occurrence=2, reverse=true, ignoreCase=true) using FindMatcherReverseImpl\r\nFind string(a) in ab-ab-AB -&gt;  3 (start=1, occurrence=0, reverse=false, ignoreCase=false) using FindStringImpl\r\nFind string(a) in ab-ab-AB -&gt;  3 (start=1, occurrence=0, reverse=false, ignoreCase=true) using FindMatcherImpl\r\nFind string(a) in ab-ab-AB -&gt;  3 (start=5, occurrence=0, reverse=true, ignoreCase=false) using FindStringReverseImpl\r\nFind string(a) in ab-ab-AB -&gt;  3 (start=5, occurrence=0, reverse=true, ignoreCase=true) using FindReverseMatcherReverseImpl\r\nFind string(a) in ab-ab-AB -&gt; -1 (start=1, occurrence=1, reverse=false, ignoreCase=false) using FindMatcherImpl\r\nFind string(a) in ab-ab-AB -&gt;  6 (start=1, occurrence=1, reverse=false, ignoreCase=true) using FindMatcherImpl\r\nFind string(a) in ab-ab-AB -&gt;  0 (start=5, occurrence=1, reverse=true, ignoreCase=false) using FindMatcherReverseImpl\r\nFind string(a) in ab-ab-AB -&gt;  0 (start=5, occurrence=1, reverse=true, ignoreCase=true) using FindMatcherReverseImpl\r\nFind string(a) in ab-ab-AB -&gt; -1 (start=1, occurrence=2, reverse=false, ignoreCase=false) using FindMatcherImpl\r\nFind string(a) in ab-ab-AB -&gt; -1 (start=1, occurrence=2, reverse=false, ignoreCase=true) using FindMatcherImpl\r\nFind string(a) in ab-ab-AB -&gt; -1 (start=5, occurrence=2, reverse=true, ignoreCase=false) using FindMatcherReverseImpl\r\nFind string(a) in ab-ab-AB -&gt; -1 (start=5, occurrence=2, reverse=true, ignoreCase=true) using FindMatcherReverseImpl\r\nFind regex(a) in ab-ab-AB -&gt;  0 (start=0, occurrence=0, reverse=false, ignoreCase=false) using FindMatcherImpl\r\nFind regex(a) in ab-ab-AB -&gt;  0 (start=0, occurrence=0, reverse=false, ignoreCase=true) using FindMatcherImpl\r\nFind regex(a) in ab-ab-AB -&gt;  3 (start=8, occurrence=0, reverse=true, ignoreCase=false) using FindMatcherReverseImpl\r\nFind regex(a) in ab-ab-AB -&gt;  6 (start=8, occurrence=0, reverse=true, ignoreCase=true) using FindMatcherReverseImpl\r\nFind regex(a) in ab-ab-AB -&gt;  3 (start=0, occurrence=1, reverse=false, ignoreCase=false) using FindMatcherImpl\r\nFind regex(a) in ab-ab-AB -&gt;  3 (start=0, occurrence=1, reverse=false, ignoreCase=true) using FindMatcherImpl\r\nFind regex(a) in ab-ab-AB -&gt;  0 (start=8, occurrence=1, reverse=true, ignoreCase=false) using FindMatcherReverseImpl\r\nFind regex(a) in ab-ab-AB -&gt;  3 (start=8, occurrence=1, reverse=true, ignoreCase=true) using FindMatcherReverseImpl\r\nFind regex(a) in ab-ab-AB -&gt; -1 (start=0, occurrence=2, reverse=false, ignoreCase=false) using FindMatcherImpl\r\nFind regex(a) in ab-ab-AB -&gt;  6 (start=0, occurrence=2, reverse=false, ignoreCase=true) using FindMatcherImpl\r\nFind regex(a) in ab-ab-AB -&gt; -1 (start=8, occurrence=2, reverse=true, ignoreCase=false) using FindMatcherReverseImpl\r\nFind regex(a) in ab-ab-AB -&gt;  0 (start=8, occurrence=2, reverse=true, ignoreCase=true) using FindMatcherReverseImpl\r\nFind regex(a) in ab-ab-AB -&gt;  3 (start=1, occurrence=0, reverse=false, ignoreCase=false) using FindMatcherImpl\r\nFind regex(a) in ab-ab-AB -&gt;  3 (start=1, occurrence=0, reverse=false, ignoreCase=true) using FindMatcherImpl\r\nFind regex(a) in ab-ab-AB -&gt;  3 (start=5, occurrence=0, reverse=true, ignoreCase=false) using FindMatcherReverseImpl\r\nFind regex(a) in ab-ab-AB -&gt;  3 (start=5, occurrence=0, reverse=true, ignoreCase=true) using FindMatcherReverseImpl\r\nFind regex(a) in ab-ab-AB -&gt; -1 (start=1, occurrence=1, reverse=false, ignoreCase=false) using FindMatcherImpl\r\nFind regex(a) in ab-ab-AB -&gt;  6 (start=1, occurrence=1, reverse=false, ignoreCase=true) using FindMatcherImpl\r\nFind regex(a) in ab-ab-AB -&gt;  0 (start=5, occurrence=1, reverse=true, ignoreCase=false) using FindMatcherReverseImpl\r\nFind regex(a) in ab-ab-AB -&gt;  0 (start=5, occurrence=1, reverse=true, ignoreCase=true) using FindMatcherReverseImpl\r\nFind regex(a) in ab-ab-AB -&gt; -1 (start=1, occurrence=2, reverse=false, ignoreCase=false) using FindMatcherImpl\r\nFind regex(a) in ab-ab-AB -&gt; -1 (start=1, occurrence=2, reverse=false, ignoreCase=true) using FindMatcherImpl\r\nFind regex(a) in ab-ab-AB -&gt; -1 (start=5, occurrence=2, reverse=true, ignoreCase=false) using FindMatcherReverseImpl\r\nFind regex(a) in ab-ab-AB -&gt; -1 (start=5, occurrence=2, reverse=true, ignoreCase=true) using FindMatcherReverseImpl\r\n"</text>
+    </captureStep>
+  </captureTest>
+  <traceTest name="testIndexOfOccurrence">
+    <runDate>2024-07-02T00:17:19.564+02:00</runDate>
+    <runDuration>0.009181</runDuration>
+    <exception></exception>
+    <traceClass>org.magicwerk.strings.StringFinder</traceClass>
+    <traceMethod>/indexOf/</traceMethod>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"indexOf"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"abc\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"0"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"indexOf"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"abc\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"0"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+  </traceTest>
+  <captureTest name="testIndexOfPattern">
+    <runDate>2025-07-24T13:58:04.6229088+02:00</runDate>
+    <runDuration>0.0028202</runDuration>
+    <exception></exception>
+    <captureStep>
+      <text outputType="TEXT">"Find regex(^a) in ab-ab -&gt;  0 (start=0, occurrence=0, reverse=false, ignoreCase=false) using FindMatcherImpl\r\nFind regex(^a) in ab-ab -&gt; -1 (start=0, occurrence=1, reverse=false, ignoreCase=false) using FindMatcherImpl\r\nFind regex(^a) in ab-ab -&gt; -1 (start=3, occurrence=0, reverse=false, ignoreCase=false) using FindMatcherImpl\r\nFind regex(^a) in ab-ab -&gt; -1 (start=3, occurrence=1, reverse=false, ignoreCase=false) using FindMatcherImpl\r\nFind regex(^a) in ab-ab -&gt;  0 (start=6, occurrence=0, reverse=true, ignoreCase=false) using FindMatcherReverseImpl\r\nFind regex(^a) in ab-ab -&gt; -1 (start=6, occurrence=1, reverse=true, ignoreCase=false) using FindMatcherReverseImpl\r\nFind regex(^a) in ab-ab -&gt;  0 (start=3, occurrence=0, reverse=true, ignoreCase=false) using FindMatcherReverseImpl\r\nFind regex(^a) in ab-ab -&gt; -1 (start=3, occurrence=1, reverse=true, ignoreCase=false) using FindMatcherReverseImpl\r\nFind regex(b$) in ab-ab -&gt;  4 (start=0, occurrence=0, reverse=false, ignoreCase=false) using FindMatcherImpl\r\nFind regex(b$) in ab-ab -&gt; -1 (start=0, occurrence=1, reverse=false, ignoreCase=false) using FindMatcherImpl\r\nFind regex(b$) in ab-ab -&gt;  4 (start=1, occurrence=0, reverse=false, ignoreCase=false) using FindMatcherImpl\r\nFind regex(b$) in ab-ab -&gt; -1 (start=1, occurrence=1, reverse=false, ignoreCase=false) using FindMatcherImpl\r\nFind regex(b$) in ab-ab -&gt;  4 (start=6, occurrence=0, reverse=true, ignoreCase=false) using FindMatcherReverseImpl\r\nFind regex(b$) in ab-ab -&gt; -1 (start=6, occurrence=1, reverse=true, ignoreCase=false) using FindMatcherReverseImpl\r\nFind regex(b$) in ab-ab -&gt; -1 (start=1, occurrence=0, reverse=true, ignoreCase=false) using FindMatcherReverseImpl\r\nFind regex(b$) in ab-ab -&gt; -1 (start=1, occurrence=1, reverse=true, ignoreCase=false) using FindMatcherReverseImpl\r\n"</text>
+    </captureStep>
+  </captureTest>
+  <captureTest name="testIndexOfRepeat">
+    <runDate>2024-06-28T10:51:08.076+02:00</runDate>
+    <runDuration>0.00726</runDuration>
+    <exception></exception>
+    <captureStep>
+      <text outputType="TEXT">"[0, 3, 4]\r\n[0, 3, 4, 7]\r\n"</text>
+    </captureStep>
+  </captureTest>
+  <traceTest name="testOverlap">
+    <runDate>2026-01-26T22:31:00.4676503+01:00</runDate>
+    <runDuration>0.0549933</runDuration>
+    <exception></exception>
+    <traceClass>org.magicwerk.strings.StringFinder</traceClass>
+    <traceMethod>/count|matches/</traceMethod>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"count"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"-aaBBaaBBaa-\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"1"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"count"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"-aaBBaaBBaa-\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"2"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"matches"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"-aaBBaaBBaa-\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"{ \r\n   Match [1/7]: aaBBaa \r\n}"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"matches"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"-aaBBaaBBaa-\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"{ \r\n   Match [1/7]: aaBBaa, \r\n   Match [5/11]: aaBBaa \r\n}"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+  </traceTest>
+</testClass>

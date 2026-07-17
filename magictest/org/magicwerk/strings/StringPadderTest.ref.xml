@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testClass xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="org.magicwerk.strings.StringPadderTest" xsi:noNamespaceSchemaLocation="testclass-v10.xsd">
+  <captureTest name="testBenchmarks">
+    <runDate>2026-04-08T21:22:01.5762614+02:00</runDate>
+    <runDuration>0.0049149</runDuration>
+    <exception></exception>
+    <captureStep>
+      <text outputType="TEXT">"Test class org.magicwerk.brownies.core.strings.StringPadderTest$StringPadderLeftLen3BenchmarkTest\r\nResult: abc\r\nResult: abcde\r\nTest class org.magicwerk.brownies.core.strings.StringPadderTest$StringPadderLeftLen9BenchmarkTest\r\nResult: xxxxxxabc\r\nResult: xxxxabcde\r\nTest class org.magicwerk.brownies.core.strings.StringPadderTest$StringPadderRightLen3BenchmarkTest\r\nResult: abc\r\nResult: abcde\r\nTest class org.magicwerk.brownies.core.strings.StringPadderTest$StringPadderRightLen9BenchmarkTest\r\nResult: abcxxxxxx\r\nResult: abcdexxxx\r\n"</text>
+    </captureStep>
+  </captureTest>
+  <captureTest name="testCompare">
+    <runDate>2025-07-09T13:50:50.8036471+02:00</runDate>
+    <runDuration>0.0270633</runDuration>
+    <exception></exception>
+    <captureStep>
+      <text outputType="TEXT">"len = 5\r\npadMode = RIGHT\r\n0123456789\r\npadMode = CENTER\r\n0123456789\r\npadMode = LEFT\r\n0123456789\r\nlen = 10\r\npadMode = RIGHT\r\n0123456789\r\npadMode = CENTER\r\n0123456789\r\npadMode = LEFT\r\n0123456789\r\nlen = 15\r\npadMode = RIGHT\r\n0123456789.....\r\npadMode = CENTER\r\n..0123456789...\r\npadMode = LEFT\r\n.....0123456789\r\n"</text>
+    </captureStep>
+  </captureTest>
+  <captureTest name="testGeneric">
+    <runDate>2026-01-21T17:00:52.360407+01:00</runDate>
+    <runDuration>4.517E-4</runDuration>
+    <exception></exception>
+    <captureStep>
+      <text outputType="TEXT">"1234 -&gt; 1234-"</text>
+    </captureStep>
+    <captureStep>
+      <text outputType="TEXT">"1234 -&gt; 1234-"</text>
+    </captureStep>
+    <captureStep>
+      <text outputType="TEXT">"1234 -&gt; 1234-"</text>
+    </captureStep>
+    <captureStep>
+      <text outputType="TEXT">"12345 -&gt; 12345"</text>
+    </captureStep>
+    <captureStep>
+      <text outputType="TEXT">"12345 -&gt; null"</text>
+    </captureStep>
+    <captureStep>
+      <text outputType="TEXT">"12345 -&gt; Exception"</text>
+    </captureStep>
+    <captureStep>
+      <text outputType="TEXT">"123456 -&gt; 123456"</text>
+    </captureStep>
+    <captureStep>
+      <text outputType="TEXT">"123456 -&gt; null"</text>
+    </captureStep>
+    <captureStep>
+      <text outputType="TEXT">"123456 -&gt; Exception"</text>
+    </captureStep>
+  </captureTest>
+  <traceTest name="testPad">
+    <runDate>2025-04-30T16:54:12.3856497+02:00</runDate>
+    <runDuration>0.1268276</runDuration>
+    <exception></exception>
+    <traceClass>org.magicwerk.brownies.core.strings.StringPadder$StringPadderInline</traceClass>
+    <traceMethod>pad</traceMethod>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"pad"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"abc\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="PRE" param="Result">"abc..."</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"pad"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"abc\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="PRE" param="Result">".abc.."</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"pad"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"abc\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="PRE" param="Result">"..abc."</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"pad"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"abc\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="PRE" param="Result">"...abc"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"pad"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"abc\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="PRE" param="Result">"abc&gt;&lt;&gt;"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"pad"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"abcd\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="PRE" param="Result">"abcd&lt;&gt;"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"pad"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"abc\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="PRE" param="Result">"&lt;abc&lt;&gt;"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"pad"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"abcd\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="PRE" param="Result">"&lt;abcd&gt;"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"pad"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"abc\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="PRE" param="Result">"&lt;&gt;abc&gt;"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"pad"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"abcd\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="PRE" param="Result">"&lt;abcd&gt;"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"pad"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"abc\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="PRE" param="Result">"&lt;&gt;&lt;abc"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"pad"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"abcd\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="PRE" param="Result">"&lt;&gt;abcd"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"pad"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"abc\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="PRE" param="Result">"abc   "</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+  </traceTest>
+  <traceTest name="testPadAll">
+    <runDate>2025-04-30T16:54:12.6039207+02:00</runDate>
+    <runDuration>0.0096902</runDuration>
+    <exception></exception>
+    <traceClass>org.magicwerk.brownies.core.strings.StringPadder$StringPadderInline</traceClass>
+    <traceMethod>padAll</traceMethod>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"padAll"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="PRE" param="#1">"{ \"abc\", \"abcd\", \"abcdef\" }"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"{ \"abc...\", \"abcd..\", \"abcdef\" }"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"padAll"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="PRE" param="#1">"{ \"abc\", \"abcd\", \"abcdef\" }"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"{ \".abc..\", \".abcd.\", \"abcdef\" }"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"padAll"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="PRE" param="#1">"{ \"abc\", \"abcd\", \"abcdef\" }"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"{ \"...abc\", \"..abcd\", \"abcdef\" }"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"padAll"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="PRE" param="#1">"{ \"abc\", \"abcd\", \"abcdef\" }"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"{ \"abc&gt;&lt;&gt;\", \"abcd&lt;&gt;\", \"abcdef\" }"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"padAll"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="PRE" param="#1">"{ \"abc\", \"abcd\", \"abcdef\" }"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"{ \"&lt;abc&lt;&gt;\", \"&lt;abcd&gt;\", \"abcdef\" }"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"padAll"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="PRE" param="#1">"{ \"abc\", \"abcd\", \"abcdef\" }"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"{ \"&lt;&gt;&lt;abc\", \"&lt;&gt;abcd\", \"abcdef\" }"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+  </traceTest>
+</testClass>

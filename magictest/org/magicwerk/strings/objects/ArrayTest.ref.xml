@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testClass xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="org.magicwerk.strings.objects.ArrayTest" xsi:noNamespaceSchemaLocation="testclass-v10.xsd">
+  <captureTest name="testArray">
+    <runDate>2020-11-25T01:33:50.202+01:00</runDate>
+    <runDuration>0.2203295</runDuration>
+    <exception></exception>
+    <captureStep>
+      <text outputType="TEXT">"[a, b]\r\na\r\nb\r\n[ \"a\", \"b\" ]\r\n"</text>
+    </captureStep>
+  </captureTest>
+</testClass>

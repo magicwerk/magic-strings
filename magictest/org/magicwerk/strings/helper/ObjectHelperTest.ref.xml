@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testClass xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="org.magicwerk.strings.helper.ObjectHelperTest" xsi:noNamespaceSchemaLocation="testclass-v10.xsd">
+  <traceTest name="testImplToString">
+    <runDate>2020-12-21T22:07:36.993+01:00</runDate>
+    <runDuration>0.0229359</runDuration>
+    <exception></exception>
+    <traceClass>org.magicwerk.strings.helper.ObjectHelper</traceClass>
+    <traceMethod>implToString</traceMethod>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"implToString"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"{ \r\n   int number = 0; \r\n   String string = null; \r\n}"</paramText>
+        <paramText outputType="VALUE" param="#2">"[ \r\n   { \r\n      String name = \"number\"; \r\n      java.util.function.Function getter = { \r\n      }; \r\n   }, \r\n   { \r\n      String name = \"string\"; \r\n      java.util.function.Function getter = { \r\n      }; \r\n   } \r\n]"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"number: 0, string: null\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"implToString"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"{ \r\n   int number = 1; \r\n   String string = \"a\"; \r\n}"</paramText>
+        <paramText outputType="VALUE" param="#2">"[ \r\n   { \r\n      String name = \"number\"; \r\n      java.util.function.Function getter = { \r\n      }; \r\n   }, \r\n   { \r\n      String name = \"string\"; \r\n      java.util.function.Function getter = { \r\n      }; \r\n   } \r\n]"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"number: 1, string: a\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+  </traceTest>
+  <captureTest name="testObjectHelper">
+    <runDate>2024-12-03T09:07:11.3601369+01:00</runDate>
+    <runDuration>0.0071707</runDuration>
+    <exception></exception>
+    <captureStep>
+      <text outputType="TEXT">""</text>
+    </captureStep>
+  </captureTest>
+</testClass>

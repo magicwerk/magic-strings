@@ -1,0 +1,905 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testClass xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="org.magicwerk.strings.helper.ObjectToolsTest" xsi:noNamespaceSchemaLocation="testclass-v10.xsd">
+  <traceTest name="testCast">
+    <runDate>2020-04-24T02:01:13.622+02:00</runDate>
+    <runDuration>0.0168966</runDuration>
+    <exception></exception>
+    <traceClass>org.magicwerk.strings.helper.ObjectTools</traceClass>
+    <traceMethod>/cast|castOr/</traceMethod>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"cast"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"null"</paramText>
+        <paramText outputType="VALUE" param="#2">"class java.lang.String"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"null"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"cast"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"{ \r\n}"</paramText>
+        <paramText outputType="VALUE" param="#2">"class java.lang.String"</paramText>
+      </parameters>
+      <result></result>
+      <error>
+        <paramText outputType="VALUE" param="Error">"java.lang.ClassCastException: Cannot cast java.lang.Object to java.lang.String"</paramText>
+      </error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"cast"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"abc\""</paramText>
+        <paramText outputType="VALUE" param="#2">"class java.lang.String"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"abc\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"cast"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"123"</paramText>
+        <paramText outputType="VALUE" param="#2">"class java.lang.String"</paramText>
+      </parameters>
+      <result></result>
+      <error>
+        <paramText outputType="VALUE" param="Error">"java.lang.ClassCastException: Cannot cast java.lang.Integer to java.lang.String"</paramText>
+      </error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"castOr"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"null"</paramText>
+        <paramText outputType="VALUE" param="#2">"class java.lang.String"</paramText>
+        <paramText outputType="VALUE" param="#3">"\"default\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"default\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"castOr"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"{ \r\n}"</paramText>
+        <paramText outputType="VALUE" param="#2">"class java.lang.String"</paramText>
+        <paramText outputType="VALUE" param="#3">"\"default\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"default\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"castOr"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"abc\""</paramText>
+        <paramText outputType="VALUE" param="#2">"class java.lang.String"</paramText>
+        <paramText outputType="VALUE" param="#3">"\"default\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"abc\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"castOr"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"123"</paramText>
+        <paramText outputType="VALUE" param="#2">"class java.lang.String"</paramText>
+        <paramText outputType="VALUE" param="#3">"\"default\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"default\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+  </traceTest>
+  <traceTest name="testCompare">
+    <runDate>2015-03-02T00:28:25.049+01:00</runDate>
+    <runDuration>0.016164239</runDuration>
+    <exception></exception>
+    <traceClass>org.magicwerk.strings.helper.ObjectTools</traceClass>
+    <traceMethod>compare</traceMethod>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"compare"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"a\""</paramText>
+        <paramText outputType="VALUE" param="#2">"\"b\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"-1"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"compare"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"a\""</paramText>
+        <paramText outputType="VALUE" param="#2">"\"a\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"0"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"compare"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"b\""</paramText>
+        <paramText outputType="VALUE" param="#2">"\"a\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"1"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"compare"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"a\""</paramText>
+        <paramText outputType="VALUE" param="#2">"null"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"-1"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"compare"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"null"</paramText>
+        <paramText outputType="VALUE" param="#2">"\"a\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"1"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"compare"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"null"</paramText>
+        <paramText outputType="VALUE" param="#2">"null"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"0"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+  </traceTest>
+  <traceTest name="testCompareFields">
+    <runDate>2024-08-16T02:14:13.3148907+02:00</runDate>
+    <runDuration>0.0051292</runDuration>
+    <exception></exception>
+    <traceClass>org.magicwerk.strings.helper.ObjectTools</traceClass>
+    <traceMethod>compareFields</traceMethod>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"compareFields"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"[ \"a1\", \"a2\", \"b1\", \"b2\" ]"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"-1"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"compareFields"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"[ \"a2\", \"a1\", \"b1\", \"b2\" ]"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"1"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"compareFields"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"[ \"a1\", \"a1\", \"b1\", \"b2\" ]"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"-1"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"compareFields"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"[ \"a1\", \"a1\", \"b1\", \"b1\" ]"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"0"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"compareFields"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"[ \"a1\", 1 ]"</paramText>
+      </parameters>
+      <result></result>
+      <error>
+        <paramText outputType="VALUE" param="Error">"java.lang.ClassCastException: class java.lang.Integer cannot be cast to class java.lang.String (java.lang.Integer and java.lang.String are in module java.base of loader 'bootstrap')"</paramText>
+      </error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"compareFields"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"[ \r\n   \"a1\", \r\n   { \r\n   } \r\n]"</paramText>
+      </parameters>
+      <result></result>
+      <error>
+        <paramText outputType="VALUE" param="Error">"java.lang.ClassCastException: class java.lang.Object cannot be cast to class java.lang.Comparable (java.lang.Object and java.lang.Comparable are in module java.base of loader 'bootstrap')"</paramText>
+      </error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"compareFields"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"[ \"a1\", \"a2\", \"X\" ]"</paramText>
+      </parameters>
+      <result></result>
+      <error>
+        <paramText outputType="VALUE" param="Error">"java.lang.IllegalArgumentException: Number of arguments must be even"</paramText>
+      </error>
+    </traceStep>
+  </traceTest>
+  <traceTest name="testEquals">
+    <runDate>2024-10-28T15:01:09.4616721+01:00</runDate>
+    <runDuration>0.0066805</runDuration>
+    <exception></exception>
+    <traceClass>org.magicwerk.strings.helper.ObjectTools</traceClass>
+    <traceMethod>equals</traceMethod>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"equals"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"[ 1, 2 ]"</paramText>
+        <paramText outputType="VALUE" param="#2">"[ 1, 2 ]"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"true"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"equals"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"[ 1, 2 ]"</paramText>
+        <paramText outputType="VALUE" param="#2">"[ 1, 2 ]"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"true"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"equals"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"[ 1, 2 ]"</paramText>
+        <paramText outputType="VALUE" param="#2">"[ 0, 0 ]"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"false"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"equals"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"[ \"a\", \"b\" ]"</paramText>
+        <paramText outputType="VALUE" param="#2">"[ \"a\", \"b\" ]"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"true"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"equals"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"[ \"a\", \"b\" ]"</paramText>
+        <paramText outputType="VALUE" param="#2">"[ \"a\", \"b\" ]"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"true"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"equals"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"[ \"a\", \"b\" ]"</paramText>
+        <paramText outputType="VALUE" param="#2">"[ \"a\", \"X\" ]"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"false"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"equals"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"{ \"a\", \"b\" }"</paramText>
+        <paramText outputType="VALUE" param="#2">"{ \"a\", \"b\" }"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"true"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"equals"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"{ \"a\", \"b\" }"</paramText>
+        <paramText outputType="VALUE" param="#2">"{ \"a\", \"b\" }"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"true"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"equals"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"{ \"a\", \"b\" }"</paramText>
+        <paramText outputType="VALUE" param="#2">"{ \"a\", \"X\" }"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"false"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"equals"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"null"</paramText>
+        <paramText outputType="VALUE" param="#2">"null"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"true"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"equals"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"null"</paramText>
+        <paramText outputType="VALUE" param="#2">"[ \"a\", \"b\" ]"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"false"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"equals"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"abc\""</paramText>
+        <paramText outputType="VALUE" param="#2">"\"abc\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"true"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"equals"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"abc\""</paramText>
+        <paramText outputType="VALUE" param="#2">"\"def\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"false"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"equals"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"abc\""</paramText>
+        <paramText outputType="VALUE" param="#2">"{ \"a\", \"b\" }"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"false"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"equals"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"{ 1: \"a\", 2: \"b\" }"</paramText>
+        <paramText outputType="VALUE" param="#2">"{ 1: \"a\", 2: \"b\" }"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"true"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"equals"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"{ 1: \"a\", 2: \"b\" }"</paramText>
+        <paramText outputType="VALUE" param="#2">"{ 1: \"a\", 2: \"b\" }"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"true"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+  </traceTest>
+  <traceTest name="testEqualsArray">
+    <runDate>2015-03-02T00:28:25.984+01:00</runDate>
+    <runDuration>0.005023255</runDuration>
+    <exception></exception>
+    <traceClass>org.magicwerk.strings.helper.ObjectTools</traceClass>
+    <traceMethod>equalsArray</traceMethod>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"equalsArray"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"[ 1 ]"</paramText>
+        <paramText outputType="VALUE" param="#2">"[ 1 ]"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"true"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"equalsArray"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"[ 1 ]"</paramText>
+        <paramText outputType="VALUE" param="#2">"[ 1 ]"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"true"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"equalsArray"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"[ 1 ]"</paramText>
+        <paramText outputType="VALUE" param="#2">"[ 2 ]"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"false"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"equalsArray"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"[ \"a\" ]"</paramText>
+        <paramText outputType="VALUE" param="#2">"[ \"a\" ]"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"true"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"equalsArray"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"[ \"a\" ]"</paramText>
+        <paramText outputType="VALUE" param="#2">"[ \"a\" ]"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"true"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"equalsArray"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"[ \"a\" ]"</paramText>
+        <paramText outputType="VALUE" param="#2">"[ \"b\" ]"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"false"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"equalsArray"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"[ \r\n   [ 1 ], \r\n   [ 2 ] \r\n]"</paramText>
+        <paramText outputType="VALUE" param="#2">"[ \r\n   [ 1 ], \r\n   [ 2 ] \r\n]"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"true"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"equalsArray"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"[ \r\n   [ 1 ], \r\n   [ 2 ] \r\n]"</paramText>
+        <paramText outputType="VALUE" param="#2">"[ \r\n   [ 1 ], \r\n   [ 2 ] \r\n]"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"true"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"equalsArray"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"[ \r\n   [ 1 ], \r\n   [ 2 ] \r\n]"</paramText>
+        <paramText outputType="VALUE" param="#2">"[ \r\n   [ 1 ] \r\n]"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"false"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"equalsArray"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"[ \r\n   [ 1 ], \r\n   [ 2 ] \r\n]"</paramText>
+        <paramText outputType="VALUE" param="#2">"[ \r\n   [ 1 ], \r\n   [ 2 ] \r\n]"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"true"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+  </traceTest>
+  <traceTest name="testGet">
+    <runDate>2019-05-24T15:30:37.844+02:00</runDate>
+    <runDuration>0.032512015</runDuration>
+    <exception></exception>
+    <traceClass>org.magicwerk.strings.helper.ObjectTools</traceClass>
+    <traceMethod>/get|getOr/</traceMethod>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"getOr"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"abc\""</paramText>
+        <paramText outputType="VALUE" param="#2">"class java.lang.String"</paramText>
+        <paramText outputType="VALUE" param="#3">"{ \r\n}"</paramText>
+        <paramText outputType="VALUE" param="#4">"-1"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"3"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"getOr"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"123"</paramText>
+        <paramText outputType="VALUE" param="#2">"class java.lang.String"</paramText>
+        <paramText outputType="VALUE" param="#3">"{ \r\n}"</paramText>
+        <paramText outputType="VALUE" param="#4">"-1"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"-1"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+  </traceTest>
+  <traceTest name="testIndexOneOf">
+    <runDate>2018-06-18T14:56:14.395+02:00</runDate>
+    <runDuration>6.46796E-4</runDuration>
+    <exception></exception>
+    <traceClass>org.magicwerk.strings.helper.ObjectTools</traceClass>
+    <traceMethod>indexOneOf</traceMethod>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"indexOneOf"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"alpha\""</paramText>
+        <paramText outputType="VALUE" param="#2">"[ \"alpha\", \"beta\", \"gamma\" ]"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"0"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"indexOneOf"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"beta\""</paramText>
+        <paramText outputType="VALUE" param="#2">"[ \"alpha\", \"beta\", \"gamma\" ]"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"1"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"indexOneOf"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"gamma\""</paramText>
+        <paramText outputType="VALUE" param="#2">"[ \"alpha\", \"beta\", \"gamma\" ]"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"2"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"indexOneOf"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"xyz\""</paramText>
+        <paramText outputType="VALUE" param="#2">"[ \"alpha\", \"beta\", \"gamma\" ]"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"-1"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"indexOneOf"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"null"</paramText>
+        <paramText outputType="VALUE" param="#2">"[ \"alpha\", \"beta\", \"gamma\" ]"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"-1"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"indexOneOf"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"null"</paramText>
+        <paramText outputType="VALUE" param="#2">"[ \"alpha\", \"beta\", \"gamma\", null ]"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"3"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"indexOneOf"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"alpha\""</paramText>
+        <paramText outputType="VALUE" param="#2">"[ ]"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"-1"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"indexOneOf"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"null"</paramText>
+        <paramText outputType="VALUE" param="#2">"[ ]"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"-1"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+  </traceTest>
+  <traceTest name="testIsOneOf">
+    <runDate>2018-06-18T14:56:14.694+02:00</runDate>
+    <runDuration>7.97828E-4</runDuration>
+    <exception></exception>
+    <traceClass>org.magicwerk.strings.helper.ObjectTools</traceClass>
+    <traceMethod>isOneOf</traceMethod>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"isOneOf"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"alpha\""</paramText>
+        <paramText outputType="VALUE" param="#2">"[ \"alpha\", \"beta\", \"gamma\" ]"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"true"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"isOneOf"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"beta\""</paramText>
+        <paramText outputType="VALUE" param="#2">"[ \"alpha\", \"beta\", \"gamma\" ]"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"true"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"isOneOf"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"gamma\""</paramText>
+        <paramText outputType="VALUE" param="#2">"[ \"alpha\", \"beta\", \"gamma\" ]"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"true"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"isOneOf"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"xyz\""</paramText>
+        <paramText outputType="VALUE" param="#2">"[ \"alpha\", \"beta\", \"gamma\" ]"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"false"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"isOneOf"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"null"</paramText>
+        <paramText outputType="VALUE" param="#2">"[ \"alpha\", \"beta\", \"gamma\" ]"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"false"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"isOneOf"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"null"</paramText>
+        <paramText outputType="VALUE" param="#2">"[ \"alpha\", \"beta\", \"gamma\", null ]"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"true"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"isOneOf"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"alpha\""</paramText>
+        <paramText outputType="VALUE" param="#2">"[ ]"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"false"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"isOneOf"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"null"</paramText>
+        <paramText outputType="VALUE" param="#2">"[ ]"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"false"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+  </traceTest>
+</testClass>
