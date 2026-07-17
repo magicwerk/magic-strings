@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testClass xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="org.magicwerk.strings.helper.NumberToolsTest" xsi:noNamespaceSchemaLocation="testclass-v10.xsd">
+  <traceTest name="testConvertNumber">
+    <runDate>2024-09-11T00:49:58.1805224+02:00</runDate>
+    <runDuration>0.0715732</runDuration>
+    <exception></exception>
+    <traceClass>org.magicwerk.strings.helper.NumberTools</traceClass>
+    <traceMethod>convertNumber</traceMethod>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"convertNumber"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"0"</paramText>
+        <paramText outputType="VALUE" param="#2">"int"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"0 class java.lang.Integer"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"convertNumber"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"1000"</paramText>
+        <paramText outputType="VALUE" param="#2">"byte"</paramText>
+      </parameters>
+      <result></result>
+      <error>
+        <paramText outputType="VALUE" param="Error">"java.lang.IllegalArgumentException: Cannot convert 1000 into byte"</paramText>
+      </error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"convertNumber"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"null"</paramText>
+        <paramText outputType="VALUE" param="#2">"int"</paramText>
+      </parameters>
+      <result></result>
+      <error>
+        <paramText outputType="VALUE" param="Error">"java.lang.IllegalArgumentException: Cannot convert null into int"</paramText>
+      </error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"convertNumber"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"null"</paramText>
+        <paramText outputType="VALUE" param="#2">"class java.lang.Integer"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"null "</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"convertNumber"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"123"</paramText>
+        <paramText outputType="VALUE" param="#2">"{ \r\n   byte, \r\n   int \r\n}"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"123 class java.lang.Byte"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"convertNumber"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"1234"</paramText>
+        <paramText outputType="VALUE" param="#2">"{ \r\n   byte, \r\n   int \r\n}"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"1234 class java.lang.Integer"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+  </traceTest>
+  <traceTest name="testConvertNumberIf">
+    <runDate>2024-09-11T00:49:58.3173072+02:00</runDate>
+    <runDuration>0.0025165</runDuration>
+    <exception></exception>
+    <traceClass>org.magicwerk.strings.helper.NumberTools</traceClass>
+    <traceMethod>convertNumberIf</traceMethod>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"convertNumberIf"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"0"</paramText>
+        <paramText outputType="VALUE" param="#2">"int"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"0 class java.lang.Integer"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"convertNumberIf"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"1000"</paramText>
+        <paramText outputType="VALUE" param="#2">"byte"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"null "</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"convertNumberIf"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"null"</paramText>
+        <paramText outputType="VALUE" param="#2">"int"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"null "</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"convertNumberIf"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"null"</paramText>
+        <paramText outputType="VALUE" param="#2">"class java.lang.Integer"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"null "</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"convertNumberIf"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"123"</paramText>
+        <paramText outputType="VALUE" param="#2">"{ \r\n   byte, \r\n   int \r\n}"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"123 class java.lang.Byte"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"convertNumberIf"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"1234"</paramText>
+        <paramText outputType="VALUE" param="#2">"{ \r\n   byte, \r\n   int \r\n}"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"1234 class java.lang.Integer"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+  </traceTest>
+  <traceTest name="testCreateAnyNumber">
+    <runDate>2024-09-02T09:32:49.4547802+02:00</runDate>
+    <runDuration>6.027E-4</runDuration>
+    <exception></exception>
+    <traceClass>org.magicwerk.strings.helper.NumberTools</traceClass>
+    <traceMethod>createAnyNumber</traceMethod>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"createAnyNumber"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"int"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"0"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"createAnyNumber"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"class java.lang.Integer"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"0"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+  </traceTest>
+  <traceTest name="testGetCommonNumberClass">
+    <runDate>2024-09-02T09:32:49.5071182+02:00</runDate>
+    <runDuration>0.0059423</runDuration>
+    <exception></exception>
+    <traceClass>org.magicwerk.strings.helper.NumberTools</traceClass>
+    <traceMethod>getCommonNumberClass</traceMethod>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"getCommonNumberClass"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"int"</paramText>
+        <paramText outputType="VALUE" param="#2">"int"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"int"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"getCommonNumberClass"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"int"</paramText>
+        <paramText outputType="VALUE" param="#2">"class java.lang.Integer"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"class java.lang.Integer"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"getCommonNumberClass"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"int"</paramText>
+        <paramText outputType="VALUE" param="#2">"long"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"long"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"getCommonNumberClass"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"int"</paramText>
+        <paramText outputType="VALUE" param="#2">"float"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"double"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"getCommonNumberClass"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"int"</paramText>
+        <paramText outputType="VALUE" param="#2">"double"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"double"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"getCommonNumberClass"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"class java.math.BigInteger"</paramText>
+        <paramText outputType="VALUE" param="#2">"double"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"class java.math.BigDecimal"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+  </traceTest>
+  <traceTest name="testIsNumber">
+    <runDate>2024-09-09T10:41:16.4968605+02:00</runDate>
+    <runDuration>6.69E-4</runDuration>
+    <exception></exception>
+    <traceClass>org.magicwerk.strings.helper.NumberTools</traceClass>
+    <traceMethod>/is.*/</traceMethod>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"isByte"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"123"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"true"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"isByte"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"1234"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"false"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"isShort"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"1234"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"true"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"isShort"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"123456"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"false"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"isInt"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"123456"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"true"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+  </traceTest>
+</testClass>

@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testClass xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="org.magicwerk.strings.objects.ResultsTest" xsi:noNamespaceSchemaLocation="testclass-v10.xsd">
+  <traceTest name="testMultiResult">
+    <runDate>2026-04-08T09:41:39.309318+02:00</runDate>
+    <runDuration>0.0188515</runDuration>
+    <exception></exception>
+    <traceClass>org.magicwerk.brownies.core.objects.MultiResult</traceClass>
+    <traceMethod>/.*/</traceMethod>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"MultiResult"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"{ \r\n   ok \r\n}"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"[ok]"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"getValue"</paramText>
+      </description>
+      <parameters></parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"ok\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"getValueOr"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"null"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"ok\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"getError"</paramText>
+      </description>
+      <parameters></parameters>
+      <result></result>
+      <error>
+        <paramText outputType="VALUE" param="Error">"org.magicwerk.brownies.core.objects.Result$ResultException: No error available"</paramText>
+      </error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"getErrorOrNull"</paramText>
+      </description>
+      <parameters></parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"null"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"getErrors"</paramText>
+      </description>
+      <parameters></parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"{ }"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"MultiResult"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"{ \r\n   Error: java.lang.RuntimeException: err1, \r\n   Error: java.lang.RuntimeException: err2, \r\n   ok \r\n}"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"[Error: java.lang.RuntimeException: err1, Error: java.lang.RuntimeException: err2, ok]"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"getValue"</paramText>
+      </description>
+      <parameters></parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"ok\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"getValueOr"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"null"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"ok\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"getError"</paramText>
+      </description>
+      <parameters></parameters>
+      <result></result>
+      <error>
+        <paramText outputType="VALUE" param="Error">"org.magicwerk.brownies.core.objects.Result$ResultException: No error available"</paramText>
+      </error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"getErrorOrNull"</paramText>
+      </description>
+      <parameters></parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"null"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"getErrors"</paramText>
+      </description>
+      <parameters></parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"{ \r\n   java.lang.RuntimeException: err1, \r\n   java.lang.RuntimeException: err2 \r\n}"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"MultiResult"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"{ \r\n   Error: java.lang.RuntimeException: err1, \r\n   Error: java.lang.RuntimeException: err2 \r\n}"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"[Error: java.lang.RuntimeException: err1, Error: java.lang.RuntimeException: err2]"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"getValue"</paramText>
+      </description>
+      <parameters></parameters>
+      <result></result>
+      <error>
+        <paramText outputType="VALUE" param="Error">"org.magicwerk.brownies.core.objects.Result$ResultException: No value available"</paramText>
+      </error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"getValueOr"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"null"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"null"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"getError"</paramText>
+      </description>
+      <parameters></parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"java.lang.RuntimeException: err1"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"getErrorOrNull"</paramText>
+      </description>
+      <parameters></parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"java.lang.RuntimeException: err1"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"getErrors"</paramText>
+      </description>
+      <parameters></parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"{ \r\n   java.lang.RuntimeException: err1, \r\n   java.lang.RuntimeException: err2 \r\n}"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+  </traceTest>
+  <traceTest name="testResult">
+    <runDate>2026-04-08T09:41:39.4321143+02:00</runDate>
+    <runDuration>0.0090766</runDuration>
+    <exception></exception>
+    <traceClass>org.magicwerk.brownies.core.objects.Result</traceClass>
+    <traceMethod>/.*/</traceMethod>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"value"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"ok\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"ok"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"getValue"</paramText>
+      </description>
+      <parameters></parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"ok\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"getValueOr"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"null"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"ok\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"getError"</paramText>
+      </description>
+      <parameters></parameters>
+      <result></result>
+      <error>
+        <paramText outputType="VALUE" param="Error">"org.magicwerk.brownies.core.objects.Result$ResultException: No error available"</paramText>
+      </error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"getErrorOrNull"</paramText>
+      </description>
+      <parameters></parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"null"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"error"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"java.lang.RuntimeException: err"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"Error: java.lang.RuntimeException: err"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"getValue"</paramText>
+      </description>
+      <parameters></parameters>
+      <result></result>
+      <error>
+        <paramText outputType="VALUE" param="Error">"java.lang.RuntimeException: err"</paramText>
+      </error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"getValueOr"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"null"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"null"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"getError"</paramText>
+      </description>
+      <parameters></parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"java.lang.RuntimeException: err"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"getErrorOrNull"</paramText>
+      </description>
+      <parameters></parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"java.lang.RuntimeException: err"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+  </traceTest>
+  <traceTest name="testResultEquals">
+    <runDate>2026-04-08T09:41:39.4732586+02:00</runDate>
+    <runDuration>0.0239283</runDuration>
+    <exception></exception>
+    <traceClass>org.magicwerk.brownies.core.objects.Result</traceClass>
+    <traceMethod>equals</traceMethod>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"equals"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"ok"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"true"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"equals"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"Error: java.lang.RuntimeException: err"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"false"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+  </traceTest>
+</testClass>

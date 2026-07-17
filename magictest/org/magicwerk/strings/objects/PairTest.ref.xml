@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testClass xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="org.magicwerk.strings.objects.PairTest" xsi:noNamespaceSchemaLocation="testclass-v10.xsd">
+  <traceTest name="testPair">
+    <runDate>2015-12-18T19:25:10.815+01:00</runDate>
+    <runDuration>0.006873129</runDuration>
+    <exception></exception>
+    <traceClass>org.magicwerk.strings.objects.Pair</traceClass>
+    <traceMethod>/.+/</traceMethod>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"Pair"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"1"</paramText>
+        <paramText outputType="VALUE" param="#2">"2"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"[1, 2]"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"getItem0"</paramText>
+      </description>
+      <parameters></parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"1"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"getItem1"</paramText>
+      </description>
+      <parameters></parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"2"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+  </traceTest>
+</testClass>

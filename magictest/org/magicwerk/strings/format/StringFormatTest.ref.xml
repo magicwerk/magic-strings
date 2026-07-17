@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testClass xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="org.magicwerk.strings.format.StringFormatTest" xsi:noNamespaceSchemaLocation="testclass-v10.xsd">
+  <captureTest name="testFormatSql">
+    <runDate>2026-04-18T23:36:33.7534755+02:00</runDate>
+    <runDuration>0.0181987</runDuration>
+    <exception></exception>
+    <captureStep>
+      <text outputType="TEXT">"update tab set x=?, y=? -&gt; update tab set x=1, y=2\r\n"</text>
+    </captureStep>
+  </captureTest>
+  <traceTest name="testLiteral">
+    <runDate>2026-04-18T23:36:33.9344677+02:00</runDate>
+    <runDuration>0.0163764</runDuration>
+    <exception></exception>
+    <traceClass>org.magicwerk.strings.format.StringFormat</traceClass>
+    <traceMethod>/.*Literal.*/</traceMethod>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"isLiteralString"</paramText>
+      </description>
+      <parameters></parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"true"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"getLiteralString"</paramText>
+      </description>
+      <parameters></parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"abc\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"isLiteralString"</paramText>
+      </description>
+      <parameters></parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"false"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"getLiteralString"</paramText>
+      </description>
+      <parameters></parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"null"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"isLiteralString"</paramText>
+      </description>
+      <parameters></parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"true"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"getLiteralString"</paramText>
+      </description>
+      <parameters></parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"a{}c\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+  </traceTest>
+  <captureTest name="testLiteralFormatParser">
+    <runDate>2026-04-18T23:36:34.0458356+02:00</runDate>
+    <runDuration>4.426E-4</runDuration>
+    <exception></exception>
+    <captureStep>
+      <text outputType="TEXT">"abc\r\n"</text>
+    </captureStep>
+  </captureTest>
+</testClass>

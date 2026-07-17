@@ -1,0 +1,449 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testClass xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="org.magicwerk.strings.helper.FuncToolsTest" xsi:noNamespaceSchemaLocation="testclass-v10.xsd">
+  <traceTest name="testCastIf">
+    <runDate>2022-08-15T09:39:25.759+02:00</runDate>
+    <runDuration>0.0123968</runDuration>
+    <exception></exception>
+    <traceClass>org.magicwerk.strings.helper.FuncTools</traceClass>
+    <traceMethod>castIf</traceMethod>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"castIf"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"abc\""</paramText>
+        <paramText outputType="VALUE" param="#2">"class java.lang.String"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"abc\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"castIf"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"abc\""</paramText>
+        <paramText outputType="VALUE" param="#2">"class java.lang.Integer"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"null"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+  </traceTest>
+  <traceTest name="testGetCastIf">
+    <runDate>2022-08-15T09:39:25.855+02:00</runDate>
+    <runDuration>0.0013893</runDuration>
+    <exception></exception>
+    <traceClass>org.magicwerk.strings.helper.FuncTools</traceClass>
+    <traceMethod>getCastIf</traceMethod>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"getCastIf"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"Optional[abc]"</paramText>
+        <paramText outputType="VALUE" param="#2">"class java.lang.String"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"abc\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"getCastIf"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"Optional[123]"</paramText>
+        <paramText outputType="VALUE" param="#2">"class java.lang.String"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"null"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"getCastIf"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"Optional.empty"</paramText>
+        <paramText outputType="VALUE" param="#2">"class java.lang.String"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"null"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+  </traceTest>
+  <traceTest name="testMap">
+    <runDate>2021-07-28T01:04:36.767+02:00</runDate>
+    <runDuration>0.0144393</runDuration>
+    <exception></exception>
+    <traceClass>org.magicwerk.strings.helper.FuncTools</traceClass>
+    <traceMethod>map</traceMethod>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"map"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"false"</paramText>
+        <paramText outputType="VALUE" param="#2">"\"a\""</paramText>
+        <paramText outputType="VALUE" param="#3">"[ true, \"b\" ]"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"b\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"map"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"false"</paramText>
+        <paramText outputType="VALUE" param="#2">"\"a\""</paramText>
+        <paramText outputType="VALUE" param="#3">"[ false, \"b\", \"c\" ]"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"c\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"map"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"false"</paramText>
+        <paramText outputType="VALUE" param="#2">"\"a\""</paramText>
+        <paramText outputType="VALUE" param="#3">"[ false, \"b\" ]"</paramText>
+      </parameters>
+      <result></result>
+      <error>
+        <paramText outputType="VALUE" param="Error">"java.lang.IllegalArgumentException: No default value"</paramText>
+      </error>
+    </traceStep>
+  </traceTest>
+  <traceTest name="testMapIndex">
+    <runDate>2025-06-12T08:35:12.5555158+02:00</runDate>
+    <runDuration>0.0234485</runDuration>
+    <exception></exception>
+    <traceClass>org.magicwerk.strings.helper.FuncTools</traceClass>
+    <traceMethod>mapIndex</traceMethod>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"mapIndex"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"1"</paramText>
+        <paramText outputType="VALUE" param="#2">"[ \"a\", \"b\", \"c\" ]"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"b\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"mapIndex"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"9"</paramText>
+        <paramText outputType="VALUE" param="#2">"[ \"a\", \"b\", \"c\" ]"</paramText>
+      </parameters>
+      <result></result>
+      <error>
+        <paramText outputType="VALUE" param="Error">"java.lang.ArrayIndexOutOfBoundsException: Index 9 out of bounds for length 3"</paramText>
+      </error>
+    </traceStep>
+  </traceTest>
+  <captureTest name="testMapWithMode">
+    <runDate>2024-02-16T22:05:00.824+01:00</runDate>
+    <runDuration>0.0073823</runDuration>
+    <exception></exception>
+    <captureStep>
+      <text outputType="TEXT">"input: a mode: NULL mapping: a a1 [] -&gt; a1\r\ninput: null mode: NULL mapping: null x [] -&gt; x\r\ninput: b mode: NULL mapping: a a1 [] -&gt; null\r\ninput: a mode: NULL mapping: a a1 [default] -&gt; Error: Number of arguments must be even for mode NULL\r\ninput: b mode: NULL mapping: a a1 [b, 1] -&gt; Error: Cannot cast java.lang.Integer to java.lang.String\r\n\r\ninput: a mode: ERROR mapping: a a1 [] -&gt; a1\r\ninput: null mode: ERROR mapping: null x [] -&gt; x\r\ninput: b mode: ERROR mapping: a a1 [] -&gt; Error: No match found for value: b\r\ninput: a mode: ERROR mapping: a a1 [default] -&gt; Error: Number of arguments must be even for mode ERROR\r\ninput: b mode: ERROR mapping: a a1 [b, 1] -&gt; Error: Cannot cast java.lang.Integer to java.lang.String\r\n\r\ninput: a mode: INPUT mapping: a a1 [] -&gt; a1\r\ninput: null mode: INPUT mapping: null x [] -&gt; x\r\ninput: b mode: INPUT mapping: a a1 [] -&gt; b\r\ninput: a mode: INPUT mapping: a a1 [default] -&gt; Error: Number of arguments must be even for mode INPUT\r\ninput: b mode: INPUT mapping: a a1 [b, 1] -&gt; Error: Cannot cast java.lang.Integer to java.lang.String\r\n\r\ninput: a mode: DEFAULT mapping: a a1 [default] -&gt; a1\r\ninput: null mode: DEFAULT mapping: null x [default] -&gt; x\r\ninput: b mode: DEFAULT mapping: a a1 [default] -&gt; default\r\ninput: a mode: DEFAULT mapping: a a1 [default] -&gt; a1\r\ninput: b mode: DEFAULT mapping: a a1 [b, 1, default] -&gt; Error: Cannot cast java.lang.Integer to java.lang.String\r\ninput: c mode: DEFAULT mapping: a a1 [b, b2, 2] -&gt; Error: Cannot cast java.lang.Integer to java.lang.String\r\n"</text>
+    </captureStep>
+  </captureTest>
+  <traceTest name="testMax">
+    <runDate>2015-12-16T08:16:16.042+01:00</runDate>
+    <runDuration>0.001021815</runDuration>
+    <exception></exception>
+    <traceClass>org.magicwerk.strings.helper.FuncTools</traceClass>
+    <traceMethod>max</traceMethod>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"max"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"[ \"abc\", \"def\" ]"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"def\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"max"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"[ \"abc\", \"ghi\", \"def\" ]"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"ghi\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"max"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"[ null, \"nvl\" ]"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"nvl\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"max"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"[ \"abc\", null ]"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"abc\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"max"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"[ null, null ]"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"null"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+  </traceTest>
+  <traceTest name="testMin">
+    <runDate>2015-12-16T08:16:16.265+01:00</runDate>
+    <runDuration>7.13094E-4</runDuration>
+    <exception></exception>
+    <traceClass>org.magicwerk.strings.helper.FuncTools</traceClass>
+    <traceMethod>min</traceMethod>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"min"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"[ \"abc\", \"def\" ]"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"abc\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"min"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"[ \"abc\", \"ghi\", \"def\" ]"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"abc\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"min"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"[ null, \"nvl\" ]"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"nvl\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"min"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"[ \"abc\", null ]"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"abc\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"min"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"[ null, null ]"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"null"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+  </traceTest>
+  <traceTest name="testNvl">
+    <runDate>2015-12-16T08:16:16.473+01:00</runDate>
+    <runDuration>0.001677023</runDuration>
+    <exception></exception>
+    <traceClass>org.magicwerk.strings.helper.FuncTools</traceClass>
+    <traceMethod>nvl</traceMethod>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"nvl"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"abc\""</paramText>
+        <paramText outputType="VALUE" param="#2">"\"nvl\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"abc\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"nvl"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"null"</paramText>
+        <paramText outputType="VALUE" param="#2">"\"nvl\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"nvl\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"nvl"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"abc\""</paramText>
+        <paramText outputType="VALUE" param="#2">"null"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"abc\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"nvl"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"null"</paramText>
+        <paramText outputType="VALUE" param="#2">"null"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"null"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"nvl"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"[ \"abc\", \"def\", \"nvl\" ]"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"abc\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"nvl"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"[ null, \"def\", \"nvl\" ]"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"def\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"nvl"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"[ \"abc\", \"def\", null ]"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"abc\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"nvl"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"[ null, \"def\", null ]"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"def\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"nvl"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"[ ]"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"null"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"nvl"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"[ null ]"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"null"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"nvl"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"[ \"abc\" ]"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"abc\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+  </traceTest>
+</testClass>

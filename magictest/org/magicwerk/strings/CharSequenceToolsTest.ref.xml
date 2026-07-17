@@ -1,0 +1,1395 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testClass xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="org.magicwerk.strings.CharSequenceToolsTest" xsi:noNamespaceSchemaLocation="testclass-v10.xsd">
+  <traceTest name="testCharSequenceView">
+    <runDate>2025-03-05T10:41:20.1075393+01:00</runDate>
+    <runDuration>0.1640195</runDuration>
+    <exception></exception>
+    <traceClass>org.magicwerk.brownies.core.strings.CharSequenceTools$CharSequenceView</traceClass>
+    <traceMethod>/.*/</traceMethod>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"CharSequenceTools$CharSequenceView"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"abcd\""</paramText>
+        <paramText outputType="VALUE" param="#2">"0"</paramText>
+        <paramText outputType="VALUE" param="#3">"-1"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"abcd"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"CharSequenceTools$CharSequenceView"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"abcd\""</paramText>
+        <paramText outputType="VALUE" param="#2">"1"</paramText>
+        <paramText outputType="VALUE" param="#3">"3"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"bc"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"CharSequenceTools$CharSequenceView"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"abcd\""</paramText>
+        <paramText outputType="VALUE" param="#2">"1"</paramText>
+        <paramText outputType="VALUE" param="#3">"4"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"bcd"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"CharSequenceTools$CharSequenceView"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"null"</paramText>
+        <paramText outputType="VALUE" param="#2">"0"</paramText>
+        <paramText outputType="VALUE" param="#3">"0"</paramText>
+      </parameters>
+      <result></result>
+      <error>
+        <paramText outputType="VALUE" param="Error">"java.lang.NullPointerException: Object may not be null"</paramText>
+      </error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"CharSequenceTools$CharSequenceView"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"abcd\""</paramText>
+        <paramText outputType="VALUE" param="#2">"-1"</paramText>
+        <paramText outputType="VALUE" param="#3">"1"</paramText>
+      </parameters>
+      <result></result>
+      <error>
+        <paramText outputType="VALUE" param="Error">"java.lang.IllegalArgumentException: start= -1, end= 1, str.length()= 4"</paramText>
+      </error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"CharSequenceTools$CharSequenceView"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"abcd\""</paramText>
+        <paramText outputType="VALUE" param="#2">"9"</paramText>
+        <paramText outputType="VALUE" param="#3">"1"</paramText>
+      </parameters>
+      <result></result>
+      <error>
+        <paramText outputType="VALUE" param="Error">"java.lang.IllegalArgumentException: start= 9, end= 1, str.length()= 4"</paramText>
+      </error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"CharSequenceTools$CharSequenceView"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"abcd\""</paramText>
+        <paramText outputType="VALUE" param="#2">"0"</paramText>
+        <paramText outputType="VALUE" param="#3">"-2"</paramText>
+      </parameters>
+      <result></result>
+      <error>
+        <paramText outputType="VALUE" param="Error">"java.lang.IllegalArgumentException: start= 0, end= -2, str.length()= 4"</paramText>
+      </error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"CharSequenceTools$CharSequenceView"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"abcd\""</paramText>
+        <paramText outputType="VALUE" param="#2">"0"</paramText>
+        <paramText outputType="VALUE" param="#3">"9"</paramText>
+      </parameters>
+      <result></result>
+      <error>
+        <paramText outputType="VALUE" param="Error">"java.lang.IllegalArgumentException: start= 0, end= 9, str.length()= 4"</paramText>
+      </error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"CharSequenceTools$CharSequenceView"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"abcd\""</paramText>
+        <paramText outputType="VALUE" param="#2">"2"</paramText>
+        <paramText outputType="VALUE" param="#3">"1"</paramText>
+      </parameters>
+      <result></result>
+      <error>
+        <paramText outputType="VALUE" param="Error">"java.lang.IllegalArgumentException: start= 2, end= 1, str.length()= 4"</paramText>
+      </error>
+    </traceStep>
+  </traceTest>
+  <captureTest name="testChecked">
+    <runDate>2026-03-02T12:09:27.5580669+01:00</runDate>
+    <runDuration>0.0269134</runDuration>
+    <exception></exception>
+    <captureStep>
+      <text outputType="TEXT">"=== Replace\r\naXbXcXd\r\naXbXcXd\r\na-b-c-d\r\naXb-c-d\r\naXbXc-d\r\naXbXcXd\r\naXbXcXd\r\nnull\r\nnull\r\nnull\r\naXbXcXd\r\nnull\r\n=== No change\r\na-b-c-d\r\na-b-c-d\r\na-b-c-d\r\na-b-c-d\r\na-b-c-d\r\na-b-c-d\r\nnull\r\nnull\r\nnull\r\nnull\r\n=== Remove\r\nabcd\r\nabcd\r\n=== Empty\r\n"</text>
+    </captureStep>
+  </captureTest>
+  <traceTest name="testContains">
+    <runDate>2021-06-09T01:51:41.006+02:00</runDate>
+    <runDuration>0.0168027</runDuration>
+    <exception></exception>
+    <traceClass>org.magicwerk.strings.CharSequenceTools</traceClass>
+    <traceMethod>contains</traceMethod>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"contains"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"abcd\""</paramText>
+        <paramText outputType="VALUE" param="#2">"\"ab\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"true"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"contains"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"abcd\""</paramText>
+        <paramText outputType="VALUE" param="#2">"\"bc\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"true"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"contains"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"abcd\""</paramText>
+        <paramText outputType="VALUE" param="#2">"\"cd\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"true"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"contains"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"abcd\""</paramText>
+        <paramText outputType="VALUE" param="#2">"\"abcde\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"false"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+  </traceTest>
+  <traceTest name="testDoReplaceInlineCharWithCodePoint">
+    <runDate>2026-05-11T15:53:25.2045851+02:00</runDate>
+    <runDuration>0.039393</runDuration>
+    <exception></exception>
+    <traceClass>org.magicwerk.strings.CharSequenceTools</traceClass>
+    <traceMethod>doReplaceInlineCharWithCodePoint</traceMethod>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"doReplaceInlineCharWithCodePoint"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"abXcd"</paramText>
+        <paramText outputType="VALUE" param="#2">"0"</paramText>
+        <paramText outputType="VALUE" param="#3">"'X'"</paramText>
+        <paramText outputType="VALUE" param="#4">"65536"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"ab\ud800\udc00cd"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"doReplaceInlineCharWithCodePoint"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"X"</paramText>
+        <paramText outputType="VALUE" param="#2">"0"</paramText>
+        <paramText outputType="VALUE" param="#3">"'X'"</paramText>
+        <paramText outputType="VALUE" param="#4">"65536"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\ud800\udc00"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"doReplaceInlineCharWithCodePoint"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"XX"</paramText>
+        <paramText outputType="VALUE" param="#2">"0"</paramText>
+        <paramText outputType="VALUE" param="#3">"'X'"</paramText>
+        <paramText outputType="VALUE" param="#4">"65536"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\ud800\udc00\ud800\udc00"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"doReplaceInlineCharWithCodePoint"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"aXbXc"</paramText>
+        <paramText outputType="VALUE" param="#2">"0"</paramText>
+        <paramText outputType="VALUE" param="#3">"'X'"</paramText>
+        <paramText outputType="VALUE" param="#4">"65536"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"a\ud800\udc00b\ud800\udc00c"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"doReplaceInlineCharWithCodePoint"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"XbX"</paramText>
+        <paramText outputType="VALUE" param="#2">"0"</paramText>
+        <paramText outputType="VALUE" param="#3">"'X'"</paramText>
+        <paramText outputType="VALUE" param="#4">"65536"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\ud800\udc00b\ud800\udc00"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+  </traceTest>
+  <traceTest name="testDoReplaceInlineCodePointWithChar">
+    <runDate>2026-04-30T23:16:32.5722122+02:00</runDate>
+    <runDuration>0.0021529</runDuration>
+    <exception></exception>
+    <traceClass>org.magicwerk.strings.CharSequenceTools</traceClass>
+    <traceMethod>doReplaceInlineCodePointWithChar</traceMethod>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"doReplaceInlineCodePointWithChar"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"ab\ud800\udc00cd"</paramText>
+        <paramText outputType="VALUE" param="#2">"0"</paramText>
+        <paramText outputType="VALUE" param="#3">"65536"</paramText>
+        <paramText outputType="VALUE" param="#4">"'X'"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"abXc"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"doReplaceInlineCodePointWithChar"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\ud800\udc00"</paramText>
+        <paramText outputType="VALUE" param="#2">"0"</paramText>
+        <paramText outputType="VALUE" param="#3">"65536"</paramText>
+        <paramText outputType="VALUE" param="#4">"'X'"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"X"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"doReplaceInlineCodePointWithChar"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\ud800\udc00\ud800\udc00"</paramText>
+        <paramText outputType="VALUE" param="#2">"0"</paramText>
+        <paramText outputType="VALUE" param="#3">"65536"</paramText>
+        <paramText outputType="VALUE" param="#4">"'X'"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"XX"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"doReplaceInlineCodePointWithChar"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"a\ud800\udc00b\ud800\udc00c"</paramText>
+        <paramText outputType="VALUE" param="#2">"0"</paramText>
+        <paramText outputType="VALUE" param="#3">"65536"</paramText>
+        <paramText outputType="VALUE" param="#4">"'X'"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"aXbX"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"doReplaceInlineCodePointWithChar"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\ud800\udc00b\ud800\udc00"</paramText>
+        <paramText outputType="VALUE" param="#2">"0"</paramText>
+        <paramText outputType="VALUE" param="#3">"65536"</paramText>
+        <paramText outputType="VALUE" param="#4">"'X'"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"XbX"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+  </traceTest>
+  <traceTest name="testDoReplaceInlineString">
+    <runDate>2026-07-08T23:59:36.1115589+02:00</runDate>
+    <runDuration>0.0403866</runDuration>
+    <exception></exception>
+    <traceClass>org.magicwerk.brownies.core.strings.CharSequenceInlineTools</traceClass>
+    <traceMethod>doReplaceInlineString</traceMethod>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"doReplaceInlineString"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"abXcd"</paramText>
+        <paramText outputType="VALUE" param="#2">"0"</paramText>
+        <paramText outputType="VALUE" param="#3">"\"X\""</paramText>
+        <paramText outputType="VALUE" param="#4">"\"01\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"ab01cd"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"doReplaceInlineString"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"X"</paramText>
+        <paramText outputType="VALUE" param="#2">"0"</paramText>
+        <paramText outputType="VALUE" param="#3">"\"X\""</paramText>
+        <paramText outputType="VALUE" param="#4">"\"01\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"01"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"doReplaceInlineString"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"XX"</paramText>
+        <paramText outputType="VALUE" param="#2">"0"</paramText>
+        <paramText outputType="VALUE" param="#3">"\"X\""</paramText>
+        <paramText outputType="VALUE" param="#4">"\"01\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"0101"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"doReplaceInlineString"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"aXbXc"</paramText>
+        <paramText outputType="VALUE" param="#2">"0"</paramText>
+        <paramText outputType="VALUE" param="#3">"\"X\""</paramText>
+        <paramText outputType="VALUE" param="#4">"\"01\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"a01b01c"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"doReplaceInlineString"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"XbX"</paramText>
+        <paramText outputType="VALUE" param="#2">"0"</paramText>
+        <paramText outputType="VALUE" param="#3">"\"X\""</paramText>
+        <paramText outputType="VALUE" param="#4">"\"01\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"01b01"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"doReplaceInlineString"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"XbX"</paramText>
+        <paramText outputType="VALUE" param="#2">"0"</paramText>
+        <paramText outputType="VALUE" param="#3">"\"\""</paramText>
+        <paramText outputType="VALUE" param="#4">"\"01\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"01X01b01X01"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"doReplaceInlineString"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"a-b-c"</paramText>
+        <paramText outputType="VALUE" param="#2">"0"</paramText>
+        <paramText outputType="VALUE" param="#3">"\"-\""</paramText>
+        <paramText outputType="VALUE" param="#4">"\"--\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"a--b--c"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+  </traceTest>
+  <traceTest name="testEndsWith">
+    <runDate>2020-09-04T10:07:16.852+02:00</runDate>
+    <runDuration>0.0214972</runDuration>
+    <exception></exception>
+    <traceClass>org.magicwerk.strings.CharSequenceTools</traceClass>
+    <traceMethod>endsWith</traceMethod>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"endsWith"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"abcd\""</paramText>
+        <paramText outputType="VALUE" param="#2">"\"bcd\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"true"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"endsWith"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"abcd\""</paramText>
+        <paramText outputType="VALUE" param="#2">"\"abcd\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"true"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"endsWith"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"abcd\""</paramText>
+        <paramText outputType="VALUE" param="#2">"\"abdec\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"false"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"endsWith"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"abcd\""</paramText>
+        <paramText outputType="VALUE" param="#2">"\"bCd\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"false"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+  </traceTest>
+  <traceTest name="testIndexOf">
+    <runDate>2026-03-02T12:09:27.6746727+01:00</runDate>
+    <runDuration>0.0071222</runDuration>
+    <exception></exception>
+    <traceClass>org.magicwerk.strings.CharSequenceTools</traceClass>
+    <traceMethod>indexOf</traceMethod>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"indexOf"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"abcd\""</paramText>
+        <paramText outputType="VALUE" param="#2">"\"ab\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"0"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"indexOf"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"abcd\""</paramText>
+        <paramText outputType="VALUE" param="#2">"\"bc\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"1"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"indexOf"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"abcd\""</paramText>
+        <paramText outputType="VALUE" param="#2">"\"cd\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"2"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"indexOf"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"abcabc\""</paramText>
+        <paramText outputType="VALUE" param="#2">"\"ab\""</paramText>
+        <paramText outputType="VALUE" param="#3">"1"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"3"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"indexOf"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"abcd\""</paramText>
+        <paramText outputType="VALUE" param="#2">"\"abcde\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"-1"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"indexOf"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"abc\""</paramText>
+        <paramText outputType="VALUE" param="#2">"\"abc\""</paramText>
+        <paramText outputType="VALUE" param="#3">"1"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"-1"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"indexOf"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"abcabc\""</paramText>
+        <paramText outputType="VALUE" param="#2">"\"xy\""</paramText>
+        <paramText outputType="VALUE" param="#3">"9"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"-1"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"indexOf"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"abcabc\""</paramText>
+        <paramText outputType="VALUE" param="#2">"\"\""</paramText>
+        <paramText outputType="VALUE" param="#3">"9"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"-1"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+  </traceTest>
+  <traceTest name="testIndexOfReverse">
+    <runDate>2025-05-17T01:13:18.3440742+02:00</runDate>
+    <runDuration>0.0014236</runDuration>
+    <exception></exception>
+    <traceClass>org.magicwerk.strings.CharSequenceTools</traceClass>
+    <traceMethod>/.*/</traceMethod>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"lastIndexOf"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"aXaX\""</paramText>
+        <paramText outputType="VALUE" param="#2">"\"aX\""</paramText>
+        <paramText outputType="VALUE" param="#3">"9"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"2"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"reverseIndexOf"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"aXaX\""</paramText>
+        <paramText outputType="VALUE" param="#2">"\"aX\""</paramText>
+        <paramText outputType="VALUE" param="#3">"9"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"4"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"lastIndexOf"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"aXaX\""</paramText>
+        <paramText outputType="VALUE" param="#2">"\"aX\""</paramText>
+        <paramText outputType="VALUE" param="#3">"3"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"2"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"reverseIndexOf"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"aXaX\""</paramText>
+        <paramText outputType="VALUE" param="#2">"\"aX\""</paramText>
+        <paramText outputType="VALUE" param="#3">"3"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"2"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"lastIndexOf"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"aXaX\""</paramText>
+        <paramText outputType="VALUE" param="#2">"'X'"</paramText>
+        <paramText outputType="VALUE" param="#3">"3"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"3"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"reverseIndexOf"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"aXaX\""</paramText>
+        <paramText outputType="VALUE" param="#2">"'X'"</paramText>
+        <paramText outputType="VALUE" param="#3">"3"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"2"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+  </traceTest>
+  <traceTest name="testLastIndexOf">
+    <runDate>2025-05-15T17:54:05.5188928+02:00</runDate>
+    <runDuration>0.0015145</runDuration>
+    <exception></exception>
+    <traceClass>org.magicwerk.strings.CharSequenceTools</traceClass>
+    <traceMethod>lastIndexOf</traceMethod>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"lastIndexOf"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"abcd\""</paramText>
+        <paramText outputType="VALUE" param="#2">"\"cd\""</paramText>
+        <paramText outputType="VALUE" param="#3">"5"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"2"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"lastIndexOf"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"abcd\""</paramText>
+        <paramText outputType="VALUE" param="#2">"\"cd\""</paramText>
+        <paramText outputType="VALUE" param="#3">"4"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"2"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"lastIndexOf"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"abcd\""</paramText>
+        <paramText outputType="VALUE" param="#2">"\"cd\""</paramText>
+        <paramText outputType="VALUE" param="#3">"3"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"2"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"lastIndexOf"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"abcd\""</paramText>
+        <paramText outputType="VALUE" param="#2">"\"cd\""</paramText>
+        <paramText outputType="VALUE" param="#3">"2"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"2"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"lastIndexOf"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"abcd\""</paramText>
+        <paramText outputType="VALUE" param="#2">"\"cd\""</paramText>
+        <paramText outputType="VALUE" param="#3">"1"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"-1"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"lastIndexOf"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"abcd\""</paramText>
+        <paramText outputType="VALUE" param="#2">"\"cd\""</paramText>
+        <paramText outputType="VALUE" param="#3">"0"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"-1"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"lastIndexOf"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"abcd\""</paramText>
+        <paramText outputType="VALUE" param="#2">"\"cd\""</paramText>
+        <paramText outputType="VALUE" param="#3">"-1"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"-1"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+  </traceTest>
+  <traceTest name="testMatchNot">
+    <runDate>2026-06-12T11:47:21.0333351+02:00</runDate>
+    <runDuration>0.0474758</runDuration>
+    <exception></exception>
+    <traceClass>org.magicwerk.strings.CharSequenceTools</traceClass>
+    <traceMethod>matchNot</traceMethod>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"matchNot"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"{ \"0abc\", \"abc1\", \"0abc1\" }"</paramText>
+        <paramText outputType="VALUE" param="#2">"\"abc\""</paramText>
+        <paramText outputType="VALUE" param="#3">"0"</paramText>
+        <paramText outputType="VALUE" param="#4">"3"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"false"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"matchNot"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"{ \"0abc\", \"abc1\", \"0abc1\" }"</paramText>
+        <paramText outputType="VALUE" param="#2">"\"0abc\""</paramText>
+        <paramText outputType="VALUE" param="#3">"1"</paramText>
+        <paramText outputType="VALUE" param="#4">"3"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"true"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"matchNot"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"{ \"0abc\", \"abc1\", \"0abc1\" }"</paramText>
+        <paramText outputType="VALUE" param="#2">"\"abc1\""</paramText>
+        <paramText outputType="VALUE" param="#3">"0"</paramText>
+        <paramText outputType="VALUE" param="#4">"3"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"true"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"matchNot"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"{ \"0abc\", \"abc1\", \"0abc1\" }"</paramText>
+        <paramText outputType="VALUE" param="#2">"\"0abc1\""</paramText>
+        <paramText outputType="VALUE" param="#3">"1"</paramText>
+        <paramText outputType="VALUE" param="#4">"3"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"true"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+  </traceTest>
+  <traceTest name="testReplace">
+    <runDate>2025-06-02T20:29:30.3175685+02:00</runDate>
+    <runDuration>0.0169415</runDuration>
+    <exception></exception>
+    <traceClass>org.magicwerk.strings.CharSequenceTools</traceClass>
+    <traceMethod>/.*/</traceMethod>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"replaceChar"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"a0b0c0d\""</paramText>
+        <paramText outputType="VALUE" param="#2">"0"</paramText>
+        <paramText outputType="VALUE" param="#3">"'1'"</paramText>
+        <paramText outputType="VALUE" param="#4">"'0'"</paramText>
+        <paramText outputType="VALUE" param="#5">"{ \r\n}"</paramText>
+        <paramText outputType="VALUE" param="#6">"-1"</paramText>
+        <paramText outputType="VALUE" param="#7">"false"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"a0b0c0d\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"replaceChar"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"a0b0c0d\""</paramText>
+        <paramText outputType="VALUE" param="#2">"0"</paramText>
+        <paramText outputType="VALUE" param="#3">"'1'"</paramText>
+        <paramText outputType="VALUE" param="#4">"'0'"</paramText>
+        <paramText outputType="VALUE" param="#5">"{ \r\n}"</paramText>
+        <paramText outputType="VALUE" param="#6">"-1"</paramText>
+        <paramText outputType="VALUE" param="#7">"true"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"null"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"replaceChar"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"a0b0c0d\""</paramText>
+        <paramText outputType="VALUE" param="#2">"0"</paramText>
+        <paramText outputType="VALUE" param="#3">"'0'"</paramText>
+        <paramText outputType="VALUE" param="#4">"'1'"</paramText>
+        <paramText outputType="VALUE" param="#5">"{ \r\n}"</paramText>
+        <paramText outputType="VALUE" param="#6">"-1"</paramText>
+        <paramText outputType="VALUE" param="#7">"false"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"a1b1c1d\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"replaceChar"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"a0b0c0d\""</paramText>
+        <paramText outputType="VALUE" param="#2">"0"</paramText>
+        <paramText outputType="VALUE" param="#3">"'0'"</paramText>
+        <paramText outputType="VALUE" param="#4">"'1'"</paramText>
+        <paramText outputType="VALUE" param="#5">"{ \r\n}"</paramText>
+        <paramText outputType="VALUE" param="#6">"3"</paramText>
+        <paramText outputType="VALUE" param="#7">"true"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"a1b1c1d\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"replaceChar"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"a0b0c0d\""</paramText>
+        <paramText outputType="VALUE" param="#2">"0"</paramText>
+        <paramText outputType="VALUE" param="#3">"'0'"</paramText>
+        <paramText outputType="VALUE" param="#4">"'1'"</paramText>
+        <paramText outputType="VALUE" param="#5">"{ \r\n}"</paramText>
+        <paramText outputType="VALUE" param="#6">"0"</paramText>
+        <paramText outputType="VALUE" param="#7">"false"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"a0b0c0d\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"replaceChar"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"a0b0c0d\""</paramText>
+        <paramText outputType="VALUE" param="#2">"0"</paramText>
+        <paramText outputType="VALUE" param="#3">"'0'"</paramText>
+        <paramText outputType="VALUE" param="#4">"'1'"</paramText>
+        <paramText outputType="VALUE" param="#5">"{ \r\n}"</paramText>
+        <paramText outputType="VALUE" param="#6">"1"</paramText>
+        <paramText outputType="VALUE" param="#7">"false"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"a1b0c0d\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"replaceChar"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"a0b0c0d\""</paramText>
+        <paramText outputType="VALUE" param="#2">"0"</paramText>
+        <paramText outputType="VALUE" param="#3">"'0'"</paramText>
+        <paramText outputType="VALUE" param="#4">"'1'"</paramText>
+        <paramText outputType="VALUE" param="#5">"{ \r\n}"</paramText>
+        <paramText outputType="VALUE" param="#6">"2"</paramText>
+        <paramText outputType="VALUE" param="#7">"false"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"a1b1c0d\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"replaceChar"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"a0b0c0d\""</paramText>
+        <paramText outputType="VALUE" param="#2">"0"</paramText>
+        <paramText outputType="VALUE" param="#3">"'0'"</paramText>
+        <paramText outputType="VALUE" param="#4">"'1'"</paramText>
+        <paramText outputType="VALUE" param="#5">"{ \r\n}"</paramText>
+        <paramText outputType="VALUE" param="#6">"2"</paramText>
+        <paramText outputType="VALUE" param="#7">"true"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"null"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+  </traceTest>
+  <captureTest name="testReplaceCodePoint">
+    <runDate>2026-01-25T22:44:38.8207338+01:00</runDate>
+    <runDuration>0.0397538</runDuration>
+    <exception></exception>
+    <captureStep>
+      <text outputType="TEXT">"codePointLen: 3 (charLen : 6): \\ud800\\udc00 (U+10000, '\ud800\udc00'), \\ud800\\udc01 (U+10001, '\ud800\udc01'), \\ud800\\udc00 (U+10000, '\ud800\udc00')\r\ncodePointLen: 3 (charLen : 6): \\ud800\\udc00 (U+10000, '\ud800\udc00'), \\ud800\\udc00 (U+10000, '\ud800\udc00'), \\ud800\\udc00 (U+10000, '\ud800\udc00')\r\ncodePointLen: 3 (charLen : 6): \\ud800\\udc00 (U+10000, '\ud800\udc00'), \\ud800\\udc00 (U+10000, '\ud800\udc00'), \\ud800\\udc00 (U+10000, '\ud800\udc00')\r\n"</text>
+    </captureStep>
+  </captureTest>
+  <traceTest name="testReplaceInline">
+    <runDate>2026-01-22T00:20:25.8751237+01:00</runDate>
+    <runDuration>0.0324367</runDuration>
+    <exception></exception>
+    <traceClass>org.magicwerk.strings.CharSequenceTools</traceClass>
+    <traceMethod>doReplaceInlineChar</traceMethod>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"doReplaceInlineChar"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"a-b-c"</paramText>
+        <paramText outputType="VALUE" param="#2">"0"</paramText>
+        <paramText outputType="VALUE" param="#3">"'-'"</paramText>
+        <paramText outputType="VALUE" param="#4">"true"</paramText>
+        <paramText outputType="VALUE" param="#5">"'='"</paramText>
+        <paramText outputType="VALUE" param="#6">"{ \r\n}"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="#1">"a=b=c"</paramText>
+        <paramText outputType="VALUE" param="Result">"a=b=c"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"doReplaceInlineChar"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"a-b-c"</paramText>
+        <paramText outputType="VALUE" param="#2">"0"</paramText>
+        <paramText outputType="VALUE" param="#3">"'-'"</paramText>
+        <paramText outputType="VALUE" param="#4">"false"</paramText>
+        <paramText outputType="VALUE" param="#5">"' '"</paramText>
+        <paramText outputType="VALUE" param="#6">"{ \r\n}"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="#1">"abc"</paramText>
+        <paramText outputType="VALUE" param="Result">"abc"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+  </traceTest>
+  <traceTest name="testRetainCharPredicate">
+    <runDate>2026-03-03T00:40:22.5294185+01:00</runDate>
+    <runDuration>0.0489299</runDuration>
+    <exception></exception>
+    <traceClass>org.magicwerk.strings.CharSequenceTools</traceClass>
+    <traceMethod>retainCharPredicate</traceMethod>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"retainCharPredicate"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"abc\""</paramText>
+        <paramText outputType="VALUE" param="#2">"0"</paramText>
+        <paramText outputType="VALUE" param="#3">"{ \r\n}"</paramText>
+        <paramText outputType="VALUE" param="#4">"{ \r\n}"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"retainCharPredicate"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"abc012def\""</paramText>
+        <paramText outputType="VALUE" param="#2">"0"</paramText>
+        <paramText outputType="VALUE" param="#3">"{ \r\n}"</paramText>
+        <paramText outputType="VALUE" param="#4">"{ \r\n}"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"012\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"retainCharPredicate"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"abc012def345ghi\""</paramText>
+        <paramText outputType="VALUE" param="#2">"0"</paramText>
+        <paramText outputType="VALUE" param="#3">"{ \r\n}"</paramText>
+        <paramText outputType="VALUE" param="#4">"{ \r\n}"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"012345\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"retainCharPredicate"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"abc012\""</paramText>
+        <paramText outputType="VALUE" param="#2">"0"</paramText>
+        <paramText outputType="VALUE" param="#3">"{ \r\n}"</paramText>
+        <paramText outputType="VALUE" param="#4">"{ \r\n}"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"012\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"retainCharPredicate"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"012def\""</paramText>
+        <paramText outputType="VALUE" param="#2">"0"</paramText>
+        <paramText outputType="VALUE" param="#3">"{ \r\n}"</paramText>
+        <paramText outputType="VALUE" param="#4">"{ \r\n}"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"012\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"retainCharPredicate"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"012\""</paramText>
+        <paramText outputType="VALUE" param="#2">"0"</paramText>
+        <paramText outputType="VALUE" param="#3">"{ \r\n}"</paramText>
+        <paramText outputType="VALUE" param="#4">"{ \r\n}"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"012\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"retainCharPredicate"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"\""</paramText>
+        <paramText outputType="VALUE" param="#2">"0"</paramText>
+        <paramText outputType="VALUE" param="#3">"{ \r\n}"</paramText>
+        <paramText outputType="VALUE" param="#4">"{ \r\n}"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+  </traceTest>
+  <traceTest name="testStartsAt">
+    <runDate>2025-07-25T23:21:13.036371+02:00</runDate>
+    <runDuration>4.386E-4</runDuration>
+    <exception></exception>
+    <traceClass>org.magicwerk.strings.CharSequenceTools</traceClass>
+    <traceMethod>startsAt</traceMethod>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"startsAt"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"abcd\""</paramText>
+        <paramText outputType="VALUE" param="#2">"\"ab\""</paramText>
+        <paramText outputType="VALUE" param="#3">"0"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"true"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"startsAt"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"abcd\""</paramText>
+        <paramText outputType="VALUE" param="#2">"\"bc\""</paramText>
+        <paramText outputType="VALUE" param="#3">"1"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"true"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"startsAt"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"abcd\""</paramText>
+        <paramText outputType="VALUE" param="#2">"\"cd\""</paramText>
+        <paramText outputType="VALUE" param="#3">"2"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"true"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"startsAt"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"abcd\""</paramText>
+        <paramText outputType="VALUE" param="#2">"\"abcde\""</paramText>
+        <paramText outputType="VALUE" param="#3">"0"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"false"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"startsAt"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"abcd\""</paramText>
+        <paramText outputType="VALUE" param="#2">"\"ab\""</paramText>
+        <paramText outputType="VALUE" param="#3">"1"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"false"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+  </traceTest>
+  <traceTest name="testStartsWith">
+    <runDate>2021-06-09T08:49:19.262+02:00</runDate>
+    <runDuration>9.233E-4</runDuration>
+    <exception></exception>
+    <traceClass>org.magicwerk.strings.CharSequenceTools</traceClass>
+    <traceMethod>startsWith</traceMethod>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"startsWith"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"abcd\""</paramText>
+        <paramText outputType="VALUE" param="#2">"\"abc\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"true"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"startsWith"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"abcd\""</paramText>
+        <paramText outputType="VALUE" param="#2">"\"abcd\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"true"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"startsWith"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"abcd\""</paramText>
+        <paramText outputType="VALUE" param="#2">"\"abdec\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"false"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"startsWith"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"abcd\""</paramText>
+        <paramText outputType="VALUE" param="#2">"\"aBc\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"false"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+  </traceTest>
+  <captureTest name="testVerifyCoverage">
+    <runDate>2025-07-29T01:07:03.918197+02:00</runDate>
+    <runDuration>4.167488899</runDuration>
+    <exception></exception>
+  </captureTest>
+  <captureTest name="testVerifyIStringMatcher">
+    <runDate>2025-07-30T09:23:54.8658109+02:00</runDate>
+    <runDuration>0.0490849</runDuration>
+    <exception></exception>
+    <captureStep>
+      <text outputType="TEXT">""</text>
+    </captureStep>
+  </captureTest>
+  <captureTest name="testVerifyIndexOf">
+    <runDate>2025-07-29T12:03:54.2775822+02:00</runDate>
+    <runDuration>0.1194437</runDuration>
+    <exception></exception>
+    <captureStep>
+      <text outputType="TEXT">""</text>
+    </captureStep>
+  </captureTest>
+  <captureTest name="testVerifyStringsMatcher">
+    <runDate>2025-08-13T23:29:00.9236529+02:00</runDate>
+    <runDuration>8.257E-4</runDuration>
+    <exception></exception>
+    <captureStep>
+      <text outputType="TEXT">""</text>
+    </captureStep>
+  </captureTest>
+</testClass>

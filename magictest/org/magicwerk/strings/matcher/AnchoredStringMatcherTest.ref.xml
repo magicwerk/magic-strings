@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testClass xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="org.magicwerk.strings.matcher.AnchoredStringMatcherTest" xsi:noNamespaceSchemaLocation="testclass-v10.xsd">
+  <captureTest name="testAnchoredRepeatedStringMatcher">
+    <runDate>2025-07-17T16:40:56.5499738+02:00</runDate>
+    <runDuration>0.0388727</runDuration>
+    <exception></exception>
+    <captureStep>
+      <text outputType="TEXT">"\nInput 0101abc:\r\nMatch [0/2]: 01 (Match string: 01)\r\nMatch [0/4]: 0101 (RepeatedStringStartsAtMatcherImpl (Match string: 01))\r\nMatch [0/2]: 01 (AnchoredStringStartsAtMatcher (pos: 0, Match string: 01))\r\nMatch [0/4]: 0101 (AnchoredStringFindStartsAtMatcher (pos: 0, RepeatedStringStartsAtMatcherImpl (Match string: 01)))\r\nnull (AnchoredStringEndsAtMatcher (pos: -1, Match string: 01))\r\nnull (AnchoredStringFindEndsAtMatcher (pos: -1, RepeatedStringStartsAtMatcherImpl (Match string: 01)))\r\n\nInput abc0101:\r\nMatch [3/5]: 01 (Match string: 01)\r\nMatch [3/7]: 0101 (RepeatedStringStartsAtMatcherImpl (Match string: 01))\r\nnull (AnchoredStringStartsAtMatcher (pos: 0, Match string: 01))\r\nnull (AnchoredStringFindStartsAtMatcher (pos: 0, RepeatedStringStartsAtMatcherImpl (Match string: 01)))\r\nMatch [5/7]: 01 (AnchoredStringEndsAtMatcher (pos: -1, Match string: 01))\r\nMatch [3/7]: 0101 (AnchoredStringFindEndsAtMatcher (pos: -1, RepeatedStringStartsAtMatcherImpl (Match string: 01)))\r\n"</text>
+    </captureStep>
+  </captureTest>
+  <traceTest name="testAnchoredStringMatcher">
+    <runDate>2025-07-17T16:27:04.7705722+02:00</runDate>
+    <runDuration>0.0161698</runDuration>
+    <exception></exception>
+    <traceClass>org.magicwerk.strings.matcher.AnchoredStringMatcher</traceClass>
+    <traceMethod>/.*/</traceMethod>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"of"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"Match string: abc"</paramText>
+        <paramText outputType="VALUE" param="#2">"0"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"AnchoredStringStartsAtMatcher (pos: 0, Match string: abc)"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"find"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"abc)\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"Match [0/3]: abc"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"indexOf"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"abc)\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"0"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"indexOfEnd"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"abc)\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"3"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"of"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"Match string: abc"</paramText>
+        <paramText outputType="VALUE" param="#2">"0"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"AnchoredStringStartsAtMatcher (pos: 0, Match string: abc)"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"find"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"(abc)\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"null"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"indexOf"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"(abc)\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"-1"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"indexOfEnd"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"(abc)\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"-1"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"of"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"Match string: abc"</paramText>
+        <paramText outputType="VALUE" param="#2">"1"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"AnchoredStringStartsAtMatcher (pos: 1, Match string: abc)"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"find"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"abc)\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"null"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"indexOf"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"abc)\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"-1"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"indexOfEnd"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"abc)\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"-1"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"of"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"Match string: abc"</paramText>
+        <paramText outputType="VALUE" param="#2">"1"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"AnchoredStringStartsAtMatcher (pos: 1, Match string: abc)"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"find"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"(abc)\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"Match [1/4]: abc"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"indexOf"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"(abc)\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"1"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"indexOfEnd"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"(abc)\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"4"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"of"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"Match string: abc"</paramText>
+        <paramText outputType="VALUE" param="#2">"-1"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"AnchoredStringEndsAtMatcher (pos: -1, Match string: abc)"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"find"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"(abc\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"Match [1/4]: abc"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"indexOf"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"(abc\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"1"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"indexOfEnd"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"(abc\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"4"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"of"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"Match string: abc"</paramText>
+        <paramText outputType="VALUE" param="#2">"-1"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"AnchoredStringEndsAtMatcher (pos: -1, Match string: abc)"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"find"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"(abc)\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"null"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"indexOf"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"(abc)\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"-1"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"indexOfEnd"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"(abc)\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"-1"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"of"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"Match string: abc"</paramText>
+        <paramText outputType="VALUE" param="#2">"-2"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"AnchoredStringEndsAtMatcher (pos: -2, Match string: abc)"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"find"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"(abc\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"null"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"indexOf"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"(abc\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"-1"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"indexOfEnd"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"(abc\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"-1"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"of"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"Match string: abc"</paramText>
+        <paramText outputType="VALUE" param="#2">"-2"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"AnchoredStringEndsAtMatcher (pos: -2, Match string: abc)"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"find"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"(abc)\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"Match [1/4]: abc"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"indexOf"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"(abc)\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"1"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"indexOfEnd"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"(abc)\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"4"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+  </traceTest>
+</testClass>

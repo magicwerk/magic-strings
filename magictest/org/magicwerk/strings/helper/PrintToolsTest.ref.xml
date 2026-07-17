@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testClass xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="org.magicwerk.strings.helper.PrintToolsTest" xsi:noNamespaceSchemaLocation="testclass-v10.xsd">
+  <captureTest name="testToString">
+    <runDate>2022-11-26T12:02:34.656+01:00</runDate>
+    <runDuration>0.0085362</runDuration>
+    <exception></exception>
+    <captureStep>
+      <text outputType="TEXT">"[(this Collection)]\r\n&lt;ERROR: toString() of type class java.util.ArrayList throws StackOverflowError&gt;\r\n[]\r\n[obj]\r\n[obj0, obj1]\r\n[[obj]]\r\n[]\r\n[obj]\r\n[obj0, obj1]\r\n[[obj]]\r\n"</text>
+    </captureStep>
+  </captureTest>
+  <captureTest name="testToStringJdk">
+    <runDate>2022-11-26T11:54:51.209+01:00</runDate>
+    <runDuration>0.0057923</runDuration>
+    <exception></exception>
+    <captureStep>
+      <text outputType="TEXT">"[(this Collection)]\r\nException on toString() of type class java.util.ArrayList: StackOverflowError\r\n[]\r\n[obj]\r\n[obj0, obj1]\r\n[[obj]]\r\n[Ljava.lang.Object;@\r\n[Ljava.lang.Object;@\r\n[Ljava.lang.Object;@\r\n[[Ljava.lang.Object;@\r\n"</text>
+    </captureStep>
+  </captureTest>
+</testClass>

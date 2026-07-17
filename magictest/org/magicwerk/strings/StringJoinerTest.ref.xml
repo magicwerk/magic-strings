@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testClass xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="org.magicwerk.strings.StringJoinerTest" xsi:noNamespaceSchemaLocation="testclass-v10.xsd">
+  <captureTest name="testBenchmarks">
+    <runDate>2026-04-18T00:08:31.5805981+02:00</runDate>
+    <runDuration>0.009656</runDuration>
+    <exception></exception>
+    <captureStep>
+      <text outputType="TEXT">"Test class org.magicwerk.brownies.core.strings.StringJoinerTest$StringJoinerFailOnNullBenchmarkTest\r\nResult: 0123456789-0123456789-0123456789\r\nResult: java.lang.reflect.InvocationTargetException: java.lang.NullPointerException\r\nTest class org.magicwerk.brownies.core.strings.StringJoinerTest$StringJoinerIgnoreNullBenchmarkTest\r\nResult: 0123456789-0123456789-0123456789\r\nResult: 0123456789-0123456789\r\nTest class org.magicwerk.brownies.core.strings.StringJoinerTest$StringJoinerNullEmptyBenchmarkTest\r\nResult: 0123456789-0123456789-0123456789\r\nResult: 0123456789--0123456789\r\nTest class org.magicwerk.brownies.core.strings.StringJoinerTest$StringJoinerReplaceNullBenchmarkTest\r\nResult: 0123456789-0123456789-0123456789\r\nResult: 0123456789-abc-0123456789\r\n"</text>
+    </captureStep>
+  </captureTest>
+  <traceTest name="testJoin">
+    <runDate>2025-08-22T01:22:10.0637312+02:00</runDate>
+    <runDuration>0.0214511</runDuration>
+    <exception></exception>
+    <traceClass>org.magicwerk.strings.StringJoiner</traceClass>
+    <traceMethod>/join.*/</traceMethod>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"joinStrings"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="This">"{ \r\n   String nullStr = null; \r\n   int nullLen = 0; \r\n   java.util.function.Function formatObj = { \r\n   }; \r\n   String separatorStr = \"-\"; \r\n   int separatorLen = 1; \r\n   boolean beginEndMarkerAlways = false; \r\n   String beginEndMarker = \"()\"; \r\n   String beginMarker = \"(\"; \r\n   String endMarker = \")\"; \r\n   int bufSize = 1024; \r\n}"</paramText>
+        <paramText outputType="VALUE" param="#1">"{ }"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="PRE" param="Result">""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"joinStrings"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="This">"{ \r\n   String nullStr = null; \r\n   int nullLen = 0; \r\n   java.util.function.Function formatObj = { \r\n   }; \r\n   String separatorStr = \"-\"; \r\n   int separatorLen = 1; \r\n   boolean beginEndMarkerAlways = false; \r\n   String beginEndMarker = \"()\"; \r\n   String beginMarker = \"(\"; \r\n   String endMarker = \")\"; \r\n   int bufSize = 1024; \r\n}"</paramText>
+        <paramText outputType="VALUE" param="#1">"{ \"a\" }"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="PRE" param="Result">"(a)"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"joinObjects"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="This">"{ \r\n   String nullStr = null; \r\n   int nullLen = 0; \r\n   java.util.function.Function formatObj = { \r\n   }; \r\n   String separatorStr = \"-\"; \r\n   int separatorLen = 1; \r\n   boolean beginEndMarkerAlways = false; \r\n   String beginEndMarker = \"()\"; \r\n   String beginMarker = \"(\"; \r\n   String endMarker = \")\"; \r\n   int bufSize = 1024; \r\n}"</paramText>
+        <paramText outputType="VALUE" param="#1">"{ \"a\", \"b\" }"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="PRE" param="Result">"(a-b)"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+  </traceTest>
+</testClass>

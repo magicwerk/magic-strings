@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testClass xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="org.magicwerk.strings.StringStreamerToolsTest" xsi:noNamespaceSchemaLocation="testclass-v10.xsd">
+  <captureTest name="testReadUntilChar">
+    <runDate>2025-03-05T16:37:17.8066381+01:00</runDate>
+    <runDuration>0.0366844</runDuration>
+    <exception></exception>
+    <captureStep>
+      <text outputType="TEXT">"ReadUntilChar('x')\r\ninput: abc, match: false/null, consumed: 0, buffer: , remainder: abc\r\ninput: axc, match: true/x, consumed: 2, buffer: ax, remainder: c\r\n\nsetConsumeMatch(false)\r\ninput: abc, match: false/null, consumed: 0, buffer: , remainder: abc\r\ninput: axc, match: true/x, consumed: 1, buffer: a, remainder: xc\r\n\nReadUntilChar(c -&gt; c == 'x' || c == 'y')\r\ninput: abc, match: false/null, consumed: 0, buffer: , remainder: abc\r\ninput: axc, match: true/x, consumed: 2, buffer: ax, remainder: c\r\n\nsetConsumeMatch(false)\r\ninput: abc, match: false/null, consumed: 0, buffer: , remainder: abc\r\ninput: axc, match: true/x, consumed: 1, buffer: a, remainder: xc\r\n"</text>
+    </captureStep>
+  </captureTest>
+  <captureTest name="testReadUntilLine">
+    <runDate>2024-09-20T01:49:05.9434204+02:00</runDate>
+    <runDuration>0.0066775</runDuration>
+    <exception></exception>
+    <captureStep>
+      <text outputType="TEXT">"c\n\r\nc\n\r\nc\nd\n\r\n"</text>
+    </captureStep>
+  </captureTest>
+  <captureTest name="testReadUntilOneOf">
+    <runDate>2025-03-06T13:41:24.1304397+01:00</runDate>
+    <runDuration>0.013302</runDuration>
+    <exception></exception>
+    <captureStep>
+      <text outputType="TEXT">"input: abcdefg, matches: [] -&gt; matched: null, buffer: , remainder: abcdefg\r\ninput: abcdefg, matches: [a] -&gt; matched: a, buffer: a, remainder: bcdefg\r\ninput: abcdefg, matches: [x] -&gt; matched: null, buffer: , remainder: abcdefg\r\ninput: abcdefg, matches: [bcd] -&gt; matched: bcd, buffer: abcd, remainder: efg\r\ninput: abcdefg, matches: [bcd, bcde] -&gt; matched: bcd, buffer: abcd, remainder: efg\r\npreferLong = true\r\ninput: abcdefg, matches: [bcd, bcdx] -&gt; matched: bcd, buffer: abcd, remainder: efg\r\ninput: abcdefg, matches: [bcd, bcde] -&gt; matched: bcde, buffer: abcde, remainder: fg\r\ninput: abcdefg, matches: [def, defgh] -&gt; matched: def, buffer: abcdef, remainder: g\r\npreventAdvance = true\r\ninput: abcdefg, matches: [abc] -&gt; matched: abc, buffer: abc, remainder: defg\r\ninput: abcdefg, matches: [bcd] -&gt; matched: null, buffer: , remainder: abcdefg\r\n\nconsumeMatch = false\r\ninput: abcdefg, matches: [] -&gt; matched: null, buffer: , remainder: abcdefg\r\ninput: abcdefg, matches: [a] -&gt; matched: a, buffer: , remainder: abcdefg\r\ninput: abcdefg, matches: [x] -&gt; matched: null, buffer: , remainder: abcdefg\r\ninput: abcdefg, matches: [bcd] -&gt; matched: bcd, buffer: a, remainder: bcdefg\r\ninput: abcdefg, matches: [bcd, bcde] -&gt; matched: bcd, buffer: a, remainder: bcdefg\r\npreferLong = true\r\ninput: abcdefg, matches: [bcd, bcdx] -&gt; matched: bcd, buffer: a, remainder: bcdefg\r\ninput: abcdefg, matches: [bcd, bcde] -&gt; matched: bcde, buffer: a, remainder: bcdefg\r\ninput: abcdefg, matches: [def, defgh] -&gt; matched: def, buffer: abc, remainder: defg\r\npreventAdvance = true\r\ninput: abcdefg, matches: [abc] -&gt; matched: abc, buffer: , remainder: abcdefg\r\ninput: abcdefg, matches: [bcd] -&gt; matched: null, buffer: , remainder: abcdefg\r\n\nrepeated\r\nBuffer: ab-cd-, Stream: ef\r\n"</text>
+    </captureStep>
+  </captureTest>
+  <captureTest name="testReadUntilString">
+    <runDate>2021-05-19T21:28:58.796+02:00</runDate>
+    <runDuration>0.0501992</runDuration>
+    <exception></exception>
+    <captureStep>
+      <text outputType="TEXT">"ReadUntilString('012')\r\ninput: abc, match: false/null, buffer: , remainder: abc\r\ninput: a012b, match: true/012, buffer: a012, remainder: b\r\n\nsetConsumeMatch(false)\r\ninput: abc, match: false/null, buffer: , remainder: abc\r\ninput: a012b, match: true/012, buffer: a, remainder: 012b\r\n"</text>
+    </captureStep>
+  </captureTest>
+  <captureTest name="testReadWhileChar">
+    <runDate>2025-03-05T01:43:48.3036349+01:00</runDate>
+    <runDuration>0.0013556</runDuration>
+    <exception></exception>
+    <captureStep>
+      <text outputType="TEXT">"testReadWhileChar('a')\r\ninput: abc, buffer: a, remainder: bc\r\ninput: xyz, buffer: , remainder: xyz\r\n\ntestReadWhileChar(c -&gt; c == 'a' || c == 'b')\r\ninput: abc, buffer: ab, remainder: c\r\ninput: xyz, buffer: , remainder: xyz\r\n"</text>
+    </captureStep>
+  </captureTest>
+  <captureTest name="testReadWhileCharDoubleEscaped">
+    <runDate>2021-05-19T22:06:12.682+02:00</runDate>
+    <runDuration>0.0010805</runDuration>
+    <exception></exception>
+    <captureStep>
+      <text outputType="TEXT">"input: abc, consumed: abc, escaped: false\r\ninput: ab-x, consumed: ab, escaped: false\r\ninput: ab--cd-x, consumed: ab--cd, escaped: true\r\n"</text>
+    </captureStep>
+  </captureTest>
+  <captureTest name="testReadWhileCharEscapedEscaped">
+    <runDate>2021-05-19T22:05:41.626+02:00</runDate>
+    <runDuration>7.921E-4</runDuration>
+    <exception></exception>
+    <captureStep>
+      <text outputType="TEXT">"input: abc, consumed: abc, escaped: false\r\ninput: ab]x, consumed: ab, escaped: false\r\ninput: ab-]cd]x, consumed: ab-]cd, escaped: true\r\n"</text>
+    </captureStep>
+  </captureTest>
+  <captureTest name="testReadWhileOneOf">
+    <runDate>2025-03-05T10:14:11.8739731+01:00</runDate>
+    <runDuration>0.0078433</runDuration>
+    <exception></exception>
+    <captureStep>
+      <text outputType="TEXT">"buffer: ab-cd-, available: ef\r\n"</text>
+    </captureStep>
+  </captureTest>
+</testClass>

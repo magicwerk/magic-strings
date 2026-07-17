@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testClass xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="org.magicwerk.strings.StringAlignerTest" xsi:noNamespaceSchemaLocation="testclass-v10.xsd">
+  <captureTest name="testAlign">
+    <runDate>2026-01-20T00:56:44.491369+01:00</runDate>
+    <runDuration>0.022665</runDuration>
+    <exception></exception>
+    <captureStep>
+      <text outputType="PRE">"(012  )\r\n(01234)\r\n(01234)\r\n(012xx)\r\n(01245)\r\n(0123.)\r\n"</text>
+    </captureStep>
+  </captureTest>
+  <captureTest name="testBenchmarks">
+    <runDate>2026-04-08T21:21:26.6226572+02:00</runDate>
+    <runDuration>0.0016868</runDuration>
+    <exception></exception>
+    <captureStep>
+      <text outputType="TEXT">"Test class org.magicwerk.brownies.core.strings.StringAlignerTest$StringAlignerTruncateBenchmarkTest\r\nResult: abcde\r\nResult: abcd.\r\nTest class org.magicwerk.brownies.core.strings.StringAlignerTest$StringAlignerPadderBenchmarkTest\r\nResult: abcde\r\nResult: abcxx\r\n"</text>
+    </captureStep>
+  </captureTest>
+  <captureTest name="testGeneric">
+    <runDate>2026-01-21T17:03:59.6277+01:00</runDate>
+    <runDuration>0.013832</runDuration>
+    <exception></exception>
+    <captureStep>
+      <text outputType="TEXT">"1234 -&gt; 1234-"</text>
+    </captureStep>
+    <captureStep>
+      <text outputType="TEXT">"1234 -&gt; 1234-"</text>
+    </captureStep>
+    <captureStep>
+      <text outputType="TEXT">"1234 -&gt; 1234-"</text>
+    </captureStep>
+    <captureStep>
+      <text outputType="TEXT">"12345 -&gt; 12345"</text>
+    </captureStep>
+    <captureStep>
+      <text outputType="TEXT">"12345 -&gt; null"</text>
+    </captureStep>
+    <captureStep>
+      <text outputType="TEXT">"12345 -&gt; Exception"</text>
+    </captureStep>
+    <captureStep>
+      <text outputType="TEXT">"123456 -&gt; 12345"</text>
+    </captureStep>
+    <captureStep>
+      <text outputType="TEXT">"123456 -&gt; 12345"</text>
+    </captureStep>
+    <captureStep>
+      <text outputType="TEXT">"123456 -&gt; 12345"</text>
+    </captureStep>
+  </captureTest>
+</testClass>

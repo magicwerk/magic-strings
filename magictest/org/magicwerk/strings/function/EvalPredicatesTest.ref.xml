@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testClass xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="org.magicwerk.strings.function.EvalPredicatesTest" xsi:noNamespaceSchemaLocation="testclass-v10.xsd">
+  <captureTest name="testEvalAndPredicate">
+    <runDate>2026-04-16T11:19:27.3472155+02:00</runDate>
+    <runDuration>0.0399071</runDuration>
+    <exception></exception>
+    <captureStep>
+      <text outputType="TEXT">"Stats of AndPredicate: [EvalPredicate of contains(a), EvalPredicate of contains(b)]: total: 3, true: 1, false: 2, error: 0\r\n[ab: TRUE (decidingPredicate: -1), a: FALSE (decidingPredicate: 1), b: FALSE (decidingPredicate: 0)]\r\nab: TRUE ([EvalPredicate of contains(a): TRUE, EvalPredicate of contains(b): TRUE])\r\na: FALSE ([EvalPredicate of contains(a): TRUE, EvalPredicate of contains(b): FALSE])\r\nb: FALSE ([EvalPredicate of contains(a): FALSE, EvalPredicate of contains(b): null])\r\n0: Stats of contains(a): total: 3, true: 2, false: 1, error: 0\r\n0: null\r\n1: Stats of contains(b): total: 2, true: 1, false: 1, error: 0\r\n1: null\r\n"</text>
+    </captureStep>
+  </captureTest>
+  <captureTest name="testEvalOrPredicate">
+    <runDate>2026-04-16T11:19:27.4647383+02:00</runDate>
+    <runDuration>0.0062324</runDuration>
+    <exception></exception>
+    <captureStep>
+      <text outputType="TEXT">"Stats of OrPredicate: [EvalPredicate of contains(a), EvalPredicate of contains(b)]: total: 3, true: 2, false: 1, error: 0\r\n[a: TRUE (decidingPredicate: 0), b: TRUE (decidingPredicate: 1), c: FALSE (decidingPredicate: -1)]\r\na: TRUE ([EvalPredicate of contains(a): TRUE, EvalPredicate of contains(b): null])\r\nb: TRUE ([EvalPredicate of contains(a): FALSE, EvalPredicate of contains(b): TRUE])\r\nc: FALSE ([EvalPredicate of contains(a): FALSE, EvalPredicate of contains(b): FALSE])\r\n0: Stats of contains(a): total: 3, true: 1, false: 2, error: 0\r\n0: null\r\n1: Stats of contains(b): total: 2, true: 1, false: 1, error: 0\r\n1: null\r\n"</text>
+    </captureStep>
+  </captureTest>
+  <captureTest name="testEvalPredicate">
+    <runDate>2023-03-22T01:36:11.481+01:00</runDate>
+    <runDuration>8.091E-4</runDuration>
+    <exception></exception>
+    <captureStep>
+      <text outputType="TEXT">"Stats of contains(a): total: 3, true: 1, false: 2, error: 0\r\n[a: TRUE, b: FALSE, c: FALSE]\r\n"</text>
+    </captureStep>
+  </captureTest>
+</testClass>

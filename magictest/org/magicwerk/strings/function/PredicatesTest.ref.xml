@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testClass xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="org.magicwerk.strings.function.PredicatesTest" xsi:noNamespaceSchemaLocation="testclass-v10.xsd">
+  <captureTest name="testPredicates">
+    <runDate>2023-03-13T08:53:26.878+01:00</runDate>
+    <runDuration>0.0113851</runDuration>
+    <exception></exception>
+    <captureStep>
+      <text outputType="TEXT">""</text>
+    </captureStep>
+  </captureTest>
+</testClass>

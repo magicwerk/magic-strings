@@ -1,0 +1,2082 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testClass xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="org.magicwerk.strings.text.TextToolsTest" xsi:noNamespaceSchemaLocation="testclass-v10.xsd">
+  <traceTest name="testChangeLines">
+    <runDate>2024-04-03T16:04:04.759+02:00</runDate>
+    <runDuration>0.0435432</runDuration>
+    <exception></exception>
+    <traceClass>org.magicwerk.strings.text.TextTools</traceClass>
+    <traceMethod>changeLines</traceMethod>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"changeLines"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"1a\\n2b\\n3ac\\n4d\""</paramText>
+        <paramText outputType="VALUE" param="#2">"{ \r\n}"</paramText>
+        <paramText outputType="VALUE" param="#3">"true"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"[1a\\n][3ac\\n][4d]\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"changeLines"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"1a\\n2b\\n3ac\\n4d\""</paramText>
+        <paramText outputType="VALUE" param="#2">"{ \r\n}"</paramText>
+        <paramText outputType="VALUE" param="#3">"false"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"[1a]\\n[3ac]\\n[4d]\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+  </traceTest>
+  <traceTest name="testGetCommonEol">
+    <runDate>2022-04-07T09:57:50.764+02:00</runDate>
+    <runDuration>0.0110934</runDuration>
+    <exception></exception>
+    <traceClass>org.magicwerk.strings.text.TextTools</traceClass>
+    <traceMethod>getCommonEol</traceMethod>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"getCommonEol"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"null"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"null"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"getCommonEol"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"getCommonEol"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"a\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"getCommonEol"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"\\n\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"\\n\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"getCommonEol"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"\\r\\n\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"\\r\\n\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"getCommonEol"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"a\\n\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"\\n\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"getCommonEol"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"a\\nb\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"\\n\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"getCommonEol"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"a\\r\\nb\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"\\r\\n\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"getCommonEol"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"a\\nb\\n\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"\\n\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"getCommonEol"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"\\n\\n\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"\\n\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"getCommonEol"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"\\r\\n\\r\\r\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"null"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+  </traceTest>
+  <traceTest name="testGetDistinctEol">
+    <runDate>2022-04-07T09:57:50.952+02:00</runDate>
+    <runDuration>0.0018012</runDuration>
+    <exception></exception>
+    <traceClass>org.magicwerk.strings.text.TextTools</traceClass>
+    <traceMethod>getDistinctEol</traceMethod>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"getDistinctEol"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"null"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"null"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"getDistinctEol"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"{ \"\" }"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"getDistinctEol"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"a\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"{ \"\" }"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"getDistinctEol"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"\\n\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"{ \"\\n\" }"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"getDistinctEol"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"\\r\\n\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"{ \"\\r\\n\" }"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"getDistinctEol"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"a\\n\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"{ \"\\n\" }"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"getDistinctEol"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"a\\nb\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"{ \"\", \"\\n\" }"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"getDistinctEol"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"a\\r\\nb\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"{ \"\", \"\\r\\n\" }"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"getDistinctEol"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"a\\nb\\n\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"{ \"\\n\" }"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"getDistinctEol"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"\\n\\n\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"{ \"\\n\" }"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"getDistinctEol"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"\\r\\n\\r\\r\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"{ \"\\r\\n\", \"\\r\" }"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+  </traceTest>
+  <traceTest name="testGetFirstEol">
+    <runDate>2022-04-07T09:57:51.012+02:00</runDate>
+    <runDuration>7.381E-4</runDuration>
+    <exception></exception>
+    <traceClass>org.magicwerk.strings.text.TextTools</traceClass>
+    <traceMethod>getFirstEol</traceMethod>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"getFirstEol"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"null"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"null"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"getFirstEol"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"getFirstEol"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"a\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"getFirstEol"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"\\n\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"\\n\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"getFirstEol"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"\\r\\n\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"\\r\\n\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"getFirstEol"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"a\\n\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"\\n\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"getFirstEol"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"a\\nb\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"\\n\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"getFirstEol"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"a\\r\\nb\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"\\r\\n\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"getFirstEol"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"a\\nb\\n\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"\\n\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"getFirstEol"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"\\n\\n\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"\\n\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"getFirstEol"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"\\r\\n\\r\\r\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"\\r\\n\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+  </traceTest>
+  <traceTest name="testGetLine">
+    <runDate>2021-10-28T15:57:07.738+02:00</runDate>
+    <runDuration>0.0103828</runDuration>
+    <exception></exception>
+    <traceClass>org.magicwerk.strings.text.TextTools</traceClass>
+    <traceMethod>getLine</traceMethod>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"getLine"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"line1\\n\\r\\nline3\\r\\n\""</paramText>
+        <paramText outputType="VALUE" param="#2">"2"</paramText>
+        <paramText outputType="VALUE" param="#3">"true"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"line3\\r\\n\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"getLine"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"line1\\n\\r\\nline3\\r\\n\""</paramText>
+        <paramText outputType="VALUE" param="#2">"2"</paramText>
+        <paramText outputType="VALUE" param="#3">"false"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"line3\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"getLine"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"line1\\n\\r\\nline3\\r\\n\""</paramText>
+        <paramText outputType="VALUE" param="#2">"-1"</paramText>
+        <paramText outputType="VALUE" param="#3">"false"</paramText>
+      </parameters>
+      <result></result>
+      <error>
+        <paramText outputType="VALUE" param="Error">"java.lang.IllegalArgumentException: Invalid line index: -1"</paramText>
+      </error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"getLine"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"line1\\n\\r\\nline3\\r\\n\""</paramText>
+        <paramText outputType="VALUE" param="#2">"5"</paramText>
+        <paramText outputType="VALUE" param="#3">"false"</paramText>
+      </parameters>
+      <result></result>
+      <error>
+        <paramText outputType="VALUE" param="Error">"java.lang.IllegalArgumentException: Invalid line index: 5"</paramText>
+      </error>
+    </traceStep>
+  </traceTest>
+  <traceTest name="testGetLineStructure">
+    <runDate>2021-10-28T15:57:07.927+02:00</runDate>
+    <runDuration>8.161E-4</runDuration>
+    <exception></exception>
+    <traceClass>org.magicwerk.strings.text.TextTools</traceClass>
+    <traceMethod>getLineStructure</traceMethod>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"getLineStructure"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"abc\\ndef\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"   \\n   \""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+  </traceTest>
+  <traceTest name="testGetMarkerMessage">
+    <runDate>2022-05-05T23:07:46.044+02:00</runDate>
+    <runDuration>0.0898241</runDuration>
+    <exception></exception>
+    <traceClass>org.magicwerk.strings.text.TextTools</traceClass>
+    <traceMethod>getMarkerMessage</traceMethod>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"getMarkerMessage"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"Invalid character\""</paramText>
+        <paramText outputType="VALUE" param="#2">"\"abXcd\""</paramText>
+        <paramText outputType="VALUE" param="#3">"2"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="PRE" param="Result">"Invalid character (pos: 2 -&gt; row: 0 / col: 2):\nabXcd\n  ^"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+  </traceTest>
+  <traceTest name="testGetNumLines">
+    <runDate>2021-10-28T15:57:08.119+02:00</runDate>
+    <runDuration>7.955E-4</runDuration>
+    <exception></exception>
+    <traceClass>org.magicwerk.strings.text.TextTools</traceClass>
+    <traceMethod>getNumLines</traceMethod>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"getNumLines"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"null"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"0"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"getNumLines"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"1"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"getNumLines"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"\\n\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"1"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"getNumLines"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"\\n\\n\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"2"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"getNumLines"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"Alpha\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"1"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"getNumLines"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"Alpha\\n\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"1"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"getNumLines"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"Alpha\\nBeta\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"2"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"getNumLines"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"Alpha\\nBeta\\n\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"2"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"getNumLines"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"Alpha\\r\\nBeta\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"2"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"getNumLines"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"Alpha\\rBeta\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"2"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+  </traceTest>
+  <traceTest name="testGetString">
+    <runDate>2024-08-16T01:33:46.3738057+02:00</runDate>
+    <runDuration>0.007834</runDuration>
+    <exception></exception>
+    <traceClass>org.magicwerk.strings.text.TextTools</traceClass>
+    <traceMethod>getString</traceMethod>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"getString"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"line1\\n\\r\\nline3\\r\\n\""</paramText>
+        <paramText outputType="VALUE" param="#2">"row: 0, col: 1"</paramText>
+        <paramText outputType="VALUE" param="#3">"row: 0, col: 3"</paramText>
+        <paramText outputType="VALUE" param="#4">"NEAREST"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"in\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"getString"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"line1\\n\\r\\nline3\\r\\n\""</paramText>
+        <paramText outputType="VALUE" param="#2">"row: 0, col: 1"</paramText>
+        <paramText outputType="VALUE" param="#3">"row: 0, col: 1"</paramText>
+        <paramText outputType="VALUE" param="#4">"NEAREST"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"getString"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"line1\\n\\r\\nline3\\r\\n\""</paramText>
+        <paramText outputType="VALUE" param="#2">"row: 0, col: 1"</paramText>
+        <paramText outputType="VALUE" param="#3">"row: 0, col: 0"</paramText>
+        <paramText outputType="VALUE" param="#4">"NEAREST"</paramText>
+      </parameters>
+      <result></result>
+      <error>
+        <paramText outputType="VALUE" param="Error">"java.lang.StringIndexOutOfBoundsException: begin 1, end 0, length 15"</paramText>
+      </error>
+    </traceStep>
+  </traceTest>
+  <traceTest name="testGetStringPos">
+    <runDate>2022-05-05T22:34:41.901+02:00</runDate>
+    <runDuration>0.003439</runDuration>
+    <exception></exception>
+    <traceClass>org.magicwerk.strings.text.TextTools</traceClass>
+    <traceMethod>getStringPos</traceMethod>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"getStringPos"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"line1\\n\\r\\nline3\\r\\n\""</paramText>
+        <paramText outputType="VALUE" param="#2">"row: 0, col: 0"</paramText>
+        <paramText outputType="VALUE" param="#3">"NEAREST"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"0"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"getStringPos"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"line1\\n\\r\\nline3\\r\\n\""</paramText>
+        <paramText outputType="VALUE" param="#2">"row: 0, col: 2"</paramText>
+        <paramText outputType="VALUE" param="#3">"NEAREST"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"2"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"getStringPos"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"line1\\n\\r\\nline3\\r\\n\""</paramText>
+        <paramText outputType="VALUE" param="#2">"row: 2, col: 1"</paramText>
+        <paramText outputType="VALUE" param="#3">"NEAREST"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"9"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"getStringPos"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"line1\\n\\r\\nline3\\r\\n\""</paramText>
+        <paramText outputType="VALUE" param="#2">"row: 4, col: 0"</paramText>
+        <paramText outputType="VALUE" param="#3">"NEAREST"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"15"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"getStringPos"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"line1\\n\\r\\nline3\\r\\n\""</paramText>
+        <paramText outputType="VALUE" param="#2">"row: -1, col: -1"</paramText>
+        <paramText outputType="VALUE" param="#3">"NEAREST"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"0"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"getStringPos"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"line1\\n\\r\\nline3\\r\\n\""</paramText>
+        <paramText outputType="VALUE" param="#2">"row: 0, col: 10"</paramText>
+        <paramText outputType="VALUE" param="#3">"NEAREST"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"5"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"getStringPos"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"line1\\n\\r\\nline3\\r\\n\""</paramText>
+        <paramText outputType="VALUE" param="#2">"row: 10, col: 0"</paramText>
+        <paramText outputType="VALUE" param="#3">"NEAREST"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"15"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"getStringPos"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"line1\\n\\r\\nline3\\r\\n\""</paramText>
+        <paramText outputType="VALUE" param="#2">"row: -1, col: -1"</paramText>
+        <paramText outputType="VALUE" param="#3">"DEFAULT"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"null"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"getStringPos"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"line1\\n\\r\\nline3\\r\\n\""</paramText>
+        <paramText outputType="VALUE" param="#2">"row: 0, col: 10"</paramText>
+        <paramText outputType="VALUE" param="#3">"DEFAULT"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"null"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"getStringPos"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"line1\\n\\r\\nline3\\r\\n\""</paramText>
+        <paramText outputType="VALUE" param="#2">"row: 10, col: 0"</paramText>
+        <paramText outputType="VALUE" param="#3">"DEFAULT"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"null"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+  </traceTest>
+  <captureTest name="testGetText">
+    <runDate>2021-10-19T01:41:55.949+02:00</runDate>
+    <runDuration>0.0283382</runDuration>
+    <exception></exception>
+    <captureStep>
+      <text outputType="TEXT">""</text>
+    </captureStep>
+  </captureTest>
+  <traceTest name="testGetTextPos">
+    <runDate>2022-05-05T22:26:24.226+02:00</runDate>
+    <runDuration>0.0078307</runDuration>
+    <exception></exception>
+    <traceClass>org.magicwerk.strings.text.TextTools</traceClass>
+    <traceMethod>getTextPos</traceMethod>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"getTextPos"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"line1\\n\\r\\nline3\\r\\n\""</paramText>
+        <paramText outputType="VALUE" param="#2">"0"</paramText>
+        <paramText outputType="VALUE" param="#3">"NEAREST"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"row: 0, col: 0"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"getTextPos"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"line1\\n\\r\\nline3\\r\\n\""</paramText>
+        <paramText outputType="VALUE" param="#2">"2"</paramText>
+        <paramText outputType="VALUE" param="#3">"NEAREST"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"row: 0, col: 2"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"getTextPos"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"line1\\n\\r\\nline3\\r\\n\""</paramText>
+        <paramText outputType="VALUE" param="#2">"5"</paramText>
+        <paramText outputType="VALUE" param="#3">"NEAREST"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"row: 0, col: 5"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"getTextPos"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"line1\\n\\r\\nline3\\r\\n\""</paramText>
+        <paramText outputType="VALUE" param="#2">"6"</paramText>
+        <paramText outputType="VALUE" param="#3">"NEAREST"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"row: 1, col: 0"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"getTextPos"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"line1\\n\\r\\nline3\\r\\n\""</paramText>
+        <paramText outputType="VALUE" param="#2">"7"</paramText>
+        <paramText outputType="VALUE" param="#3">"NEAREST"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"row: 1, col: 1"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"getTextPos"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"line1\\n\\r\\nline3\\r\\n\""</paramText>
+        <paramText outputType="VALUE" param="#2">"9"</paramText>
+        <paramText outputType="VALUE" param="#3">"NEAREST"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"row: 2, col: 1"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"getTextPos"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"line1\\n\\r\\nline3\\r\\n\""</paramText>
+        <paramText outputType="VALUE" param="#2">"20"</paramText>
+        <paramText outputType="VALUE" param="#3">"NEAREST"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"row: 3, col: 15"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"getTextPos"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"line1\\n\\r\\nline3\\r\\n\""</paramText>
+        <paramText outputType="VALUE" param="#2">"-1"</paramText>
+        <paramText outputType="VALUE" param="#3">"NEAREST"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"row: 0, col: 0"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"getTextPos"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"line1\\n\\r\\nline3\\r\\n\""</paramText>
+        <paramText outputType="VALUE" param="#2">"20"</paramText>
+        <paramText outputType="VALUE" param="#3">"DEFAULT"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"null"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"getTextPos"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"line1\\n\\r\\nline3\\r\\n\""</paramText>
+        <paramText outputType="VALUE" param="#2">"-1"</paramText>
+        <paramText outputType="VALUE" param="#3">"DEFAULT"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"null"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+  </traceTest>
+  <traceTest name="testHasMoreLines">
+    <runDate>2021-10-28T15:57:09.21+02:00</runDate>
+    <runDuration>3.777E-4</runDuration>
+    <exception></exception>
+    <traceClass>org.magicwerk.strings.text.TextTools</traceClass>
+    <traceMethod>hasMoreLines</traceMethod>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"hasMoreLines"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"a\\nb\""</paramText>
+        <paramText outputType="VALUE" param="#2">"1"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"true"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"hasMoreLines"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"a\\nb\""</paramText>
+        <paramText outputType="VALUE" param="#2">"2"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"false"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"hasMoreLines"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"a\\nb\""</paramText>
+        <paramText outputType="VALUE" param="#2">"3"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"false"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+  </traceTest>
+  <traceTest name="testIndentLines">
+    <runDate>2021-10-28T15:57:09.402+02:00</runDate>
+    <runDuration>6.384E-4</runDuration>
+    <exception></exception>
+    <traceClass>org.magicwerk.strings.text.TextTools</traceClass>
+    <traceMethod>indentLines</traceMethod>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"indentLines"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"null"</paramText>
+        <paramText outputType="VALUE" param="#2">"\"-\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"null"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"indentLines"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"Alpha\""</paramText>
+        <paramText outputType="VALUE" param="#2">"\"-\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"-Alpha\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"indentLines"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"Alpha\\nBeta\""</paramText>
+        <paramText outputType="VALUE" param="#2">"\"-\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"-Alpha\\n-Beta\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"indentLines"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"Alpha\\n\\nBeta\""</paramText>
+        <paramText outputType="VALUE" param="#2">"\"-\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"-Alpha\\n-\\n-Beta\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"indentLines"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"Alpha\\nBeta\\n\""</paramText>
+        <paramText outputType="VALUE" param="#2">"\"-\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"-Alpha\\n-Beta\\n\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"indentLines"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"Alpha\\r\\nBeta\""</paramText>
+        <paramText outputType="VALUE" param="#2">"\"-\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"-Alpha\\r\\n-Beta\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"indentLines"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"Alpha\\rBeta\""</paramText>
+        <paramText outputType="VALUE" param="#2">"\"-\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"-Alpha\\r-Beta\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+  </traceTest>
+  <captureTest name="testLineIterator">
+    <runDate>2022-04-06T23:22:29.505+02:00</runDate>
+    <runDuration>0.0416204</runDuration>
+    <exception></exception>
+    <captureStep>
+      <text outputType="TEXT">"null\r\nnull\r\n\"\", \"\"\r\n\"\", \"\"\r\n\"a\", \"a\"\r\n\"a\", \"a\"\r\n\"\\n\", \"\\n\"\r\n\"\\n\", \"\\n\", \"\"\r\n\"\\r\\n\", \"\\r\\n\"\r\n\"\\r\\n\", \"\\r\\n\", \"\"\r\n\"a\\n\", \"a\\n\"\r\n\"a\\n\", \"a\\n\", \"\"\r\n\"a\\nb\", \"a\\n\", \"b\"\r\n\"a\\nb\", \"a\\n\", \"b\"\r\n\"a\\r\\nb\", \"a\\r\\n\", \"b\"\r\n\"a\\r\\nb\", \"a\\r\\n\", \"b\"\r\n\"a\\nb\\n\", \"a\\n\", \"b\\n\"\r\n\"a\\nb\\n\", \"a\\n\", \"b\\n\", \"\"\r\n\"\\n\\n\", \"\\n\", \"\\n\"\r\n\"\\n\\n\", \"\\n\", \"\\n\", \"\"\r\n\"\\r\\n\\r\\r\", \"\\r\\n\", \"\\r\", \"\\r\"\r\n\"\\r\\n\\r\\r\", \"\\r\\n\", \"\\r\", \"\\r\", \"\"\r\n"</text>
+    </captureStep>
+  </captureTest>
+  <traceTest name="testNormalizeEol">
+    <runDate>2022-04-07T09:53:37.674+02:00</runDate>
+    <runDuration>7.014E-4</runDuration>
+    <exception></exception>
+    <traceClass>org.magicwerk.strings.text.TextTools</traceClass>
+    <traceMethod>normalizeEol</traceMethod>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"normalizeEol"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"null"</paramText>
+        <paramText outputType="VALUE" param="#2">"\"\\r\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"null"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"normalizeEol"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"\""</paramText>
+        <paramText outputType="VALUE" param="#2">"\"\\r\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"normalizeEol"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"a\""</paramText>
+        <paramText outputType="VALUE" param="#2">"\"\\r\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"a\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"normalizeEol"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"\\n\""</paramText>
+        <paramText outputType="VALUE" param="#2">"\"\\r\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"\\r\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"normalizeEol"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"\\r\\n\""</paramText>
+        <paramText outputType="VALUE" param="#2">"\"\\r\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"\\r\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"normalizeEol"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"a\\n\""</paramText>
+        <paramText outputType="VALUE" param="#2">"\"\\r\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"a\\r\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"normalizeEol"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"a\\nb\""</paramText>
+        <paramText outputType="VALUE" param="#2">"\"\\r\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"a\\rb\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"normalizeEol"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"a\\r\\nb\""</paramText>
+        <paramText outputType="VALUE" param="#2">"\"\\r\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"a\\rb\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"normalizeEol"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"a\\nb\\n\""</paramText>
+        <paramText outputType="VALUE" param="#2">"\"\\r\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"a\\rb\\r\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"normalizeEol"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"\\n\\n\""</paramText>
+        <paramText outputType="VALUE" param="#2">"\"\\r\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"\\r\\r\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"normalizeEol"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"\\r\\n\\r\\r\""</paramText>
+        <paramText outputType="VALUE" param="#2">"\"\\r\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"\\r\\r\\r\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+  </traceTest>
+  <traceTest name="testNormalizeSpaces">
+    <runDate>2024-06-27T10:24:49.754+02:00</runDate>
+    <runDuration>0.0010333</runDuration>
+    <exception></exception>
+    <traceClass>org.magicwerk.strings.text.TextTools</traceClass>
+    <traceMethod>normalizeSpaces</traceMethod>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"normalizeSpaces"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"null"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"null"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"normalizeSpaces"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"normalizeSpaces"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"abc\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"abc\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"normalizeSpaces"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\" abc\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"abc\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"normalizeSpaces"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"abc \""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"abc\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"normalizeSpaces"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\" abc \""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"abc\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"normalizeSpaces"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"  abc\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"abc\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"normalizeSpaces"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"abc  \""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"abc\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"normalizeSpaces"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"  abc  \""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"abc\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"normalizeSpaces"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"a b\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"a b\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"normalizeSpaces"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"a  b\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"a b\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"normalizeSpaces"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"a b c\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"a b c\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"normalizeSpaces"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"a  b  c\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"a b c\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"normalizeSpaces"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\" a b \""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"a b\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"normalizeSpaces"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"  a  b  \""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"a b\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"normalizeSpaces"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\" a b c \""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"a b c\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"normalizeSpaces"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"  a  b  c  \""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"a b c\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+  </traceTest>
+  <traceTest name="testRemoveEmptyLinesAtEnd">
+    <runDate>2021-10-18T00:17:05.674+02:00</runDate>
+    <runDuration>0.0285913</runDuration>
+    <exception></exception>
+    <traceClass>org.magicwerk.strings.text.TextTools</traceClass>
+    <traceMethod>removeEmptyLinesAtEnd</traceMethod>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"removeEmptyLinesAtEnd"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"abc\\n\\r\\n\\n\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"abc\\n\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"removeEmptyLinesAtEnd"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"abc\\n\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"abc\\n\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"removeEmptyLinesAtEnd"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"abc\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"abc\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"removeEmptyLinesAtEnd"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"null"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"null"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+  </traceTest>
+  <traceTest name="testRemoveEmptyLinesAtStart">
+    <runDate>2021-10-17T23:46:03.804+02:00</runDate>
+    <runDuration>0.0358009</runDuration>
+    <exception></exception>
+    <traceClass>org.magicwerk.strings.text.TextTools</traceClass>
+    <traceMethod>removeEmptyLinesAtStart</traceMethod>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"removeEmptyLinesAtStart"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"\\r\\n\\nabc\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"abc\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"removeEmptyLinesAtStart"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"abc\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"abc\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"removeEmptyLinesAtStart"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"null"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"null"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+  </traceTest>
+  <traceTest name="testRemoveLines">
+    <runDate>2023-10-30T17:25:22.992+01:00</runDate>
+    <runDuration>0.0107469</runDuration>
+    <exception></exception>
+    <traceClass>org.magicwerk.strings.text.TextTools</traceClass>
+    <traceMethod>removeLines</traceMethod>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"removeLines"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"1a\\n2b\\n3ac\\n4d\""</paramText>
+        <paramText outputType="VALUE" param="#2">"{ \r\n}"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"2b\\n4d\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+  </traceTest>
+  <traceTest name="testRemoveTrailingWhitespaces">
+    <runDate>2024-06-06T01:03:40.066+02:00</runDate>
+    <runDuration>0.0178599</runDuration>
+    <exception></exception>
+    <traceClass>org.magicwerk.strings.text.TextTools</traceClass>
+    <traceMethod>removeTrailingWhitespaces</traceMethod>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"removeTrailingWhitespaces"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"abc\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"abc\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"removeTrailingWhitespaces"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"abc \""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"abc\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"removeTrailingWhitespaces"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"abc  \""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"abc\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"removeTrailingWhitespaces"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"abc\\n\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"abc\\n\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"removeTrailingWhitespaces"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"abc \\n\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"abc\\n\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"removeTrailingWhitespaces"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"abc  \\n\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"abc\\n\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+  </traceTest>
+  <traceTest name="testSplitLines">
+    <runDate>2021-10-28T15:57:10.651+02:00</runDate>
+    <runDuration>6.601E-4</runDuration>
+    <exception></exception>
+    <traceClass>org.magicwerk.strings.text.TextTools</traceClass>
+    <traceMethod>splitLines</traceMethod>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"splitLines"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"null"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"null"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"splitLines"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"{ \"\" }"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"splitLines"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"\\n\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"{ \"\" }"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"splitLines"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"\\n\\n\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"{ \"\", \"\" }"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"splitLines"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"Alpha\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"{ \"Alpha\" }"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"splitLines"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"Alpha\\n\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"{ \"Alpha\" }"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"splitLines"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"Alpha\\nBeta\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"{ \"Alpha\", \"Beta\" }"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"splitLines"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"Alpha\\nBeta\\n\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"{ \"Alpha\", \"Beta\" }"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"splitLines"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"Alpha\\r\\nBeta\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"{ \"Alpha\", \"Beta\" }"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"splitLines"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"Alpha\\rBeta\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"{ \"Alpha\", \"Beta\" }"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+  </traceTest>
+  <traceTest name="testTrimBlank">
+    <runDate>2026-04-17T11:11:20.3835636+02:00</runDate>
+    <runDuration>3.389E-4</runDuration>
+    <exception></exception>
+    <traceClass>org.magicwerk.strings.text.TextTools</traceClass>
+    <traceMethod>trimBlank</traceMethod>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"trimBlank"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"null"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"null"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"trimBlank"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"trimBlank"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\" \""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"trimBlank"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\" x\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"x\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"trimBlank"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"x\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"x\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"trimBlank"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\" x \""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"x\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"trimBlank"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"  abc  \""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"abc\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+  </traceTest>
+  <traceTest name="testTrimSpaces">
+    <runDate>2024-06-27T09:51:02.98+02:00</runDate>
+    <runDuration>6.822E-4</runDuration>
+    <exception></exception>
+    <traceClass>org.magicwerk.strings.text.TextTools</traceClass>
+    <traceMethod>trimSpaces</traceMethod>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"trimSpaces"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"null"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"null"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"trimSpaces"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"trimSpaces"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"abc\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"abc\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"trimSpaces"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\" abc\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"abc\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"trimSpaces"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"abc \""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"abc\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"trimSpaces"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\" abc \""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"abc\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"trimSpaces"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"  abc\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"abc\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"trimSpaces"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"abc  \""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"abc\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"trimSpaces"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"  abc  \""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"abc\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+  </traceTest>
+</testClass>

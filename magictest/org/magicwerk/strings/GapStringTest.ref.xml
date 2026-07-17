@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testClass xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="org.magicwerk.strings.GapStringTest" xsi:noNamespaceSchemaLocation="testclass-v10.xsd">
+  <traceTest name="testGetCodePoint">
+    <runDate>2026-04-19T12:47:54.9144626+02:00</runDate>
+    <runDuration>0.0216761</runDuration>
+    <exception></exception>
+    <traceClass>org.magicwerk.strings.GapString</traceClass>
+    <traceMethod>getCodePoint</traceMethod>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"getCodePoint"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"0"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"97"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"getCodePoint"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"0"</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"65536"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+  </traceTest>
+  <captureTest name="testStringIndexOf">
+    <runDate>2026-07-07T19:04:33.2426612+02:00</runDate>
+    <runDuration>0.0149396</runDuration>
+    <exception></exception>
+    <captureStep>
+      <text outputType="TEXT">""</text>
+    </captureStep>
+  </captureTest>
+  <captureTest name="testStringLastIndexOf">
+    <runDate>2026-07-09T00:59:23.752506+02:00</runDate>
+    <runDuration>0.0030613</runDuration>
+    <exception></exception>
+    <captureStep>
+      <text outputType="TEXT">""</text>
+    </captureStep>
+  </captureTest>
+  <captureTest name="testStringRepeat">
+    <runDate>2026-07-07T19:04:33.304528+02:00</runDate>
+    <runDuration>0.0059221</runDuration>
+    <exception></exception>
+    <captureStep>
+      <text outputType="TEXT">""</text>
+    </captureStep>
+  </captureTest>
+  <captureTest name="testStringReplace">
+    <runDate>2026-07-09T00:59:23.8176039+02:00</runDate>
+    <runDuration>0.0050846</runDuration>
+    <exception></exception>
+    <captureStep>
+      <text outputType="TEXT">""</text>
+    </captureStep>
+  </captureTest>
+  <captureTest name="testStringStartsEndsWith">
+    <runDate>2026-07-09T00:59:23.8488491+02:00</runDate>
+    <runDuration>0.0029978</runDuration>
+    <exception></exception>
+    <captureStep>
+      <text outputType="TEXT">""</text>
+    </captureStep>
+  </captureTest>
+  <captureTest name="testStringStripTrim">
+    <runDate>2026-07-09T00:59:23.8778227+02:00</runDate>
+    <runDuration>0.008489</runDuration>
+    <exception></exception>
+    <captureStep>
+      <text outputType="TEXT">""</text>
+    </captureStep>
+  </captureTest>
+  <captureTest name="testStringSubstring">
+    <runDate>2026-07-09T00:59:23.9102049+02:00</runDate>
+    <runDuration>8.555E-4</runDuration>
+    <exception></exception>
+    <captureStep>
+      <text outputType="TEXT">""</text>
+    </captureStep>
+  </captureTest>
+</testClass>

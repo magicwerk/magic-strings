@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testClass xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="org.magicwerk.strings.StringStreamTest" xsi:noNamespaceSchemaLocation="testclass-v10.xsd">
+  <captureTest name="test">
+    <runDate>2025-03-03T23:32:11.4191078+01:00</runDate>
+    <runDuration>0.0163703</runDuration>
+    <exception></exception>
+    <captureStep>
+      <text outputType="TEXT">"0:12:34:-1\r\n"</text>
+    </captureStep>
+  </captureTest>
+  <captureTest name="testReadUntilMatch">
+    <runDate>2025-03-17T22:15:33.8400961+01:00</runDate>
+    <runDuration>0.0017108</runDuration>
+    <exception></exception>
+    <captureStep>
+      <text outputType="TEXT">"abc--cde -&gt; abc/-- \r\nabc--cde -&gt; abc--cde/null \r\n"</text>
+    </captureStep>
+  </captureTest>
+  <captureTest name="testStringStream">
+    <runDate>2021-05-27T01:09:43.22+02:00</runDate>
+    <runDuration>0.033452</runDuration>
+    <exception></exception>
+    <captureStep>
+      <text outputType="TEXT">"(abc) -&gt; abc\r\n"</text>
+    </captureStep>
+  </captureTest>
+  <captureTest name="testStringStream2">
+    <runDate>2025-03-17T20:57:06.8736867+01:00</runDate>
+    <runDuration>2.36E-4</runDuration>
+    <exception></exception>
+    <captureStep>
+      <text outputType="TEXT">"(abc) -&gt; abc\r\n(abc) -&gt; null abc)\r\n"</text>
+    </captureStep>
+  </captureTest>
+  <captureTest name="testStringStream3">
+    <runDate>2025-03-17T21:02:51.2151243+01:00</runDate>
+    <runDuration>2.43E-4</runDuration>
+    <exception></exception>
+    <captureStep>
+      <text outputType="TEXT">"(abc) -&gt; abc\r\n(abc) -&gt; abc\r\n(abc) -&gt; \r\n"</text>
+    </captureStep>
+  </captureTest>
+  <captureTest name="testStringStream4">
+    <runDate>2025-03-17T23:12:39.6310959+01:00</runDate>
+    <runDuration>0.0015402</runDuration>
+    <exception></exception>
+    <captureStep>
+      <text outputType="TEXT">"--ab--cd= -&gt; ab -&gt; cd -&gt; null\r\n"</text>
+    </captureStep>
+  </captureTest>
+</testClass>

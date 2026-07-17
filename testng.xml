@@ -1,0 +1,17 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Brownies-Strings-Test">
+	<test name="Brownies-Strings-Test" >
+		<!--
+		This exclusion is ignored if -excludegroups is passed on command line 
+	  	<groups>
+    		<run>
+      			<exclude name="slow" />
+	    	</run>
+  		</groups>
+  		 -->
+  		<packages>
+ 			<package name="org.magicwerk.strings.*" />
+   		</packages>   	   		 
+	</test>
+</suite>

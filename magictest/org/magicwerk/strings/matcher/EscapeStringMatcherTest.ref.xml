@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testClass xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="org.magicwerk.strings.matcher.EscapeStringMatcherTest" xsi:noNamespaceSchemaLocation="testclass-v10.xsd">
+  <traceTest name="testFind">
+    <runDate>2022-09-16T13:35:01.254+02:00</runDate>
+    <runDuration>0.0562246</runDuration>
+    <exception></exception>
+    <traceClass>org.magicwerk.strings.matcher.EscapeStringMatcher</traceClass>
+    <traceMethod>find</traceMethod>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"find"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"123\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"null"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"find"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"123 'abc' 456\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"Match [4/5]: '"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"find"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"123''456\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"null"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"find"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"123\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"null"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"find"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"123 'abc' 456\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"Match [4/5]: '"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"find"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"123 |'abc|' 456\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"null"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"find"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"123 ||'abc||' 456\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"Match [6/7]: '"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"find"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"\\\"\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"Match [0/1]: \""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"find"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"\\\\\\\"\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"null"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"find"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"\\\\\\\\\\\"\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"Match [2/3]: \""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"find"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"\\\\\\\\\\\\\\\"\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"null"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+  </traceTest>
+</testClass>

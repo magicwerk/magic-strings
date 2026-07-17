@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testClass xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="org.magicwerk.strings.matcher.NestedStringMatcherTest" xsi:noNamespaceSchemaLocation="testclass-v10.xsd">
+  <captureTest name="testNestedStringMatcher">
+    <runDate>2025-07-22T16:52:01.2049953+02:00</runDate>
+    <runDuration>0.0549693</runDuration>
+    <exception></exception>
+    <captureStep>
+      <text outputType="TEXT">"Match [3/4]: x\r\nMatch [11/12]: x\r\n\r\nMatch [11/12]: x\r\n\r\nMatch [3/4]: x\r\nMatch [5/6]: x\r\nMatch [13/14]: x\r\n\r\nRegexMatch [3/4]: x\r\nRegexMatch [11/12]: x\r\n\r\nMatch [5/6]: x\r\nMatch [17/18]: x\r\n\r\nRegexMatch [5/6]: x\r\nRegexMatch [17/18]: x\r\n\r\nMatch [3/4]: x\r\n\r\n01 ab &lt; 23 AB 45 &gt; ab 67\r\n"</text>
+    </captureStep>
+  </captureTest>
+</testClass>

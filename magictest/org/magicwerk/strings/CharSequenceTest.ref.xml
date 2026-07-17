@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testClass xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="org.magicwerk.strings.CharSequenceTest" xsi:noNamespaceSchemaLocation="testclass-v10.xsd">
+  <captureTest name="testString">
+    <runDate>2021-06-09T17:24:08.756+02:00</runDate>
+    <runDuration>0.015193</runDuration>
+    <exception></exception>
+    <captureStep>
+      <text outputType="TEXT">"Testing java.lang.String as CharSequence\r\n"</text>
+    </captureStep>
+  </captureTest>
+</testClass>

@@ -1,0 +1,437 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testClass xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="org.magicwerk.strings.StringTruncaterTest" xsi:noNamespaceSchemaLocation="testclass-v10.xsd">
+  <captureTest name="testBenchmarks">
+    <runDate>2026-04-08T21:20:54.8436043+02:00</runDate>
+    <runDuration>0.0018289</runDuration>
+    <exception></exception>
+    <captureStep>
+      <text outputType="TEXT">"Test class org.magicwerk.brownies.core.strings.StringTruncaterTest$StringTruncaterAbbreviateBenchmarkTest\r\nResult: 01...\r\nTest class org.magicwerk.brownies.core.strings.StringTruncaterTest$StringTruncaterAbbreviateMiddleBenchmarkTest\r\nResult: 0...9\r\n"</text>
+    </captureStep>
+  </captureTest>
+  <captureTest name="testGeneric">
+    <runDate>2026-01-21T17:01:58.541261+01:00</runDate>
+    <runDuration>0.0036935</runDuration>
+    <exception></exception>
+    <captureStep>
+      <text outputType="TEXT">"1234 -&gt; 1234"</text>
+    </captureStep>
+    <captureStep>
+      <text outputType="TEXT">"1234 -&gt; null"</text>
+    </captureStep>
+    <captureStep>
+      <text outputType="TEXT">"1234 -&gt; Exception"</text>
+    </captureStep>
+    <captureStep>
+      <text outputType="TEXT">"12345 -&gt; 12345"</text>
+    </captureStep>
+    <captureStep>
+      <text outputType="TEXT">"12345 -&gt; null"</text>
+    </captureStep>
+    <captureStep>
+      <text outputType="TEXT">"12345 -&gt; Exception"</text>
+    </captureStep>
+    <captureStep>
+      <text outputType="TEXT">"123456 -&gt; 12345"</text>
+    </captureStep>
+    <captureStep>
+      <text outputType="TEXT">"123456 -&gt; 12345"</text>
+    </captureStep>
+    <captureStep>
+      <text outputType="TEXT">"123456 -&gt; 12345"</text>
+    </captureStep>
+  </captureTest>
+  <traceTest name="testTruncate">
+    <runDate>2025-06-19T14:49:53.5200897+02:00</runDate>
+    <runDuration>0.0563853</runDuration>
+    <exception></exception>
+    <traceClass>org.magicwerk.strings.StringTruncater</traceClass>
+    <traceMethod>truncate</traceMethod>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"truncate"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"0123456789\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"012345-\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"truncate"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"0123456789\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"0123456\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"truncate"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"0123456789\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"-456789\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"truncate"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"0123456789\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"3456789\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"truncate"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"0123456789\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"012-789\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"truncate"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"0123456789\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"0126789\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"truncate"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"0123456789\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"01-789\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"truncate"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"0123456789\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"012789\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"truncate"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"0123456789\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"012-89\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"truncate"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"0123456789\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"012789\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"truncate"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"0123456789\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"-23456-\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"truncate"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"0123456789\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"1234567\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"truncate"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"0123456789\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"-34567-\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"truncate"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"0123456789\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"2345678\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"truncate"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"0123456789\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"01-6789\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"truncate"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"0123456789\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"0156789\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"truncate"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"0123456789\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"0123-89\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"truncate"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"0123456789\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"0123489\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"truncate"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"0123456789\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"(trun\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"truncate"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"0123456789\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"01234\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"truncate"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"0123456789\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"ated)\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"truncate"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"0123456789\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"56789\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"truncate"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"0123456789\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"(ted)\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"truncate"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"0123456789\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"23456\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"truncate"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"0123456789\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"(trd)\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"truncate"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"0123456789\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"34567\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"truncate"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"0123456789\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"trunc\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"truncate"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"0123456789\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"01789\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"truncate"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"0123456789\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"runcd\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"truncate"</paramText>
+      </description>
+      <parameters>
+        <paramText outputType="VALUE" param="#1">"\"0123456789\""</paramText>
+      </parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"\"01289\""</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+  </traceTest>
+  <traceTest name="testTruncateBuilder">
+    <runDate>2026-03-01T12:47:36.0662305+01:00</runDate>
+    <runDuration>0.0177521</runDuration>
+    <exception></exception>
+    <traceClass>org.magicwerk.brownies.core.strings.StringTruncater$Builder</traceClass>
+    <traceMethod>build</traceMethod>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"build"</paramText>
+      </description>
+      <parameters></parameters>
+      <result>
+        <paramText outputType="VALUE" param="Result">"{ \r\n   int keepLeft = 3; \r\n   int keepRight = 3; \r\n   String truncateMarker = \"-\"; \r\n   boolean centerRight = false; \r\n   int length = 7; \r\n   boolean checkNull = false; \r\n   boolean handleNotChanged = false; \r\n   org.magicwerk.brownies.core.strings.ReturnMode returnMode = RETURN_UNCHANGED; \r\n}"</paramText>
+      </result>
+      <error></error>
+    </traceStep>
+    <traceStep>
+      <description>
+        <paramText outputType="TEXT" param="Description">"build"</paramText>
+      </description>
+      <parameters></parameters>
+      <result></result>
+      <error>
+        <paramText outputType="VALUE" param="Error">"java.lang.IllegalArgumentException: keepLeft and keepRight do not add to length"</paramText>
+      </error>
+    </traceStep>
+  </traceTest>
+</testClass>
