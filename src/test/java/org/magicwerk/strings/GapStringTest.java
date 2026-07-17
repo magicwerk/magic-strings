@@ -4,8 +4,6 @@ import java.util.function.Supplier;
 
 import org.magictest.client.Capture;
 import org.magictest.client.Trace;
-import org.magicwerk.brownies.collections.GapList;
-import org.magicwerk.brownies.collections.IList;
 import org.magicwerk.brownies.core.EqualsTools.EqualsByString;
 import org.magicwerk.brownies.core.EqualsTools.EqualsException;
 import org.magicwerk.brownies.core.EqualsTools.EqualsResult;
@@ -14,6 +12,8 @@ import org.magicwerk.brownies.core.collections.Sources.CyclicSource;
 import org.magicwerk.brownies.core.objects.Result;
 import org.magicwerk.brownies.javassist.JavaVersion;
 import org.magicwerk.brownies.platform.logback.LogbackTools;
+import org.magicwerk.collections.GapList;
+import org.magicwerk.collections.IList;
 import org.magicwerk.strings.GapString;
 import org.magicwerk.strings.StringRepeater;
 import org.magicwerk.strings.GeneralStringTest.StringJmhBenchmark;

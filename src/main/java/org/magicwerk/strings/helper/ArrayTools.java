@@ -23,8 +23,8 @@ import java.util.List;
 import java.util.NoSuchElementException;
 import java.util.function.Function;
 
-import org.magicwerk.brownies.collections.GapList;
-import org.magicwerk.brownies.collections.IList;
+import org.magicwerk.collections.GapList;
+import org.magicwerk.collections.IList;
 
 /**
  * Class {@link ArrayTools} contains helper tools for working with arrays.

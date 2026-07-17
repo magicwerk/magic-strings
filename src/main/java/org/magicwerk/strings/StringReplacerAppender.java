@@ -22,7 +22,7 @@ import java.util.function.BiFunction;
 import java.util.function.IntUnaryOperator;
 import java.util.function.UnaryOperator;
 
-import org.magicwerk.brownies.collections.IList;
+import org.magicwerk.collections.IList;
 import org.magicwerk.strings.CharSequenceTools.AppendCharReplacer;
 import org.magicwerk.strings.CharSequenceTools.AppendCodePointReplacer;
 import org.magicwerk.strings.chars.CharOperator;

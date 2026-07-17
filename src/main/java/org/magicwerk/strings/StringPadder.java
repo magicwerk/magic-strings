@@ -3,9 +3,9 @@ package org.magicwerk.strings;
 import java.util.List;
 import java.util.function.UnaryOperator;
 
-import org.magicwerk.brownies.collections.GapList;
-import org.magicwerk.brownies.collections.ICollectionTools;
-import org.magicwerk.brownies.collections.IList;
+import org.magicwerk.collections.GapList;
+import org.magicwerk.collections.ICollectionTools;
+import org.magicwerk.collections.IList;
 import org.magicwerk.strings.BuilderHelper.BuilderStringBase;
 import org.magicwerk.strings.BuilderHelper.IStringTransformerBuilder;
 import org.magicwerk.strings.BuilderHelper.IStringTransformerBuilderBase;

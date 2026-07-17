@@ -23,7 +23,7 @@ import java.util.List;
 import java.util.function.BiFunction;
 import java.util.function.Function;
 
-import org.magicwerk.brownies.collections.helper.Option;
+import org.magicwerk.collections.helper.Option;
 
 /**
  * Class {@link ObjectTools} contains tools for working with Objects.

@@ -1,6 +1,6 @@
 package org.magicwerk.strings.matcher;
 
-import org.magicwerk.brownies.collections.IList;
+import org.magicwerk.collections.IList;
 import org.magicwerk.strings.helper.CheckTools;
 import org.magicwerk.strings.match.IMatch;
 import org.magicwerk.strings.match.Match;

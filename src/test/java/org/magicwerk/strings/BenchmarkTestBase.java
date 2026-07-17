@@ -4,7 +4,6 @@ import java.util.Comparator;
 import java.util.function.Consumer;
 
 import org.apache.commons.lang3.function.Consumers;
-import org.magicwerk.brownies.collections.IList;
 import org.magicwerk.brownies.core.LogTools;
 import org.magicwerk.brownies.core.concurrent.IterateExecutor;
 import org.magicwerk.brownies.core.reflect.ReflectTools;
@@ -12,6 +11,7 @@ import org.magicwerk.brownies.javassist.analyzer.ClassDef;
 import org.magicwerk.brownies.javassist.analyzer.JavaAnalyzer;
 import org.magicwerk.brownies.tools.dev.jvm.JmhBenchmarkCreator;
 import org.magicwerk.brownies.tools.dev.jvm.JmhBenchmarkCreator.TestExecution;
+import org.magicwerk.collections.IList;
 import org.slf4j.Logger;
 
 /**

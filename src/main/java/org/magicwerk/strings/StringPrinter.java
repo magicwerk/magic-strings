@@ -22,8 +22,8 @@ import java.util.function.Function;
 import java.util.function.Predicate;
 import java.util.stream.Stream;
 
-import org.magicwerk.brownies.collections.GapList;
-import org.magicwerk.brownies.collections.IList;
+import org.magicwerk.collections.GapList;
+import org.magicwerk.collections.IList;
 import org.magicwerk.strings.format.StringFormatter;
 import org.magicwerk.strings.helper.CheckTools;
 import org.magicwerk.strings.helper.PrintTools;

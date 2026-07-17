@@ -2,12 +2,12 @@ package org.magicwerk.strings;
 
 import org.apache.commons.lang3.ObjectUtils;
 import org.apache.commons.lang3.StringUtils;
-import org.magicwerk.brownies.collections.GapList;
-import org.magicwerk.brownies.collections.IList;
 import org.magicwerk.brownies.platform.logback.LogbackTools;
 import org.magicwerk.brownies.test.BrowniesJavaEnv;
 import org.magicwerk.brownies.tools.dev.jvm.JmhRunner;
 import org.magicwerk.brownies.tools.dev.jvm.JmhRunner.Options;
+import org.magicwerk.collections.GapList;
+import org.magicwerk.collections.IList;
 import org.magicwerk.strings.helper.CheckTools;
 import org.magicwerk.strings.helper.ObjectTools;
 import org.magicwerk.brownies.tools.dev.jvm.JmhTool;

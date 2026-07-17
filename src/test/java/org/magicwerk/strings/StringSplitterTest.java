@@ -5,8 +5,6 @@ import java.util.function.BiPredicate;
 
 import org.apache.commons.lang3.StringUtils;
 import org.magictest.client.Capture;
-import org.magicwerk.brownies.collections.GapList;
-import org.magicwerk.brownies.collections.IList;
 import org.magicwerk.brownies.core.print.PrintTools2;
 import org.magicwerk.brownies.platform.logback.LogbackTools;
 import org.magicwerk.brownies.test.BrowniesJavaEnv;
@@ -15,6 +13,8 @@ import org.magicwerk.brownies.tools.dev.jvm.JmhBenchmarkCreator.TestData;
 import org.magicwerk.brownies.tools.dev.jvm.JmhBenchmarkCreator.TestMethod;
 import org.magicwerk.brownies.tools.dev.jvm.JmhRunner;
 import org.magicwerk.brownies.tools.dev.jvm.JmhRunner.Options;
+import org.magicwerk.collections.GapList;
+import org.magicwerk.collections.IList;
 import org.magicwerk.strings.StringPrinter;
 import org.magicwerk.strings.StringSplitter;
 import org.magicwerk.strings.StringSplitter.SeparatorMode;

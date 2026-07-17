@@ -3,11 +3,11 @@ package org.magicwerk.strings;
 import java.util.List;
 
 import org.magictest.MagicTest;
-import org.magicwerk.brownies.collections.GapList;
-import org.magicwerk.brownies.collections.IList;
 import org.magicwerk.brownies.test.magictest.MagicTestRunner;
 import org.magicwerk.brownies.tools.dev.tools.JavaOptions;
 import org.magicwerk.brownies.tools.dev.tools.JavaTool;
+import org.magicwerk.collections.GapList;
+import org.magicwerk.collections.IList;
 
 /**
  * Run MagicTest.

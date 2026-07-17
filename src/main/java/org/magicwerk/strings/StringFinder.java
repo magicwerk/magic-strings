@@ -4,8 +4,8 @@ import java.util.Iterator;
 import java.util.NoSuchElementException;
 import java.util.function.UnaryOperator;
 
-import org.magicwerk.brownies.collections.GapList;
-import org.magicwerk.brownies.collections.IList;
+import org.magicwerk.collections.GapList;
+import org.magicwerk.collections.IList;
 import org.magicwerk.strings.BuilderHelper.BuilderFinderBase;
 import org.magicwerk.strings.chars.CharCaseTools;
 import org.magicwerk.strings.chars.CharCaseTools.CharMode;

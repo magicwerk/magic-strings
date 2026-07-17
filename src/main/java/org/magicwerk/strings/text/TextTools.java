@@ -28,8 +28,8 @@ import java.util.function.Predicate;
 import java.util.function.UnaryOperator;
 import java.util.stream.Stream;
 
-import org.magicwerk.brownies.collections.GapList;
-import org.magicwerk.brownies.collections.IList;
+import org.magicwerk.collections.GapList;
+import org.magicwerk.collections.IList;
 import org.magicwerk.strings.CharSequenceTools;
 import org.magicwerk.strings.GapString;
 import org.magicwerk.strings.StringPrinter;

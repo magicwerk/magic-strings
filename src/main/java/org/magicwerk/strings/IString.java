@@ -17,8 +17,8 @@
  */
 package org.magicwerk.strings;
 
-import org.magicwerk.brownies.collections.GapList;
-import org.magicwerk.brownies.collections.primitive.ICharList;
+import org.magicwerk.collections.GapList;
+import org.magicwerk.collections.primitive.ICharList;
 
 /**
  * Interface {@link IString} represents a mutable string, i.e. it offers methods to change the the string instance inline.

@@ -4,8 +4,8 @@ import java.math.BigInteger;
 
 import org.magictest.client.Format;
 import org.magictest.client.Trace;
-import org.magicwerk.brownies.collections.GapList;
 import org.magicwerk.brownies.core.NumberTools;
+import org.magicwerk.collections.GapList;
 
 /**
  * Test of class {@link NumberTools}.

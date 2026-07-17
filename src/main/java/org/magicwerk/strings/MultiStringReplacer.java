@@ -2,8 +2,8 @@ package org.magicwerk.strings;
 
 import java.util.function.UnaryOperator;
 
-import org.magicwerk.brownies.collections.GapList;
-import org.magicwerk.brownies.collections.IList;
+import org.magicwerk.collections.GapList;
+import org.magicwerk.collections.IList;
 import org.magicwerk.strings.BuilderHelper.IStringTransformerBuilderBase;
 import org.magicwerk.strings.StringReplacer.IStringReplacerImpl;
 import org.magicwerk.strings.StringReplacerAppender.IStringReplaceAppender;

@@ -1,9 +1,9 @@
 package org.magicwerk.strings.objects;
 
 import org.magictest.client.Trace;
-import org.magicwerk.brownies.collections.GapList;
 import org.magicwerk.brownies.core.objects.MultiResult;
 import org.magicwerk.brownies.core.objects.Result;
+import org.magicwerk.collections.GapList;
 
 /**
  * Test of result classes {@link Result} and {@link MultiResult}.

@@ -1,9 +1,9 @@
 package org.magicwerk.strings.matcher;
 
 import org.magictest.client.Capture;
-import org.magicwerk.brownies.collections.GapList;
-import org.magicwerk.brownies.collections.IList;
 import org.magicwerk.brownies.core.collections.CollectionTools2;
+import org.magicwerk.collections.GapList;
+import org.magicwerk.collections.IList;
 import org.magicwerk.strings.helper.CheckTools;
 import org.magicwerk.strings.match.IMatch;
 import org.magicwerk.strings.matcher.CharMatcher;

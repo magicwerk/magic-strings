@@ -4,14 +4,14 @@ import java.util.Collection;
 import java.util.function.Predicate;
 
 import org.magictest.client.Capture;
-import org.magicwerk.brownies.collections.GapList;
-import org.magicwerk.brownies.collections.IList;
 import org.magicwerk.brownies.core.function.PropertyPredicates;
 import org.magicwerk.brownies.core.function.PropertyPredicates.NamedExplainingPredicate;
 import org.magicwerk.brownies.core.function.PropertyPredicates.NamedListExplainingPredicate;
 import org.magicwerk.brownies.core.function.PropertyPredicates.PropertyPredicate;
 import org.magicwerk.brownies.core.function.PropertyPredicates.PropertyPredicateResult;
 import org.magicwerk.brownies.platform.logback.LogbackTools;
+import org.magicwerk.collections.GapList;
+import org.magicwerk.collections.IList;
 import org.magicwerk.strings.StringSplitter;
 import org.magicwerk.strings.function.MultiPredicate;
 

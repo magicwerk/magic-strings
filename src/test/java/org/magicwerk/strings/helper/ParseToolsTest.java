@@ -1,11 +1,11 @@
 package org.magicwerk.strings.helper;
 
-import org.magicwerk.brownies.collections.GapList;
-import org.magicwerk.brownies.collections.IList;
 import org.magicwerk.brownies.javassist.JavaVersion;
 import org.magicwerk.brownies.platform.logback.LogbackTools;
 import org.magicwerk.brownies.tools.dev.jvm.JmhBenchmarkCreator.TestData;
 import org.magicwerk.brownies.tools.dev.jvm.JmhBenchmarkCreator.TestMethod;
+import org.magicwerk.collections.GapList;
+import org.magicwerk.collections.IList;
 import org.magicwerk.strings.BenchmarkTestBase;
 import org.magicwerk.strings.helper.ParseTools;
 import org.slf4j.Logger;

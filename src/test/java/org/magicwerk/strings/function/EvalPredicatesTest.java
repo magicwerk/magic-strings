@@ -3,8 +3,6 @@ package org.magicwerk.strings.function;
 import java.util.function.Predicate;
 
 import org.magictest.client.Capture;
-import org.magicwerk.brownies.collections.GapList;
-import org.magicwerk.brownies.collections.IList;
 import org.magicwerk.brownies.core.function.EvalPredicates;
 import org.magicwerk.brownies.core.function.StringPredicates;
 import org.magicwerk.brownies.core.function.EvalPredicates.EvalAndPredicate;
@@ -12,6 +10,8 @@ import org.magicwerk.brownies.core.function.EvalPredicates.EvalMultiPredicate.Mu
 import org.magicwerk.brownies.core.function.EvalPredicates.EvalOrPredicate;
 import org.magicwerk.brownies.core.function.EvalPredicates.EvalPredicate;
 import org.magicwerk.brownies.platform.logback.LogbackTools;
+import org.magicwerk.collections.GapList;
+import org.magicwerk.collections.IList;
 import org.magicwerk.strings.function.Predicates;
 import org.magicwerk.strings.function.Predicates.AndPredicate;
 import org.magicwerk.strings.function.Predicates.OrPredicate;

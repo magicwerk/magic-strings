@@ -17,8 +17,8 @@
  */
 package org.magicwerk.strings.format;
 
-import org.magicwerk.brownies.collections.GapList;
-import org.magicwerk.brownies.collections.IList;
+import org.magicwerk.collections.GapList;
+import org.magicwerk.collections.IList;
 import org.magicwerk.strings.format.StringFormatParsers.StringFormatParser;
 import org.magicwerk.strings.mapper.IStringExistsMapper;
 import org.magicwerk.strings.mapper.IStringMapper;

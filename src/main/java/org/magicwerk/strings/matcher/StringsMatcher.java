@@ -9,10 +9,10 @@ import java.util.Set;
 import java.util.TreeSet;
 import java.util.function.UnaryOperator;
 
-import org.magicwerk.brownies.collections.GapList;
-import org.magicwerk.brownies.collections.IList;
-import org.magicwerk.brownies.collections.primitive.IIntList;
-import org.magicwerk.brownies.collections.primitive.IntGapList;
+import org.magicwerk.collections.GapList;
+import org.magicwerk.collections.IList;
+import org.magicwerk.collections.primitive.IIntList;
+import org.magicwerk.collections.primitive.IntGapList;
 import org.magicwerk.strings.CharSequenceTools;
 import org.magicwerk.strings.GapString;
 import org.magicwerk.strings.IString;

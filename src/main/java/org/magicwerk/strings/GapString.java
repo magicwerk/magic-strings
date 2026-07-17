@@ -29,8 +29,8 @@ import java.util.function.Function;
 import java.util.regex.Pattern;
 import java.util.stream.Stream;
 
-import org.magicwerk.brownies.collections.primitive.CharGapList;
-import org.magicwerk.brownies.collections.primitive.ICharListable;
+import org.magicwerk.collections.primitive.CharGapList;
+import org.magicwerk.collections.primitive.ICharListable;
 import org.magicwerk.strings.chars.CharsetTools;
 import org.magicwerk.strings.chars.CodePointTools;
 import org.magicwerk.strings.chars.CharCaseTools.CharMode;

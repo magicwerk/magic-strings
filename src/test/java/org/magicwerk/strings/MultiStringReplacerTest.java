@@ -1,7 +1,7 @@
 package org.magicwerk.strings;
 
 import org.magictest.client.Trace;
-import org.magicwerk.brownies.collections.GapList;
+import org.magicwerk.collections.GapList;
 import org.magicwerk.strings.MultiStringReplacer;
 import org.magicwerk.strings.StringReplacer;
 import org.magicwerk.strings.helper.CheckTools;

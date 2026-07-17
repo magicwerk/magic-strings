@@ -2,8 +2,8 @@ package org.magicwerk.strings.chars;
 
 import java.util.Iterator;
 
-import org.magicwerk.brownies.collections.primitive.IIntList;
-import org.magicwerk.brownies.collections.primitive.IntGapList;
+import org.magicwerk.collections.primitive.IIntList;
+import org.magicwerk.collections.primitive.IntGapList;
 import org.magicwerk.strings.CharSequenceTools;
 
 /**

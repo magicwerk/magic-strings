@@ -3,8 +3,6 @@ package org.magicwerk.strings;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import org.magicwerk.brownies.collections.GapList;
-import org.magicwerk.brownies.collections.IList;
 import org.magicwerk.brownies.core.collections.Sources.CyclicSource;
 import org.magicwerk.brownies.core.concurrent.IterateExecutor;
 import org.magicwerk.brownies.core.reflect.ReflectReflection;
@@ -14,6 +12,8 @@ import org.magicwerk.brownies.platform.logback.LogbackTools;
 import org.magicwerk.brownies.tools.dev.jvm.JmhBenchmarkCreator.TestData;
 import org.magicwerk.brownies.tools.dev.jvm.JmhBenchmarkCreator.TestExecution;
 import org.magicwerk.brownies.tools.dev.jvm.JmhBenchmarkCreator.TestMethod;
+import org.magicwerk.collections.GapList;
+import org.magicwerk.collections.IList;
 import org.magicwerk.strings.GeneralStringTest.StringJmhBenchmark;
 import org.magicwerk.strings.matcher.AnchoredStringMatcher;
 import org.magicwerk.strings.matcher.ConditionalStringMatcher;

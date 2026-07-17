@@ -3,8 +3,6 @@ package org.magicwerk.strings;
 import java.util.function.Consumer;
 
 import org.magictest.client.Capture;
-import org.magicwerk.brownies.collections.GapList;
-import org.magicwerk.brownies.collections.IList;
 import org.magicwerk.brownies.core.function.StringPredicates;
 import org.magicwerk.brownies.core.strings.stream.StringStream;
 import org.magicwerk.brownies.core.strings.stream.StringStreamer;
@@ -19,6 +17,8 @@ import org.magicwerk.brownies.core.strings.stream.StringStreamerTools.ReadWhileC
 import org.magicwerk.brownies.core.strings.stream.StringStreamerTools.ReadWhileCharEscapedEscaped;
 import org.magicwerk.brownies.core.strings.stream.StringStreamerTools.ReadWhileOneOf;
 import org.magicwerk.brownies.platform.logback.LogbackTools;
+import org.magicwerk.collections.GapList;
+import org.magicwerk.collections.IList;
 import org.slf4j.Logger;
 
 /**

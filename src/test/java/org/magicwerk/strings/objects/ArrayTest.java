@@ -1,12 +1,12 @@
 package org.magicwerk.strings.objects;
 
 import org.magictest.client.Capture;
-import org.magicwerk.brownies.collections.GapList;
-import org.magicwerk.brownies.collections.helper.MutableInt;
 import org.magicwerk.brownies.core.print.PrintTools2;
 import org.magicwerk.brownies.test.BrowniesJavaEnv;
 import org.magicwerk.brownies.tools.dev.jvm.JmhRunner;
 import org.magicwerk.brownies.tools.dev.jvm.JmhRunner.Options;
+import org.magicwerk.collections.GapList;
+import org.magicwerk.collections.helper.MutableInt;
 import org.magicwerk.strings.objects.Array;
 import org.magicwerk.strings.objects.Single;
 import org.openjdk.jmh.annotations.Benchmark;

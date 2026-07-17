@@ -1,7 +1,7 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
-<suite name="Brownies-Strings-Test">
-	<test name="Brownies-Strings-Test" >
+<suite name="Magic-Strings-Test">
+	<test name="Magic-Strings-Test" >
 		<!--
 		This exclusion is ignored if -excludegroups is passed on command line 
 	  	<groups>

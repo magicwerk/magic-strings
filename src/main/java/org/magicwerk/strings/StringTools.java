@@ -19,7 +19,7 @@ package org.magicwerk.strings;
 
 import java.util.Collection;
 
-import org.magicwerk.brownies.collections.IList;
+import org.magicwerk.collections.IList;
 import org.magicwerk.strings.chars.CharPredicate;
 import org.magicwerk.strings.chars.CodePointTools;
 import org.magicwerk.strings.helper.FuncTools;

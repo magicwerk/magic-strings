@@ -9,10 +9,10 @@ import java.util.Map;
 
 import org.magictest.client.Format;
 import org.magictest.client.Trace;
-import org.magicwerk.brownies.collections.GapList;
-import org.magicwerk.brownies.collections.IList;
-import org.magicwerk.brownies.collections.helper.NaturalComparator;
 import org.magicwerk.brownies.platform.logback.LogbackTools;
+import org.magicwerk.collections.GapList;
+import org.magicwerk.collections.IList;
+import org.magicwerk.collections.helper.NaturalComparator;
 import org.magicwerk.strings.helper.CollectionTools;
 
 import ch.qos.logback.classic.Logger;

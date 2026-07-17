@@ -6,8 +6,6 @@ import java.util.Comparator;
 import java.util.function.Function;
 
 import org.jdom2.Attribute;
-import org.magicwerk.brownies.collections.GapList;
-import org.magicwerk.brownies.collections.IList;
 import org.magicwerk.brownies.core.LogTools;
 import org.magicwerk.brownies.core.MathTools2;
 import org.magicwerk.brownies.core.TypeTools;
@@ -39,6 +37,8 @@ import org.magicwerk.brownies.html.content.HtmlTableFormatter;
 import org.magicwerk.brownies.tools.dev.jvm.JmhBenchmarkCreator.TestExecution;
 import org.magicwerk.brownies.tools.dev.jvm.JmhBenchmarkCreator.TestMethodPerformance;
 import org.magicwerk.brownies.tools.dev.jvm.JmhBenchmarkCreator.TestPerformance;
+import org.magicwerk.collections.GapList;
+import org.magicwerk.collections.IList;
 import org.magicwerk.strings.StringSplitter;
 import org.magicwerk.strings.format.StringFormatter;
 import org.magicwerk.strings.function.Predicates;

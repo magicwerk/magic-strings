@@ -17,7 +17,7 @@
  */
 package org.magicwerk.strings.chars;
 
-import org.magicwerk.brownies.collections.primitive.CharGapList;
+import org.magicwerk.collections.primitive.CharGapList;
 import org.magicwerk.strings.helper.ByteTools;
 import org.magicwerk.strings.helper.CheckTools;
 

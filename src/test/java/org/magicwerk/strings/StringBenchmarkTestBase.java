@@ -2,9 +2,9 @@ package org.magicwerk.strings;
 
 import org.magictest.client.Capture;
 import org.magictest.client.Report;
-import org.magicwerk.brownies.collections.IList;
 import org.magicwerk.brownies.tools.dev.jvm.JmhBenchmarkCreator;
 import org.magicwerk.brownies.tools.dev.jvm.JmhBenchmarkCreator.TestExecution;
+import org.magicwerk.collections.IList;
 import org.magicwerk.strings.GapString;
 import org.magicwerk.strings.IString;
 import org.magicwerk.strings.IStringTransformer;

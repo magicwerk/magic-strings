@@ -3,8 +3,6 @@ package org.magicwerk.strings.chars;
 import java.util.function.Function;
 
 import org.magictest.client.Capture;
-import org.magicwerk.brownies.collections.primitive.IIntList;
-import org.magicwerk.brownies.collections.primitive.IntGapList;
 import org.magicwerk.brownies.core.concurrent.CompareExecutor;
 import org.magicwerk.brownies.javassist.JavaVersion;
 import org.magicwerk.brownies.platform.logback.LogbackTools;
@@ -12,6 +10,8 @@ import org.magicwerk.brownies.test.BrowniesJavaEnv;
 import org.magicwerk.brownies.tools.dev.jvm.JavaEnvironment;
 import org.magicwerk.brownies.tools.dev.tools.JavaTool;
 import org.magicwerk.brownies.tools.runner.JavaRunner;
+import org.magicwerk.collections.primitive.IIntList;
+import org.magicwerk.collections.primitive.IntGapList;
 import org.magicwerk.strings.CharSequenceTools;
 import org.magicwerk.strings.chars.CodePointTools;
 import org.magicwerk.strings.helper.CheckTools;

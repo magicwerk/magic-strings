@@ -20,7 +20,7 @@ package org.magicwerk.strings.chars;
 import java.util.Iterator;
 import java.util.function.IntPredicate;
 
-import org.magicwerk.brownies.collections.primitive.IIntList;
+import org.magicwerk.collections.primitive.IIntList;
 import org.magicwerk.strings.chars.CharCaseTools.CodePointEqual;
 
 /**

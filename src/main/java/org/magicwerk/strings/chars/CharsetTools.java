@@ -33,8 +33,8 @@ import java.util.List;
 import java.util.Map;
 import java.util.Objects;
 
-import org.magicwerk.brownies.collections.GapList;
-import org.magicwerk.brownies.collections.primitive.IntGapList;
+import org.magicwerk.collections.GapList;
+import org.magicwerk.collections.primitive.IntGapList;
 
 /**
  * Class {@link CharsetTools} contains operations related to {@link Charset}s. 

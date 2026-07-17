@@ -7,8 +7,8 @@ import static org.magicwerk.strings.matcher.LinebreakMatcher.getLinebreakLengthU
 import static org.magicwerk.strings.matcher.LinebreakMatcher.isLinebreakJava;
 import static org.magicwerk.strings.matcher.LinebreakMatcher.isLinebreakUnicode;
 
-import org.magicwerk.brownies.collections.GapList;
-import org.magicwerk.brownies.collections.IList;
+import org.magicwerk.collections.GapList;
+import org.magicwerk.collections.IList;
 import org.magicwerk.strings.match.IMatch;
 import org.magicwerk.strings.match.Match;
 

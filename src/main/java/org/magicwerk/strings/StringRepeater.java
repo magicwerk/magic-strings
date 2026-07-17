@@ -20,7 +20,7 @@ package org.magicwerk.strings;
 import java.util.Arrays;
 import java.util.function.UnaryOperator;
 
-import org.magicwerk.brownies.collections.helper.CapacityHelper;
+import org.magicwerk.collections.helper.CapacityHelper;
 import org.magicwerk.strings.helper.CheckTools;
 
 /**
